@@ -1,0 +1,4 @@
+# Preserve the original recovered file bytes across platforms.
+* -text
+*.png binary
+*.br binary

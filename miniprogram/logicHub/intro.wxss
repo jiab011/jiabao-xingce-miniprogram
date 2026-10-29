@@ -1,0 +1,37 @@
+.intro-page{padding:22rpx 22rpx 70rpx}
+.intro-card{background:#fff;border-radius:26rpx;padding:62rpx 32rpx 34rpx}
+.intro-title{font-size:42rpx;font-weight:600;text-align:center}
+.intro-stars{color:#ffbf00;font-size:51rpx;letter-spacing:5rpx;margin:20rpx 0;text-align:center}
+.intro-date{color:#858b94;font-size:25rpx;text-align:center}
+.intro-tags{display:-webkit-flex;display:flex;gap:12rpx;-webkit-justify-content:center;justify-content:center;margin:28rpx 0}
+.intro-tags text{background:#3b78ff;border-radius:24rpx;color:#fff;font-size:23rpx;padding:5rpx 17rpx}
+.intro-description{color:#6b7280;font-size:29rpx;line-height:2;text-indent:2em}
+.intro-tip{background:#f0f6ff;border-radius:16rpx;color:#3b78ff;font-size:25rpx;line-height:1.8;margin-top:24rpx;padding:20rpx}
+.intro-stats{background:#fff;border-radius:24rpx;display:-webkit-flex;display:flex;-webkit-justify-content:space-around;justify-content:space-around;margin-top:20rpx;padding:25rpx 0}
+.intro-stats view{text-align:center}
+.intro-stats text{color:#999;display:block;font-size:24rpx;margin-top:8rpx}
+.intro-stats .blue,.intro-stats .gold,.intro-stats .green{font-size:40rpx;margin-top:0}
+.intro-stats .blue{color:#3b78ff}
+.intro-stats .green{color:#00c99c}
+.intro-stats .gold{color:#ffb900}
+.intro-actions{padding:45rpx 80rpx}
+.intro-actions button{border-radius:18rpx;font-size:29rpx;line-height:1.6;margin:25rpx 0 0;max-width:none;padding:17rpx 12rpx;width:100%}
+.start-study{background:#3b78ff;color:#fff}
+.browse-words{background:#e8f0ff;color:#3b78ff}
+.clear-progress{background:#f44354;color:#fff}
+@media (min-width:760px){.intro-page{padding:13.75px 13.75px 43.75px}
+.intro-card{background:#fff;border-radius:16.25px;padding:38.75px 20px 21.25px}
+.intro-title{font-size:26.25px;font-weight:600;text-align:center}
+.intro-stars{color:#ffbf00;font-size:31.875px;letter-spacing:3.125px;margin:12.5px 0;text-align:center}
+.intro-date{color:#858b94;font-size:15.625px;text-align:center}
+.intro-tags{display:-webkit-flex;display:flex;gap:7.5px;-webkit-justify-content:center;justify-content:center;margin:17.5px 0}
+.intro-tags text{background:#3b78ff;border-radius:15px;color:#fff;font-size:14.375px;padding:3.125px 10.625px}
+.intro-description{color:#6b7280;font-size:18.125px;line-height:2;text-indent:2em}
+.intro-tip{background:#f0f6ff;border-radius:10px;color:#3b78ff;font-size:15.625px;line-height:1.8;margin-top:15px;padding:12.5px}
+.intro-stats{background:#fff;border-radius:15px;display:-webkit-flex;display:flex;-webkit-justify-content:space-around;justify-content:space-around;margin-top:12.5px;padding:15.625px 0}
+.intro-stats text{color:#999;display:block;font-size:15px;margin-top:5px}
+.intro-stats .blue,.intro-stats .gold,.intro-stats .green{font-size:25px;margin-top:0}
+.intro-actions{padding:28.125px 50px}
+.intro-actions button{border-radius:11.25px;font-size:18.125px;line-height:1.6;margin:15.625px 0 0;max-width:none;padding:10.625px 7.5px;width:100%}
+}
+@import "/styles/tablet-layout.wxss";

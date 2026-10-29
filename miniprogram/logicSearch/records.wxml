@@ -1,0 +1,30 @@
+<view class="records-page">
+  <view class="records-title">做题记录</view>
+  <view class="records-paper">{{title}}</view>
+  <block wx:for="{{records}}" wx:for-item="item_f" wx:for-index="index_g" wx:key="id">
+    <button class="record-card" bindtap="open" data-id="{{item_f.id}}">
+      <view class="record-top">
+        <text>{{item_f.time}}</text>
+        <text class="record-arrow">›</text>
+      </view>
+      <view class="record-stats">
+        <view>
+          <text class="record-value">{{item_f.duration}}</text>
+          <text>用时</text>
+        </view>
+        <view>
+          <text class="record-value record-green">{{item_f.accuracy === null ? '—' : item_f.accuracy + '%'}}</text>
+          <text>正确率 {{item_f.correct}}/{{item_f.gradable}}</text>
+        </view>
+        <view>
+          <text class="record-value">{{item_f.completion}}%</text>
+          <text>完成率 {{item_f.answered}}/{{item_f.total}}</text>
+        </view>
+      </view>
+    </button>
+  </block>
+  <block wx:if="{{(!records.length ? 1 : 0) === 1}}">
+    <view class="record-empty">暂无符合条件的做题记录</view>
+  </block>
+  <view class="records-tip">正确率在10%—20%、用时不足规定时间20%或未作答的练习，不计入此列表。</view>
+</view>

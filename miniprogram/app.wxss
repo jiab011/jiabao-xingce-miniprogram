@@ -1,0 +1,23 @@
+page{background:#f6f6f6;color:#222;font-family:-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif;font-size:28rpx;line-height:1.6}
+button,image,text,view{box-sizing:border-box}
+button{border-radius:0;font-size:inherit;line-height:inherit;margin:0;padding:0}
+button::after{border:0}
+.page{padding:20rpx 18rpx 36rpx}
+.card{background:#fff;border-radius:28rpx}
+.tap-hover{opacity:.7}
+.placeholder{background:#fff;border-radius:28rpx;margin:28rpx 22rpx;padding:64rpx 34rpx;text-align:center}
+.placeholder-icon{height:112rpx;margin-bottom:24rpx;width:112rpx}
+.placeholder-title{font-size:36rpx;font-weight:600}
+.placeholder-copy{color:#888;font-size:27rpx;line-height:1.9;margin-top:20rpx}
+.primary-button{background:#3b78ff;border-radius:16rpx;color:#fff;display:block;font-size:28rpx;margin:36rpx auto 0;padding:20rpx 30rpx;width:70%}
+.placeholder-note{color:#aaa;font-size:22rpx;margin:26rpx 0;text-align:center}
+@media (min-width:760px){body{background:#f6f6f6;color:#222;font-family:-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif;font-size:17.5px;line-height:1.6}
+.page{padding:12.5px 11.25px 22.5px}
+.card,.placeholder{background:#fff;border-radius:17.5px}
+.placeholder{margin:17.5px 13.75px;padding:40px 21.25px;text-align:center}
+.placeholder-icon{height:70px;margin-bottom:15px;width:70px}
+.placeholder-title{font-size:22.5px;font-weight:600}
+.placeholder-copy{color:#888;font-size:16.875px;line-height:1.9;margin-top:12.5px}
+.primary-button{background:#3b78ff;border-radius:10px;color:#fff;display:block;font-size:17.5px;margin:22.5px auto 0;padding:12.5px 18.75px;width:70%}
+.placeholder-note{color:#aaa;font-size:13.75px;margin:16.25px 0;text-align:center}
+}

@@ -1,0 +1,63 @@
+page{background:#f6f7fa}
+.wrong-page{padding:22rpx 24rpx calc(40rpx + env(safe-area-inset-bottom))}
+.book-heading{background:#fff;border-radius:24rpx;margin-bottom:22rpx;padding:26rpx}
+.page-title{color:#172238;font-size:34rpx;font-weight:600}
+.hint{color:#94a0b2;font-size:24rpx;line-height:1.8;margin-top:10rpx}
+.wrong-page .book-card{background:#e0f3ff;border-radius:24rpx;color:#172238;display:block;line-height:1.6;margin:0 0 22rpx;max-width:none;min-width:0;padding:26rpx;text-align:left;width:100%}
+.card-top{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}
+.book-name{font-size:33rpx;font-weight:600}
+.arrow{color:#8aaedf;font-size:44rpx;line-height:1.2}
+.book-count{color:#97a4b5;font-size:24rpx;margin-top:22rpx}
+.book-count>text:first-child,.number{color:#3b78ff;font-size:30rpx}
+.paper-total{margin-left:26rpx}
+.wrong-page .vocabulary-card{background:#fff2e9}
+.vocabulary-card .arrow{color:#eda575}
+.filter{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:16rpx;margin:20rpx 0}
+.search{background:#fff;border:1rpx solid #e6edf8;border-radius:16rpx;box-sizing:border-box;-webkit-flex:1;flex:1;font-size:26rpx;height:76rpx;min-width:0;padding:14rpx 20rpx}
+.year-picker{background:#fff;border-radius:14rpx;color:#7895be;font-size:23rpx;padding:18rpx 14rpx}
+.wrong-page .paper-card{background:#e0f3ff;border-radius:24rpx;color:#172238;line-height:1.65;margin:20rpx 0;max-width:none;min-width:0;padding:24rpx;text-align:left;width:100%}
+.paper-title{font-size:29rpx}
+.paper-bottom{-webkit-align-items:center;align-items:center;color:#94a0b2;display:-webkit-flex;display:flex;font-size:24rpx;-webkit-justify-content:space-between;justify-content:space-between;margin-top:22rpx}
+.open-hint{color:#86a4c8;font-size:22rpx}
+.question-title{color:#172238;font-size:30rpx;font-weight:600;line-height:1.8}
+.heading-bottom{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:12rpx;-webkit-justify-content:space-between;justify-content:space-between;margin-top:12rpx}
+.wrong-page .review-button{background:#3b78ff;border-radius:16rpx;color:#fff;-webkit-flex-shrink:0;flex-shrink:0;font-size:24rpx;line-height:1.6;margin:0;padding:12rpx 20rpx}
+.question-list{background:#fff;border-radius:24rpx;overflow:hidden}
+.wrong-page .question-row{background:#fff;border-bottom:1rpx solid #edf0f5;border-radius:0;color:#273144;display:block;line-height:1.7;margin:0;max-width:none;min-width:0;padding:24rpx;text-align:left;width:100%}
+.question-row:last-child{border-bottom:0}
+.source{color:#8c99ad;font-size:22rpx}
+.preview{font-size:29rpx;line-height:1.9;margin-top:12rpx}
+.empty-state{background:#fff;border-radius:24rpx;color:#9aa5b6;font-size:26rpx;line-height:1.9;padding:70rpx 24rpx;text-align:center}
+.footer-hint{color:#a5adba;font-size:22rpx;padding:26rpx 0;text-align:center}
+.legacy-hint{background:#fff7ef;border-radius:16rpx;color:#a18f7d;font-size:23rpx;line-height:1.8;margin-bottom:20rpx;padding:18rpx 22rpx}
+.wrong-page .retry{background:#3b78ff;border-radius:14rpx;color:#fff;font-size:26rpx;margin:24rpx auto 0;padding:14rpx 26rpx;width:70%}
+@media (min-width:760px){.wrong-page{padding:13.75px 15px calc(25px + env(safe-area-inset-bottom))}
+.book-heading{background:#fff;border-radius:15px;margin-bottom:13.75px;padding:16.25px}
+.page-title{color:#172238;font-size:21.25px;font-weight:600}
+.hint{color:#94a0b2;font-size:15px;line-height:1.8;margin-top:6.25px}
+.wrong-page .book-card{background:#e0f3ff;border-radius:15px;color:#172238;display:block;line-height:1.6;margin:0 0 13.75px;max-width:none;min-width:0;padding:16.25px;text-align:left;width:100%}
+.book-name{font-size:20.625px;font-weight:600}
+.arrow{color:#8aaedf;font-size:27.5px;line-height:1.2}
+.book-count{color:#97a4b5;font-size:15px;margin-top:13.75px}
+.book-count>text:first-child,.number{color:#3b78ff;font-size:18.75px}
+.paper-total{margin-left:16.25px}
+.filter{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:10px;margin:12.5px 0}
+.search{background:#fff;border:.625px solid #e6edf8;border-radius:10px;box-sizing:border-box;-webkit-flex:1;flex:1;font-size:16.25px;height:47.5px;min-width:0;padding:8.75px 12.5px}
+.year-picker{background:#fff;border-radius:8.75px;color:#7895be;font-size:14.375px;padding:11.25px 8.75px}
+.wrong-page .paper-card{background:#e0f3ff;border-radius:15px;color:#172238;line-height:1.65;margin:12.5px 0;max-width:none;min-width:0;padding:15px;text-align:left;width:100%}
+.paper-title{font-size:18.125px}
+.paper-bottom{-webkit-align-items:center;align-items:center;color:#94a0b2;display:-webkit-flex;display:flex;font-size:15px;-webkit-justify-content:space-between;justify-content:space-between;margin-top:13.75px}
+.open-hint{color:#86a4c8;font-size:13.75px}
+.question-title{color:#172238;font-size:18.75px;font-weight:600;line-height:1.8}
+.heading-bottom{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:7.5px;-webkit-justify-content:space-between;justify-content:space-between;margin-top:7.5px}
+.wrong-page .review-button{background:#3b78ff;border-radius:10px;color:#fff;-webkit-flex-shrink:0;flex-shrink:0;font-size:15px;line-height:1.6;margin:0;padding:7.5px 12.5px}
+.question-list{background:#fff;border-radius:15px;overflow:hidden}
+.wrong-page .question-row{background:#fff;border-bottom:.625px solid #edf0f5;border-radius:0;color:#273144;display:block;line-height:1.7;margin:0;max-width:none;min-width:0;padding:15px;text-align:left;width:100%}
+.source{color:#8c99ad;font-size:13.75px}
+.preview{font-size:18.125px;line-height:1.9;margin-top:7.5px}
+.empty-state{background:#fff;border-radius:15px;color:#9aa5b6;font-size:16.25px;line-height:1.9;padding:43.75px 15px;text-align:center}
+.footer-hint{color:#a5adba;font-size:13.75px;padding:16.25px 0;text-align:center}
+.legacy-hint{background:#fff7ef;border-radius:10px;color:#a18f7d;font-size:14.375px;line-height:1.8;margin-bottom:12.5px;padding:11.25px 13.75px}
+.wrong-page .retry{background:#3b78ff;border-radius:8.75px;color:#fff;font-size:16.25px;margin:15px auto 0;padding:8.75px 16.25px;width:70%}
+}
+@import "/styles/tablet-layout.wxss";

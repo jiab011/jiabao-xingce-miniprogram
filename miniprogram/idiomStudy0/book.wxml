@@ -1,0 +1,55 @@
+<block wx:if="{{(word ? 1 : 0) === 1}}">
+  <view class="book-page">
+    <view class="book-tabs">
+      <button class="filter-correct {{filter === 'correct' ? 'active' : ''}}" bindtap="filter" data-filter="correct">正确选项（{{correctCount}}）</button>
+      <button class="filter-distractor {{filter === 'distractor' ? 'active' : ''}}" bindtap="filter" data-filter="distractor">混淆选项（{{distractorCount}}）</button>
+      <block wx:if="{{(unknownCount ? 1 : 0) === 1}}">
+        <button class="filter-unknown {{filter === 'unknown' ? 'active' : ''}}" bindtap="filter" data-filter="unknown">待核答案（{{unknownCount}}）</button>
+      </block>
+    </view>
+    <view class="book-hint">背题模式 · 正确答案已标绿，阅读不会计入作答记录</view>
+    <block wx:for="{{cards}}" wx:for-item="item_m" wx:for-index="index_n" wx:key="id">
+      <view class="book-card">
+        <view class="book-source">{{item_m.source.title}}<text>第 {{item_m.source.no}} 题</text></view>
+        <view class="book-body">
+          <view class="book-stem" selectable="{{true}}">{{item_m.stem}}</view>
+          <block wx:for="{{item_m.options}}" wx:for-item="item_x" wx:for-index="index_y" wx:key="label">
+            <view class="book-option">
+              <text class="book-letter {{item_x.correct ? 'correct' : ''}}">{{item_x.label}}</text>
+              <view class="book-option-text">
+                <block wx:for="{{item_x.parts}}" wx:for-item="item_G0" wx:for-index="index_H0" wx:key="index">
+                  <text class="{{item_G0.id ? 'word-link' : ''}}" bindtap="openWord" data-id="{{item_G0.id}}">{{item_G0.text}} </text>
+                </block>
+              </view>
+            </view>
+          </block>
+          <view class="book-card-actions">
+            <button class="book-favorite" bindtap="favorite" data-id="{{item_m.id}}">{{item_m.favorite ? '♥ 已收藏题目' : '♡ 收藏题目'}}</button>
+            <button bindtap="analysis" data-id="{{item_m.id}}">查看解析 ›</button>
+          </view>
+          <block wx:if="{{(!item_m.answer ? 1 : 0) === 1}}">
+            <view class="missing-answer">原库暂无标准答案，此题不判分。</view>
+          </block>
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{(!total ? 1 : 0) === 1}}">
+      <view class="blank-state">本库没有该分类的关联题目。</view>
+    </block>
+    <block wx:if="{{(more ? 1 : total ? 2 : 0) === 1}}">
+      <button class="load-more" bindtap="more">继续加载（已显示 {{cards.length}} / {{total}} 题）</button>
+    </block>
+    <block wx:elif="{{(more ? 1 : total ? 2 : 0) === 2}}">
+      <view class="fine-print">已展示本分类全部 {{total}} 道去重真题</view>
+    </block>
+    <view class="book-bottom">
+      <button class="green-button" bindtap="practice" disabled="{{!total}}">用这些题进入做题模式</button>
+    </view>
+  </view>
+</block>
+<block wx:if="{{(bookLoading ? 1 : 0) === 1}}">
+  <view class="book-loading">正在读取题目…</view>
+</block>
+<block wx:if="{{(bookError ? 1 : 0) === 1}}">
+  <button class="book-retry" bindtap="retryBook">题目暂未读取，点击重试</button>
+</block>

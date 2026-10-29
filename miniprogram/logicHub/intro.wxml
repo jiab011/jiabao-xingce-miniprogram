@@ -1,0 +1,33 @@
+<view class="intro-page">
+  <view class="intro-card">
+    <view class="intro-title">公考高频成语</view>
+    <view class="intro-stars">★ ★ ★ ★ ★</view>
+    <view class="intro-date">整理时间：2026-10-23</view>
+    <view class="intro-tags">
+      <text>推荐</text>
+      <text>成语</text>
+      <text>真题高频</text>
+    </view>
+    <view class="intro-description">从咱们已收录的逻辑填空真题中，整理在至少 5 道去重题目中出现的 {{total}} 个成语。每词包含核心含义、简易理解、10 条近五年官网例句，以及用法、辨析和关联真题。</view>
+    <view class="intro-tip">读懂意思，再放回真题。学会后点击“记住了”，就会计入已学进度。</view>
+  </view>
+  <view class="intro-stats">
+    <view>
+      <text class="blue">{{total}}</text>
+      <text>总词数</text>
+    </view>
+    <view>
+      <text class="green">{{learned}}</text>
+      <text>已学习</text>
+    </view>
+    <view>
+      <text class="gold">{{remaining}}</text>
+      <text>未学习</text>
+    </view>
+  </view>
+  <view class="intro-actions">
+    <button class="start-study" bindtap="start">{{hasProgress ? '继续学习' : '开始学习'}}</button>
+    <button class="browse-words" bindtap="browse">查看词语列表</button>
+    <button class="clear-progress" bindtap="clear">清除进度</button>
+  </view>
+</view>

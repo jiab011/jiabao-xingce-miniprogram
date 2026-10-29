@@ -1,0 +1,28 @@
+page{background:#f6f7fa}
+.records-page{padding:30rpx 24rpx 70rpx}
+.records-title{color:#26364e;font-size:38rpx;font-weight:600}
+.records-paper{color:#95a2b6;font-size:24rpx;line-height:1.8;margin:20rpx 0 30rpx}
+.records-page .record-card{background:#fff;border-radius:22rpx;color:#3b4b65;display:block;line-height:1.5;margin:0 0 22rpx;max-width:none;padding:28rpx 26rpx;text-align:left;width:100%}
+.record-top{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;font-size:26rpx;-webkit-justify-content:space-between;justify-content:space-between}
+.record-arrow{color:#9ab0d0;font-size:38rpx}
+.record-stats{-webkit-justify-content:space-between;justify-content:space-between;margin-top:22rpx;text-align:center}
+.record-stats,.record-stats>view{display:-webkit-flex;display:flex}
+.record-stats>view{color:#9ba8ba;-webkit-flex:1;flex:1;-webkit-flex-direction:column;flex-direction:column;font-size:21rpx;gap:10rpx}
+.record-value{color:#425473;font-size:34rpx;font-weight:500}
+.record-green{color:#22b28e}
+.record-empty{color:#a7b2c1;font-size:27rpx;padding:100rpx 0;text-align:center}
+.records-tip{color:#a9b4c3;font-size:21rpx;line-height:1.8;padding:15rpx 10rpx}
+@media (min-width:760px){.records-page{padding:18.75px 15px 43.75px}
+.records-title{color:#26364e;font-size:23.75px;font-weight:600}
+.records-paper{color:#95a2b6;font-size:15px;line-height:1.8;margin:12.5px 0 18.75px}
+.records-page .record-card{background:#fff;border-radius:13.75px;color:#3b4b65;display:block;line-height:1.5;margin:0 0 13.75px;max-width:none;padding:17.5px 16.25px;text-align:left;width:100%}
+.record-top{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;font-size:16.25px;-webkit-justify-content:space-between;justify-content:space-between}
+.record-arrow{color:#9ab0d0;font-size:23.75px}
+.record-stats{-webkit-justify-content:space-between;justify-content:space-between;margin-top:13.75px;text-align:center}
+.record-stats,.record-stats>view{display:-webkit-flex;display:flex}
+.record-stats>view{color:#9ba8ba;-webkit-flex:1;flex:1;-webkit-flex-direction:column;flex-direction:column;font-size:13.125px;gap:6.25px}
+.record-value{color:#425473;font-size:21.25px;font-weight:500}
+.record-empty{color:#a7b2c1;font-size:16.875px;padding:62.5px 0;text-align:center}
+.records-tip{color:#a9b4c3;font-size:13.125px;line-height:1.8;padding:9.375px 6.25px}
+}
+@import "/styles/tablet-layout.wxss";

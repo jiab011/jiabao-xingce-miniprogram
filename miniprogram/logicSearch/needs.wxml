@@ -1,0 +1,21 @@
+<page-meta page-style="{{rowSwiping ? 'overflow:hidden' : ''}}" />
+<view class="needs-page">
+  <view class="needs-title">需要学习<text>{{learned}} / {{total}}</text></view>
+  <view class="needs-tabs">
+    <button class="{{filter === 'pending' ? 'active' : ''}}" bindtap="filter" data-filter="pending">待学习</button>
+    <button class="{{filter === 'learned' ? 'active' : ''}}" bindtap="filter" data-filter="learned">已学习</button>
+    <button class="{{filter === 'all' ? 'active' : ''}}" bindtap="filter" data-filter="all">全部</button>
+  </view>
+  <block wx:for="{{rows}}" wx:for-item="item_k" wx:for-index="index_l" wx:key="id">
+    <view class="needs-swipe-row {{item_k.removing ? 'removing' : ''}}">
+      <button class="needs-delete" catchtap="remove" data-id="{{item_k.id}}">删除</button>
+      <button class="needs-word {{rowSwiping ? 'tracking' : ''}}" style="transform:translate3d({{item_k.offset}}px,0,0)" bindtap="open" bindtouchstart="rowStart" bindtouchmove="rowMove" bindtouchend="rowEnd" bindtouchcancel="rowCancel" data-id="{{item_k.id}}">
+        <text>{{item_k.term}}</text>
+        <text class="needs-state {{item_k.learned ? 'learned' : ''}}">{{item_k.learned ? '✓ 已学习' : item_k.reason === 'wrong' ? '答错需重学' : '待学习'}} ›</text>
+      </button>
+    </view>
+  </block>
+  <block wx:if="{{(!rows.length ? 1 : 0) === 1}}">
+    <view class="needs-empty">{{total ? '这个分类暂时没有词语' : '错题中的正选词、拖动加入的词语会出现在这里'}}</view>
+  </block>
+</view>

@@ -1,0 +1,11 @@
+{
+  "name": "jiabao-miniapp-recovery-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local read-only recovery tools; no application uploads or deployments",
+  "dependencies": {
+    "@babel/generator": "^8.0.6",
+    "@babel/parser": "^8.0.8",
+    "miniprogram-ci": "2.1.48"
+  }
+}

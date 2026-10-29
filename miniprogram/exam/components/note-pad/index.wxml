@@ -1,0 +1,3 @@
+<view class="pad-area">
+  <canvas class="pad-canvas" type="2d" disable-scroll="{{!readonly}}" catchtouchstart="start" catchtouchmove="move" catchtouchend="end" catchtouchcancel="end" id="noteCanvas" />
+</view>

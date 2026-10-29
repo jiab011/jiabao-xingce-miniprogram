@@ -1,0 +1,4 @@
+function _type_of(o) {
+  return o && "u" > typeof Symbol && o.constructor === Symbol ? "symbol" : typeof o;
+}
+exports._ = _type_of;

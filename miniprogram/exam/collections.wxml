@@ -1,0 +1,48 @@
+<view class="exam-page">
+  <view class="page-title">{{title}}</view>
+  <block wx:if="{{(kind === 'wrong' && step !== 'groups' ? 1 : 0) === 1}}">
+    <button class="collection-back" bindtap="back">‹ 返回{{step === 'questions' ? '试卷' : '错题分类'}}</button>
+  </block>
+  <block wx:if="{{(step === 'groups' ? 1 : step === 'papers' ? 2 : 0) === 1}}">
+    <block wx:for="{{books}}" wx:for-item="item_j" wx:for-index="index_k" wx:key="id">
+      <button class="exam-group" bindtap="openGroup" data-id="{{item_j.id}}">
+        <view class="group-title">{{item_j.name}}错题本<text>›</text></view>
+        <view class="group-stats"><text>{{item_j.count}}</text>道错题</view>
+      </button>
+    </block>
+  </block>
+  <block wx:elif="{{(step === 'groups' ? 1 : step === 'papers' ? 2 : 0) === 2}}">
+    <block wx:for="{{papers}}" wx:for-item="item_k" wx:for-index="index_l" wx:key="id">
+      <button class="paper-tile paper-open" bindtap="openPaper" data-id="{{item_k.id}}">
+        <view class="paper-title">{{item_k.title}}</view>
+        <view class="paper-meta">共 {{item_k.count}} 道错题　›</view>
+      </button>
+    </block>
+    <block wx:if="{{(!papers.length ? 1 : 0) === 1}}">
+      <view class="exam-empty">这里还没有错题</view>
+    </block>
+  </block>
+  <block wx:else>
+    <view class="collection-heading">
+      <text>共 {{total}} 道题</text>
+      <block wx:if="{{(total ? 1 : 0) === 1}}">
+        <button bindtap="start" loading="{{busy}}">{{kind === 'wrong' ? '重练本卷错题' : total > 200 ? '练习前200道收藏题' : '练习收藏题'}}</button>
+      </block>
+    </view>
+    <block wx:if="{{(loading ? 1 : 0) === 1}}">
+      <view class="exam-empty">正在读取题目…</view>
+    </block>
+    <block wx:if="{{(error ? 1 : 0) === 1}}">
+      <view class="exam-error">{{error}}<button bindtap="loadRows">重试</button></view>
+    </block>
+    <block wx:for="{{rows}}" wx:for-item="item_A0" wx:for-index="index_B0" wx:key="id">
+      <button class="question-row" bindtap="open" data-id="{{item_A0.id}}">
+        <view class="question-source">{{item_A0.paper}}</view>
+        <view class="question-preview">{{item_A0.preview}}…</view>
+      </button>
+    </block>
+    <block wx:if="{{(!loading && !total ? 1 : 0) === 1}}">
+      <view class="exam-empty">{{kind === 'wrong' ? '这里还没有错题' : '还没有收藏题目'}}</view>
+    </block>
+  </block>
+</view>

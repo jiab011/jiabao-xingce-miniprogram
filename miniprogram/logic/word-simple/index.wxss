@@ -1,0 +1,11 @@
+
+@import "/styles/logic-shared.wxss";
+.has-word-nav{padding-bottom:calc(135rpx + env(safe-area-inset-bottom))}
+.word-bank-nav{background:#fff;border-top:1rpx solid #e7edf6;bottom:0;display:-webkit-flex;display:flex;gap:10rpx;left:0;padding:20rpx 16rpx calc(20rpx + env(safe-area-inset-bottom));position:fixed;right:0;z-index:10}
+.word-bank-nav button{background:#fff;color:#3b78ff;-webkit-flex:1;flex:1;font-size:25rpx;max-width:none!important;padding:13rpx 3rpx;width:auto!important}
+.word-bank-nav button[disabled]{opacity:.3}
+@media (min-width:760px){.has-word-nav{padding-bottom:calc(84.375px + env(safe-area-inset-bottom))}
+.word-bank-nav{background:#fff;border-top:.625px solid #e7edf6;bottom:0;display:-webkit-flex;display:flex;gap:6.25px;left:0;padding:12.5px 10px calc(12.5px + env(safe-area-inset-bottom));position:fixed;right:0;z-index:10}
+.word-bank-nav button{background:#fff;color:#3b78ff;-webkit-flex:1;flex:1;font-size:15.625px;max-width:none!important;padding:8.125px 1.875px;width:auto!important}
+}
+@import "/styles/tablet-layout.wxss";

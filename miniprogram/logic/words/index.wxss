@@ -1,0 +1,4 @@
+
+@import "/styles/logic-shared.wxss";
+
+@import "/styles/tablet-layout.wxss";

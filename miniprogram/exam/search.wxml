@@ -1,0 +1,28 @@
+<view class="exam-page">
+  <view class="search-row">
+    <input class="exam-input" placeholder="输入题干或选项关键词" value="{{query}}" bindinput="input" bindconfirm="search" confirm-type="search" />
+    <button class="search-go" bindtap="search">搜索</button>
+  </view>
+  <block wx:if="{{(searched ? 1 : 0) === 1}}">
+    <view class="search-summary">共找到 {{total}} 道题</view>
+  </block>
+  <block wx:if="{{(error ? 1 : 0) === 1}}">
+    <view class="exam-error">{{error}}</view>
+  </block>
+  <block wx:for="{{rows}}" wx:for-item="item_m" wx:for-index="index_n" wx:key="id">
+    <button class="question-row" bindtap="open" loading="{{busy === item_m.id}}" data-id="{{item_m.id}}">
+      <view class="question-source">{{item_m.paper}}</view>
+      <view class="question-preview">{{item_m.preview}}…</view>
+      <text class="question-type">{{item_m.type}}</text>
+    </button>
+  </block>
+  <block wx:if="{{(hasMore ? 1 : 0) === 1}}">
+    <button class="exam-secondary" bindtap="search" loading="{{loading}}" data-more="true">加载更多</button>
+  </block>
+  <block wx:if="{{(loading && !rows.length ? 1 : 0) === 1}}">
+    <view class="exam-empty">正在搜索…</view>
+  </block>
+  <block wx:if="{{(searched && !loading && !error && !rows.length ? 1 : 0) === 1}}">
+    <view class="exam-empty">没有找到符合条件的题目</view>
+  </block>
+</view>

@@ -1,0 +1,5 @@
+
+@import "/exam/common.wxss";
+.paper-sections{color:#8296b2;font-size:23rpx;line-height:1.6;margin-top:10rpx}
+@media(min-width:760px){.paper-sections{font-size:15px;margin-top:8px}
+}

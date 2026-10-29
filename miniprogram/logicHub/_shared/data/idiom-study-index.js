@@ -1,0 +1,2635 @@
+module.exports = [{
+  id: "wdc6c7ab7aa18",
+  term: "大相径庭",
+  count: 24,
+  route: "/idiomStudy0/study",
+  position: 1
+}, {
+  id: "wffdc03b3e07b",
+  term: "相得益彰",
+  count: 24,
+  route: "/idiomStudy0/study",
+  position: 2
+}, {
+  id: "wb54e36b7936f",
+  term: "举足轻重",
+  count: 24,
+  route: "/idiomStudy0/study",
+  position: 3
+}, {
+  id: "w07d50f13caf2",
+  term: "推陈出新",
+  count: 22,
+  route: "/idiomStudy0/study",
+  position: 4
+}, {
+  id: "wfcd5442cd588",
+  term: "层出不穷",
+  count: 21,
+  route: "/idiomStudy0/study",
+  position: 5
+}, {
+  id: "w501659dc7b99",
+  term: "不言而喻",
+  count: 20,
+  route: "/idiomStudy0/study",
+  position: 6
+}, {
+  id: "wa98490645e62",
+  term: "相辅相成",
+  count: 20,
+  route: "/idiomStudy0/study",
+  position: 7
+}, {
+  id: "w4f9ceecdf317",
+  term: "背道而驰",
+  count: 18,
+  route: "/idiomStudy0/study",
+  position: 8
+}, {
+  id: "w2c61e324be09",
+  term: "有的放矢",
+  count: 18,
+  route: "/idiomStudy0/study",
+  position: 9
+}, {
+  id: "w0606e769b43b",
+  term: "显而易见",
+  count: 18,
+  route: "/idiomStudy0/study",
+  position: 10
+}, {
+  id: "w64314396029e",
+  term: "一成不变",
+  count: 17,
+  route: "/idiomStudy0/study",
+  position: 11
+}, {
+  id: "w2b884908f1cd",
+  term: "脱颖而出",
+  count: 17,
+  route: "/idiomStudy0/study",
+  position: 12
+}, {
+  id: "w30fdffdebca6",
+  term: "有目共睹",
+  count: 17,
+  route: "/idiomStudy0/study",
+  position: 13
+}, {
+  id: "wb223e016e6e1",
+  term: "理所当然",
+  count: 17,
+  route: "/idiomStudy0/study",
+  position: 14
+}, {
+  id: "w0f838384badd",
+  term: "一脉相承",
+  count: 17,
+  route: "/idiomStudy0/study",
+  position: 15
+}, {
+  id: "w1583011086ca",
+  term: "水到渠成",
+  count: 17,
+  route: "/idiomStudy0/study",
+  position: 16
+}, {
+  id: "w9a86005f745c",
+  term: "未雨绸缪",
+  count: 16,
+  route: "/idiomStudy0/study",
+  position: 17
+}, {
+  id: "w3dedf3785a99",
+  term: "持之以恒",
+  count: 16,
+  route: "/idiomStudy0/study",
+  position: 18
+}, {
+  id: "w89069eb6eb45",
+  term: "方兴未艾",
+  count: 16,
+  route: "/idiomStudy0/study",
+  position: 19
+}, {
+  id: "w6c86cb0f1955",
+  term: "源远流长",
+  count: 16,
+  route: "/idiomStudy0/study",
+  position: 20
+}, {
+  id: "w321208693987",
+  term: "无与伦比",
+  count: 16,
+  route: "/idiomStudy0/study",
+  position: 21
+}, {
+  id: "w6eb91d0ca5e4",
+  term: "急功近利",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 22
+}, {
+  id: "w6616fc6fc4fc",
+  term: "潜移默化",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 23
+}, {
+  id: "wa139a7d7a8a5",
+  term: "固步自封",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 24
+}, {
+  id: "wd2bb12dbcf3f",
+  term: "因地制宜",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 25
+}, {
+  id: "w3de610e21c59",
+  term: "独树一帜",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 26
+}, {
+  id: "w35b1cd4521d0",
+  term: "标新立异",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 27
+}, {
+  id: "w68d6c86cc17b",
+  term: "循序渐进",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 28
+}, {
+  id: "wfd217f6d3967",
+  term: "顾此失彼",
+  count: 15,
+  route: "/idiomStudy0/study",
+  position: 29
+}, {
+  id: "w023830722897",
+  term: "莫衷一是",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 30
+}, {
+  id: "w4c8f652f060f",
+  term: "捉襟见肘",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 31
+}, {
+  id: "wd9987fd14a49",
+  term: "此起彼伏",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 32
+}, {
+  id: "w73ebc0dec0f3",
+  term: "走马观花",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 33
+}, {
+  id: "wef751b63750a",
+  term: "人云亦云",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 34
+}, {
+  id: "w288b38a736dc",
+  term: "凤毛麟角",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 35
+}, {
+  id: "w885faf1fd1da",
+  term: "南辕北辙",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 36
+}, {
+  id: "wace27abc5208",
+  term: "一日千里",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 37
+}, {
+  id: "w55960070a2b3",
+  term: "缘木求鱼",
+  count: 14,
+  route: "/idiomStudy0/study",
+  position: 38
+}, {
+  id: "wd19d3f538678",
+  term: "一蹴而就",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 39
+}, {
+  id: "w8536edfbc12a",
+  term: "根深蒂固",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 40
+}, {
+  id: "w1afc0c0bb7c0",
+  term: "因势利导",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 41
+}, {
+  id: "w327cb8e830f8",
+  term: "一劳永逸",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 42
+}, {
+  id: "w02a8ba201274",
+  term: "立竿见影",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 43
+}, {
+  id: "w361a3aaca8fd",
+  term: "司空见惯",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 44
+}, {
+  id: "w8418fe781913",
+  term: "独一无二",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 45
+}, {
+  id: "w4f7c7bc442aa",
+  term: "叹为观止",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 46
+}, {
+  id: "w74a7c06550c7",
+  term: "崭露头角",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 47
+}, {
+  id: "w100a83dae339",
+  term: "纸上谈兵",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 48
+}, {
+  id: "w4ac3cba0d87f",
+  term: "精益求精",
+  count: 13,
+  route: "/idiomStudy0/study",
+  position: 49
+}, {
+  id: "wfafa0529bd47",
+  term: "一以贯之",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 50
+}, {
+  id: "we797d64435c1",
+  term: "日新月异",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 51
+}, {
+  id: "we54bc6014ab7",
+  term: "并行不悖",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 52
+}, {
+  id: "wd94dcea4ba1f",
+  term: "如火如荼",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 53
+}, {
+  id: "wabf1a6ab6744",
+  term: "齐头并进",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 54
+}, {
+  id: "w13de8fb0e48a",
+  term: "各有千秋",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 55
+}, {
+  id: "w4030f879f08b",
+  term: "浅尝辄止",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 56
+}, {
+  id: "wbaf1185ed003",
+  term: "轻而易举",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 57
+}, {
+  id: "w27ce2f9246ac",
+  term: "迫在眉睫",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 58
+}, {
+  id: "wc301ef369453",
+  term: "如出一辙",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 59
+}, {
+  id: "we3292467404b",
+  term: "束手无策",
+  count: 12,
+  route: "/idiomStudy0/study",
+  position: 60
+}, {
+  id: "w05fb45013635",
+  term: "束之高阁",
+  count: 11,
+  route: "/idiomStudy0/study",
+  position: 61
+}, {
+  id: "wdd8504aa5939",
+  term: "应运而生",
+  count: 11,
+  route: "/idiomStudy0/study",
+  position: 62
+}, {
+  id: "w7b6367c58bfa",
+  term: "本末倒置",
+  count: 11,
+  route: "/idiomStudy0/study",
+  position: 63
+}, {
+  id: "w86734f02c8ff",
+  term: "深入人心",
+  count: 11,
+  route: "/idiomStudy0/study",
+  position: 64
+}, {
+  id: "w76372794f56c",
+  term: "息息相关",
+  count: 11,
+  route: "/idiomStudy0/study",
+  position: 65
+}, {
+  id: "w982eb8d42f55",
+  term: "按图索骥",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 66
+}, {
+  id: "wc849c8e89a87",
+  term: "责无旁贷",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 67
+}, {
+  id: "w7edb87a523e7",
+  term: "趋之若鹜",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 68
+}, {
+  id: "w5bcf08067d18",
+  term: "不胜枚举",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 69
+}, {
+  id: "w84553d62633c",
+  term: "千篇一律",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 70
+}, {
+  id: "w76ae4c14b6d6",
+  term: "屡见不鲜",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 71
+}, {
+  id: "w69ce70a3512e",
+  term: "浩如烟海",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 72
+}, {
+  id: "wd3b053d2a0c1",
+  term: "适得其反",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 73
+}, {
+  id: "w7cb772654acf",
+  term: "浮光掠影",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 74
+}, {
+  id: "w8d631a4aa284",
+  term: "与众不同",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 75
+}, {
+  id: "w48fa1f19198a",
+  term: "栩栩如生",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 76
+}, {
+  id: "w008dfc6ccef2",
+  term: "比比皆是",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 77
+}, {
+  id: "wd3ab06e31b0e",
+  term: "望洋兴叹",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 78
+}, {
+  id: "w74e846efa0fd",
+  term: "循规蹈矩",
+  count: 11,
+  route: "/idiomStudy1/study",
+  position: 79
+}, {
+  id: "wef17d4b22a6c",
+  term: "另辟蹊径",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 80
+}, {
+  id: "w5e30652ce06c",
+  term: "大势所趋",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 81
+}, {
+  id: "wb073dc6d2317",
+  term: "包罗万象",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 82
+}, {
+  id: "wf4f11d344843",
+  term: "休戚与共",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 83
+}, {
+  id: "w03aae017bc71",
+  term: "势在必行",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 84
+}, {
+  id: "w4e1aaa0d788d",
+  term: "厚积薄发",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 85
+}, {
+  id: "wca89c3ae3957",
+  term: "妙趣横生",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 86
+}, {
+  id: "w6ae141efefac",
+  term: "相提并论",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 87
+}, {
+  id: "w2171511140e0",
+  term: "不谋而合",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 88
+}, {
+  id: "w38b3e951ed86",
+  term: "望尘莫及",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 89
+}, {
+  id: "w5b58df1db684",
+  term: "殊途同归",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 90
+}, {
+  id: "wfee2ffa5ff98",
+  term: "后来居上",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 91
+}, {
+  id: "wa15c8ef3bae5",
+  term: "喜闻乐见",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 92
+}, {
+  id: "w8f854e6c0de0",
+  term: "按部就班",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 93
+}, {
+  id: "w38deb60fb47e",
+  term: "接踵而至",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 94
+}, {
+  id: "w5bf7bc69dd27",
+  term: "熟视无睹",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 95
+}, {
+  id: "w4659cc097b8b",
+  term: "融会贯通",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 96
+}, {
+  id: "w17193ce0eb36",
+  term: "风起云涌",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 97
+}, {
+  id: "wb80a0f81bee6",
+  term: "一马当先",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 98
+}, {
+  id: "w18baaa9cbbbd",
+  term: "信手拈来",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 99
+}, {
+  id: "wcb4247ee617a",
+  term: "好高骛远",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 100
+}, {
+  id: "wf310f595cfce",
+  term: "心旷神怡",
+  count: 10,
+  route: "/idiomStudy1/study",
+  position: 101
+}, {
+  id: "w4f454615791a",
+  term: "左支右绌",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 102
+}, {
+  id: "w0e820d4494fe",
+  term: "前所未有",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 103
+}, {
+  id: "wf0f1df788b48",
+  term: "大有可为",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 104
+}, {
+  id: "wc4d52cd5bc4a",
+  term: "望而却步",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 105
+}, {
+  id: "wb9630aaf84b5",
+  term: "随波逐流",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 106
+}, {
+  id: "wa500d174fa79",
+  term: "心无旁骛",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 107
+}, {
+  id: "wffeed05c7819",
+  term: "无可厚非",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 108
+}, {
+  id: "w7199549f5ba5",
+  term: "筚路蓝缕",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 109
+}, {
+  id: "w55ec9df9880b",
+  term: "如履薄冰",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 110
+}, {
+  id: "wbb82ee0969ad",
+  term: "难以为继",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 111
+}, {
+  id: "w34e3b3f012f1",
+  term: "交相辉映",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 112
+}, {
+  id: "we5d30ec77741",
+  term: "并驾齐驱",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 113
+}, {
+  id: "wc5c5e2f96916",
+  term: "微不足道",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 114
+}, {
+  id: "w8756fb4e3c98",
+  term: "瞻前顾后",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 115
+}, {
+  id: "wc5261dfd33de",
+  term: "积重难返",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 116
+}, {
+  id: "w4755548662b4",
+  term: "突飞猛进",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 117
+}, {
+  id: "w56003864f629",
+  term: "举一反三",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 118
+}, {
+  id: "w5d939eb7149e",
+  term: "亦步亦趋",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 119
+}, {
+  id: "w54b97f4a38db",
+  term: "各行其是",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 120
+}, {
+  id: "w0fb2400ff1ea",
+  term: "因循守旧",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 121
+}, {
+  id: "wc85e17b9f695",
+  term: "墨守成规",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 122
+}, {
+  id: "wf4ae2b94edc4",
+  term: "惟妙惟肖",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 123
+}, {
+  id: "w56b8297badd1",
+  term: "相形见绌",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 124
+}, {
+  id: "w74567be2d650",
+  term: "置若罔闻",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 125
+}, {
+  id: "w199d1d0f7aa1",
+  term: "自以为是",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 126
+}, {
+  id: "w5851582975f1",
+  term: "蜻蜓点水",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 127
+}, {
+  id: "wef438288758e",
+  term: "视而不见",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 128
+}, {
+  id: "w384c3427034a",
+  term: "随心所欲",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 129
+}, {
+  id: "w7b7840e3875a",
+  term: "集思广益",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 130
+}, {
+  id: "w84c392a4ceff",
+  term: "鱼龙混杂",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 131
+}, {
+  id: "w3bbff1d7dcf0",
+  term: "不计其数",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 132
+}, {
+  id: "w6c85b7d8d008",
+  term: "互为表里",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 133
+}, {
+  id: "wb79c6e0f2cf2",
+  term: "敷衍了事",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 134
+}, {
+  id: "w5f3089977e38",
+  term: "无足轻重",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 135
+}, {
+  id: "weabb85ca7dd5",
+  term: "生生不息",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 136
+}, {
+  id: "wa8903e33efac",
+  term: "眼花缭乱",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 137
+}, {
+  id: "w11032f910f4d",
+  term: "舍本逐末",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 138
+}, {
+  id: "w8425e1475c1c",
+  term: "革故鼎新",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 139
+}, {
+  id: "wcc802b319e92",
+  term: "鳞次栉比",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 140
+}, {
+  id: "w2a6b788d46ed",
+  term: "兼收并蓄",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 141
+}, {
+  id: "w26ee9dcbd04d",
+  term: "如影随形",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 142
+}, {
+  id: "wb4339fc61693",
+  term: "如数家珍",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 143
+}, {
+  id: "we707c428ca12",
+  term: "有条不紊",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 144
+}, {
+  id: "w57a5af38ef5e",
+  term: "琳琅满目",
+  count: 9,
+  route: "/idiomStudy1/study",
+  position: 145
+}, {
+  id: "wf9e2f4effc07",
+  term: "一目了然",
+  count: 8,
+  route: "/idiomStudy1/study",
+  position: 146
+}, {
+  id: "wc07d6f44ae19",
+  term: "因噎废食",
+  count: 8,
+  route: "/idiomStudy1/study",
+  position: 147
+}, {
+  id: "wf93d29d7a9e0",
+  term: "独善其身",
+  count: 8,
+  route: "/idiomStudy1/study",
+  position: 148
+}, {
+  id: "wcef561bf11a5",
+  term: "力不从心",
+  count: 8,
+  route: "/idiomStudy1/study",
+  position: 149
+}, {
+  id: "wbe4783f6a3b4",
+  term: "大同小异",
+  count: 8,
+  route: "/idiomStudy1/study",
+  position: 150
+}, {
+  id: "w91ed3547b049",
+  term: "得不偿失",
+  count: 8,
+  route: "/idiomStudy1/study",
+  position: 151
+}, {
+  id: "w389c6865d9c4",
+  term: "心驰神往",
+  count: 8,
+  route: "/idiomStudy1/study",
+  position: 152
+}, {
+  id: "w5db4e0b6352b",
+  term: "空中楼阁",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 153
+}, {
+  id: "w87981bd50c50",
+  term: "不约而同",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 154
+}, {
+  id: "w96d4dd8b6f23",
+  term: "与日俱增",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 155
+}, {
+  id: "wab7ff6f9ba4d",
+  term: "事半功倍",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 156
+}, {
+  id: "wb801c71e5bc2",
+  term: "刻不容缓",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 157
+}, {
+  id: "w6481fdd43c07",
+  term: "博大精深",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 158
+}, {
+  id: "w1ee552417635",
+  term: "同日而语",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 159
+}, {
+  id: "w0c8e633167fd",
+  term: "名副其实",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 160
+}, {
+  id: "w2707a7bc380b",
+  term: "抱残守缺",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 161
+}, {
+  id: "w3aea48b27da4",
+  term: "曲高和寡",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 162
+}, {
+  id: "w8ab987e58cac",
+  term: "水乳交融",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 163
+}, {
+  id: "w17b53a53cf8f",
+  term: "波澜壮阔",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 164
+}, {
+  id: "w2043fee5131c",
+  term: "游刃有余",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 165
+}, {
+  id: "w585f400f6e1c",
+  term: "身体力行",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 166
+}, {
+  id: "wf1dbf544c3f9",
+  term: "匠心独运",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 167
+}, {
+  id: "w538fc71287bd",
+  term: "天马行空",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 168
+}, {
+  id: "w216cbf450b1b",
+  term: "巧夺天工",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 169
+}, {
+  id: "w3e0a15a09a1c",
+  term: "振聋发聩",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 170
+}, {
+  id: "w69251458f4af",
+  term: "掩耳盗铃",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 171
+}, {
+  id: "w5833c07832a5",
+  term: "条分缕析",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 172
+}, {
+  id: "w58a730219401",
+  term: "矢志不渝",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 173
+}, {
+  id: "w2105d36fcb13",
+  term: "行之有效",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 174
+}, {
+  id: "w98d14b46fdc7",
+  term: "裹足不前",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 175
+}, {
+  id: "w309f99bb9042",
+  term: "见微知著",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 176
+}, {
+  id: "w81eb0ed74b4d",
+  term: "防微杜渐",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 177
+}, {
+  id: "wa286d8aaa4e6",
+  term: "顺理成章",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 178
+}, {
+  id: "w866c747ceaaa",
+  term: "鱼目混珠",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 179
+}, {
+  id: "wb8de39a0b376",
+  term: "一如既往",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 180
+}, {
+  id: "wdb56778f295f",
+  term: "不以为然",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 181
+}, {
+  id: "wb8c8c1be9fb1",
+  term: "义不容辞",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 182
+}, {
+  id: "wc5fab13516e4",
+  term: "别具一格",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 183
+}, {
+  id: "w564e417b7e80",
+  term: "千姿百态",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 184
+}, {
+  id: "w1cc4dfd74e4c",
+  term: "双管齐下",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 185
+}, {
+  id: "wda655a8ad8cc",
+  term: "囫囵吞枣",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 186
+}, {
+  id: "w5d7de444a55e",
+  term: "实事求是",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 187
+}, {
+  id: "wea68557f9842",
+  term: "寥寥无几",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 188
+}, {
+  id: "w565aa3c8fd43",
+  term: "引人入胜",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 189
+}, {
+  id: "wa13f567e7dee",
+  term: "披荆斩棘",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 190
+}, {
+  id: "w1ceab2566c20",
+  term: "汗牛充栋",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 191
+}, {
+  id: "wa9bc548ad6d0",
+  term: "独占鳌头",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 192
+}, {
+  id: "w2610ad87f2b6",
+  term: "画地为牢",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 193
+}, {
+  id: "w72316f4844ef",
+  term: "等量齐观",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 194
+}, {
+  id: "w4154526024d3",
+  term: "良莠不齐",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 195
+}, {
+  id: "w16d457c99eca",
+  term: "锲而不舍",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 196
+}, {
+  id: "w0c89acb70ada",
+  term: "闭门造车",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 197
+}, {
+  id: "w91d635c39e81",
+  term: "博采众长",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 198
+}, {
+  id: "w6d16496468d9",
+  term: "差强人意",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 199
+}, {
+  id: "w3c2ed24e3937",
+  term: "珠联璧合",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 200
+}, {
+  id: "w474342e22823",
+  term: "相映成趣",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 201
+}, {
+  id: "wca0f35b22d14",
+  term: "管中窥豹",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 202
+}, {
+  id: "w84564a9d6c89",
+  term: "美轮美奂",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 203
+}, {
+  id: "w1ea31d32b84e",
+  term: "退避三舍",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 204
+}, {
+  id: "wdc1af81b55cf",
+  term: "避重就轻",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 205
+}, {
+  id: "wd8ee311ed1a0",
+  term: "错综复杂",
+  count: 8,
+  route: "/idiomStudy2/study",
+  position: 206
+}, {
+  id: "wc4904ce8937f",
+  term: "水涨船高",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 207
+}, {
+  id: "w62543bacba39",
+  term: "不遗余力",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 208
+}, {
+  id: "wd64238d6253b",
+  term: "分道扬镳",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 209
+}, {
+  id: "w82cfab0a99ae",
+  term: "对症下药",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 210
+}, {
+  id: "w3dc2f37e18c3",
+  term: "当之无愧",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 211
+}, {
+  id: "wde55caa467ea",
+  term: "泥沙俱下",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 212
+}, {
+  id: "w7a0c54066256",
+  term: "洞若观火",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 213
+}, {
+  id: "w3b77fee6e16f",
+  term: "焕然一新",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 214
+}, {
+  id: "wacc93f983051",
+  term: "生机勃勃",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 215
+}, {
+  id: "w5e03c7fb68a7",
+  term: "稳扎稳打",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 216
+}, {
+  id: "w85eff23fa995",
+  term: "脍炙人口",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 217
+}, {
+  id: "wdd83ef85e4ef",
+  term: "触手可及",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 218
+}, {
+  id: "w98fc91bbe390",
+  term: "丰富多彩",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 219
+}, {
+  id: "w453feaf5c14a",
+  term: "众说纷纭",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 220
+}, {
+  id: "w13c8e672fd51",
+  term: "势不可挡",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 221
+}, {
+  id: "w8b47a9935a6b",
+  term: "千头万绪",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 222
+}, {
+  id: "wb79dbb7490a2",
+  term: "屈指可数",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 223
+}, {
+  id: "wa70b85b16f9a",
+  term: "截然不同",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 224
+}, {
+  id: "we8c8f1322b7f",
+  term: "浑然一体",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 225
+}, {
+  id: "wae96d13f502d",
+  term: "独辟蹊径",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 226
+}, {
+  id: "w9d2ce3c26a09",
+  term: "置身事外",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 227
+}, {
+  id: "wfa743d4f6761",
+  term: "变幻莫测",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 228
+}, {
+  id: "w823e4329e44c",
+  term: "小题大做",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 229
+}, {
+  id: "wbcd1639d6901",
+  term: "异军突起",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 230
+}, {
+  id: "w7086417d7729",
+  term: "无所适从",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 231
+}, {
+  id: "w7eebabb0e91e",
+  term: "明察秋毫",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 232
+}, {
+  id: "w3925a34ef5c6",
+  term: "格格不入",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 233
+}, {
+  id: "waf82f72453ff",
+  term: "殚精竭虑",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 234
+}, {
+  id: "w92011008b2c7",
+  term: "蒸蒸日上",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 235
+}, {
+  id: "wd8cfb4eb5584",
+  term: "错落有致",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 236
+}, {
+  id: "w82325a833a7b",
+  term: "难能可贵",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 237
+}, {
+  id: "wd22f011e8590",
+  term: "饮鸩止渴",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 238
+}, {
+  id: "w961ff2334863",
+  term: "举重若轻",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 239
+}, {
+  id: "wb39090266d12",
+  term: "争先恐后",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 240
+}, {
+  id: "wa46c53f9f386",
+  term: "于事无补",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 241
+}, {
+  id: "w54c326c8a037",
+  term: "任重道远",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 242
+}, {
+  id: "w476396bd644c",
+  term: "分崩离析",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 243
+}, {
+  id: "wa8eeb5a8df08",
+  term: "居安思危",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 244
+}, {
+  id: "wda88daf2e0b5",
+  term: "异曲同工",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 245
+}, {
+  id: "we6ca9009426b",
+  term: "徒劳无功",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 246
+}, {
+  id: "w0801ca4c50b3",
+  term: "拾人牙慧",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 247
+}, {
+  id: "w56c85f935b87",
+  term: "明哲保身",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 248
+}, {
+  id: "w5704633229dc",
+  term: "照本宣科",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 249
+}, {
+  id: "wdf49ca65511f",
+  term: "脱胎换骨",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 250
+}, {
+  id: "wf2370413a198",
+  term: "赏心悦目",
+  count: 7,
+  route: "/idiomStudy2/study",
+  position: 251
+}, {
+  id: "wdc81dec74213",
+  term: "鞭长莫及",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 252
+}, {
+  id: "w52b0685815b7",
+  term: "习以为常",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 253
+}, {
+  id: "wc06d53464fb9",
+  term: "从容不迫",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 254
+}, {
+  id: "w03e6c50847db",
+  term: "众所周知",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 255
+}, {
+  id: "w1b5fe85fa530",
+  term: "众望所归",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 256
+}, {
+  id: "we4899defed3a",
+  term: "故步自封",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 257
+}, {
+  id: "w6e9ff21a56d6",
+  term: "欣欣向荣",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 258
+}, {
+  id: "wa0ed75f859f0",
+  term: "特立独行",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 259
+}, {
+  id: "w9609df1cf96d",
+  term: "耳濡目染",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 260
+}, {
+  id: "w3015564ae2a0",
+  term: "首当其冲",
+  count: 7,
+  route: "/idiomStudy3/study",
+  position: 261
+}, {
+  id: "wcc5768c3d411",
+  term: "耳熟能详",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 262
+}, {
+  id: "w06a22623aac7",
+  term: "一无所知",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 263
+}, {
+  id: "w4dc4428f045a",
+  term: "抽丝剥茧",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 264
+}, {
+  id: "w3519ad1090f5",
+  term: "昙花一现",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 265
+}, {
+  id: "wc4703d0b7a7e",
+  term: "津津乐道",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 266
+}, {
+  id: "wbe204decc02c",
+  term: "源源不断",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 267
+}, {
+  id: "wa5a44b599ca5",
+  term: "釜底抽薪",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 268
+}, {
+  id: "w1c3873974a4a",
+  term: "鬼斧神工",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 269
+}, {
+  id: "w221abeac64fb",
+  term: "俯拾皆是",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 270
+}, {
+  id: "wc1a389a55102",
+  term: "削足适履",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 271
+}, {
+  id: "w6f45b75f8013",
+  term: "坚持不懈",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 272
+}, {
+  id: "w45c1c792372f",
+  term: "大显身手",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 273
+}, {
+  id: "wdb47c5949227",
+  term: "妄自菲薄",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 274
+}, {
+  id: "wa49063635de9",
+  term: "循循善诱",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 275
+}, {
+  id: "wd3ffafb3b99b",
+  term: "微乎其微",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 276
+}, {
+  id: "w62419f7255b0",
+  term: "扬长避短",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 277
+}, {
+  id: "w2d8733e29bb3",
+  term: "林林总总",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 278
+}, {
+  id: "w795cbba3859b",
+  term: "泾渭分明",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 279
+}, {
+  id: "w92550a76ea72",
+  term: "深入浅出",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 280
+}, {
+  id: "w22ef31549800",
+  term: "粗制滥造",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 281
+}, {
+  id: "w3bb9438833a5",
+  term: "纷至沓来",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 282
+}, {
+  id: "wf2b6aa0dbca5",
+  term: "锦上添花",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 283
+}, {
+  id: "weefce7629cfa",
+  term: "不期而遇",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 284
+}, {
+  id: "w1346c00971b0",
+  term: "事与愿违",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 285
+}, {
+  id: "w77d76a277ed7",
+  term: "兢兢业业",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 286
+}, {
+  id: "w1f4e0bff3c85",
+  term: "刻舟求剑",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 287
+}, {
+  id: "w94f821b1dd17",
+  term: "呕心沥血",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 288
+}, {
+  id: "wd8eac2f3bdf4",
+  term: "当务之急",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 289
+}, {
+  id: "we4054eea089a",
+  term: "得天独厚",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 290
+}, {
+  id: "wbc04d559ba3d",
+  term: "无可比拟",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 291
+}, {
+  id: "wad29330d1431",
+  term: "旷日持久",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 292
+}, {
+  id: "wccd6fefbee77",
+  term: "星罗棋布",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 293
+}, {
+  id: "wa45f58c5849a",
+  term: "熙熙攘攘",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 294
+}, {
+  id: "we414c59f6566",
+  term: "竭泽而渔",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 295
+}, {
+  id: "w9fba092f3e41",
+  term: "脚踏实地",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 296
+}, {
+  id: "w4ab147a18ed6",
+  term: "越俎代庖",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 297
+}, {
+  id: "w1597f48c19c3",
+  term: "身临其境",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 298
+}, {
+  id: "w38e6871b3daa",
+  term: "铺天盖地",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 299
+}, {
+  id: "wf4ecb79b61ec",
+  term: "闻名遐迩",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 300
+}, {
+  id: "w336fe32fba07",
+  term: "一视同仁",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 301
+}, {
+  id: "we227bf0d689b",
+  term: "不屑一顾",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 302
+}, {
+  id: "w237aae89c8a8",
+  term: "全神贯注",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 303
+}, {
+  id: "w8559b30648ce",
+  term: "别出心裁",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 304
+}, {
+  id: "w503110f345da",
+  term: "千锤百炼",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 305
+}, {
+  id: "w80e6fcae7c0c",
+  term: "呼之欲出",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 306
+}, {
+  id: "wae23ca2a998b",
+  term: "哗众取宠",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 307
+}, {
+  id: "w52024293f725",
+  term: "嗤之以鼻",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 308
+}, {
+  id: "w4bda315fcfc9",
+  term: "夸夸其谈",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 309
+}, {
+  id: "w6c97ac830e19",
+  term: "守株待兔",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 310
+}, {
+  id: "w9b12de4733cd",
+  term: "平分秋色",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 311
+}, {
+  id: "w637cf56cb03f",
+  term: "无懈可击",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 312
+}, {
+  id: "w42a07650191b",
+  term: "沽名钓誉",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 313
+}, {
+  id: "w833e9e5ffa80",
+  term: "活灵活现",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 314
+}, {
+  id: "wf33c907cc7b8",
+  term: "矫枉过正",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 315
+}, {
+  id: "wd2200093d71a",
+  term: "绘声绘色",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 316
+}, {
+  id: "w6c40add7dd00",
+  term: "缺一不可",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 317
+}, {
+  id: "w9908e7443f47",
+  term: "耳目一新",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 318
+}, {
+  id: "w87a94dd0af19",
+  term: "轰轰烈烈",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 319
+}, {
+  id: "w8bb4cc8d869c",
+  term: "道听途说",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 320
+}, {
+  id: "wd34f8cf4833e",
+  term: "阳奉阴违",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 321
+}, {
+  id: "w94ebdc7ad0e3",
+  term: "风靡一时",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 322
+}, {
+  id: "w50569aafeb61",
+  term: "高屋建瓴",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 323
+}, {
+  id: "w1cf3b867952d",
+  term: "齐心协力",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 324
+}, {
+  id: "wfe37e0891b3c",
+  term: "一丝不苟",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 325
+}, {
+  id: "wc3b5afb37566",
+  term: "一步登天",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 326
+}, {
+  id: "w7835439be905",
+  term: "一鸣惊人",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 327
+}, {
+  id: "we1bb62625882",
+  term: "不可多得",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 328
+}, {
+  id: "wc808bc48a741",
+  term: "不绝如缕",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 329
+}, {
+  id: "w7b99a0efea29",
+  term: "义无反顾",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 330
+}, {
+  id: "w1ad1162007f5",
+  term: "乐此不疲",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 331
+}, {
+  id: "wa544b3afa95a",
+  term: "五花八门",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 332
+}, {
+  id: "w0c108a8b4261",
+  term: "取长补短",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 333
+}, {
+  id: "w30db143fb276",
+  term: "坚定不移",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 334
+}, {
+  id: "w8313a3de4209",
+  term: "如日中天",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 335
+}, {
+  id: "w023db1603c76",
+  term: "废寝忘食",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 336
+}, {
+  id: "w200b70062bf5",
+  term: "数不胜数",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 337
+}, {
+  id: "w85cff8fecccc",
+  term: "断章取义",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 338
+}, {
+  id: "wd8c5adcd4a9b",
+  term: "无孔不入",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 339
+}, {
+  id: "wd8c8957645d2",
+  term: "浑然天成",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 340
+}, {
+  id: "w971d5c4db1f2",
+  term: "爱莫能助",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 341
+}, {
+  id: "we567bfd3e07c",
+  term: "绝无仅有",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 342
+}, {
+  id: "we618f3a2d723",
+  term: "胸有成竹",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 343
+}, {
+  id: "w5818041ecfb9",
+  term: "蔚然成风",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 344
+}, {
+  id: "wf7e97d732f10",
+  term: "进退维谷",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 345
+}, {
+  id: "w012ed2b60651",
+  term: "鞭辟入里",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 346
+}, {
+  id: "w38aa4cce7ea5",
+  term: "驾轻就熟",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 347
+}, {
+  id: "w1f83d30112ca",
+  term: "高高在上",
+  count: 6,
+  route: "/idiomStudy3/study",
+  position: 348
+}, {
+  id: "w73f1924ab503",
+  term: "坐享其成",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 349
+}, {
+  id: "w080d22a6e8b5",
+  term: "分庭抗礼",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 350
+}, {
+  id: "w3481d3176d8e",
+  term: "口耳相传",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 351
+}, {
+  id: "wa0a1f9f6ca09",
+  term: "喧宾夺主",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 352
+}, {
+  id: "we3eca1d4d8e6",
+  term: "杀鸡取卵",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 353
+}, {
+  id: "w036c35790c86",
+  term: "登峰造极",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 354
+}, {
+  id: "w770f2d9022aa",
+  term: "过犹不及",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 355
+}, {
+  id: "w7e1b5dd8032d",
+  term: "迥然不同",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 356
+}, {
+  id: "w01b89287cca2",
+  term: "销声匿迹",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 357
+}, {
+  id: "wdad9d57c99af",
+  term: "一叶障目",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 358
+}, {
+  id: "wbbea7edf075a",
+  term: "一哄而上",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 359
+}, {
+  id: "w97aa075f3c27",
+  term: "一帆风顺",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 360
+}, {
+  id: "w484314349cab",
+  term: "一意孤行",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 361
+}, {
+  id: "wcf29d17bd2ff",
+  term: "一气呵成",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 362
+}, {
+  id: "w8b344df71aa8",
+  term: "不知所措",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 363
+}, {
+  id: "we0d6f13b66be",
+  term: "专心致志",
+  count: 5,
+  route: "/idiomStudy3/study",
+  position: 364
+}, {
+  id: "w4299e9f9dc46",
+  term: "了如指掌",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 365
+}, {
+  id: "wcac1a7e72c02",
+  term: "出类拔萃",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 366
+}, {
+  id: "wf635a95bc35a",
+  term: "刚愎自用",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 367
+}, {
+  id: "wb22b2ec5bb7b",
+  term: "千差万别",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 368
+}, {
+  id: "w3c232592d916",
+  term: "唾手可得",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 369
+}, {
+  id: "w98e12cd511a3",
+  term: "大有裨益",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 370
+}, {
+  id: "w0f5cefab1401",
+  term: "孜孜不倦",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 371
+}, {
+  id: "wfdba8e8f0ad8",
+  term: "平淡无奇",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 372
+}, {
+  id: "wf7f9cbe7d414",
+  term: "感同身受",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 373
+}, {
+  id: "w0f4b6652aa2e",
+  term: "扑朔迷离",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 374
+}, {
+  id: "w134e4b72fb3d",
+  term: "望其项背",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 375
+}, {
+  id: "w258b298ca585",
+  term: "望而生畏",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 376
+}, {
+  id: "wb8d242fda7f9",
+  term: "模棱两可",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 377
+}, {
+  id: "w7b48b9a5cc87",
+  term: "海纳百川",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 378
+}, {
+  id: "we4b5ecfe7cc6",
+  term: "添砖加瓦",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 379
+}, {
+  id: "w22e3aa2653c0",
+  term: "老生常谈",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 380
+}, {
+  id: "wa4cde7083aae",
+  term: "自欺欺人",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 381
+}, {
+  id: "wddd0e9ab77f6",
+  term: "迎刃而解",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 382
+}, {
+  id: "wc10897c38396",
+  term: "遥遥领先",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 383
+}, {
+  id: "w34acc8b913e0",
+  term: "面面俱到",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 384
+}, {
+  id: "wf1f3038d9980",
+  term: "高瞻远瞩",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 385
+}, {
+  id: "w0e17df9bf06d",
+  term: "万无一失",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 386
+}, {
+  id: "we16369cb65ac",
+  term: "不求甚解",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 387
+}, {
+  id: "wf8c7c4bfa5d1",
+  term: "千变万化",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 388
+}, {
+  id: "w386ed4288667",
+  term: "听之任之",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 389
+}, {
+  id: "w441df6fb1d14",
+  term: "周而复始",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 390
+}, {
+  id: "w509143a8a332",
+  term: "和衷共济",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 391
+}, {
+  id: "we976b5fd0e24",
+  term: "唯利是图",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 392
+}, {
+  id: "w584abb58f998",
+  term: "坐而论道",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 393
+}, {
+  id: "w948b3916146e",
+  term: "孜孜以求",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 394
+}, {
+  id: "wdefcb945fa03",
+  term: "尽善尽美",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 395
+}, {
+  id: "w4cedb1316607",
+  term: "当仁不让",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 396
+}, {
+  id: "w55b1be2d30df",
+  term: "急于求成",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 397
+}, {
+  id: "w41199b309536",
+  term: "惊天动地",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 398
+}, {
+  id: "w29f7ea8fd849",
+  term: "手足无措",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 399
+}, {
+  id: "w6144befce31a",
+  term: "拍案叫绝",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 400
+}, {
+  id: "w538f26ebb83c",
+  term: "有备无患",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 401
+}, {
+  id: "w2e4fb47a2c11",
+  term: "朴实无华",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 402
+}, {
+  id: "wb639543ed71d",
+  term: "求同存异",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 403
+}, {
+  id: "wb71d0ef1eedf",
+  term: "沧海桑田",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 404
+}, {
+  id: "w6def1bf1aaa4",
+  term: "独具匠心",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 405
+}, {
+  id: "w068270aaed2d",
+  term: "甚嚣尘上",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 406
+}, {
+  id: "we64788e9f7f9",
+  term: "痛心疾首",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 407
+}, {
+  id: "wcfdb31ebc2b1",
+  term: "移花接木",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 408
+}, {
+  id: "wb77a08c08df3",
+  term: "美不胜收",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 409
+}, {
+  id: "w5496430725c9",
+  term: "自暴自弃",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 410
+}, {
+  id: "w0f6693e8c04e",
+  term: "近在咫尺",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 411
+}, {
+  id: "w8353eb7c1104",
+  term: "针锋相对",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 412
+}, {
+  id: "wb20580dc5575",
+  term: "门可罗雀",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 413
+}, {
+  id: "w0e5f5f1e279f",
+  term: "阳春白雪",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 414
+}, {
+  id: "we665a468a96f",
+  term: "顺水推舟",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 415
+}, {
+  id: "wd0ef3e995db4",
+  term: "风雨同舟",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 416
+}, {
+  id: "w5df829e4dba8",
+  term: "一举两得",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 417
+}, {
+  id: "w7583ebf5f712",
+  term: "一往无前",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 418
+}, {
+  id: "w36b1df1e8dd8",
+  term: "不置可否",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 419
+}, {
+  id: "wa8dc0ff12f70",
+  term: "事倍功半",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 420
+}, {
+  id: "w95974ee9a2af",
+  term: "出谋划策",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 421
+}, {
+  id: "w0f857516e417",
+  term: "勇往直前",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 422
+}, {
+  id: "w2226d132ee15",
+  term: "去粗取精",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 423
+}, {
+  id: "w9be49883ac18",
+  term: "各自为政",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 424
+}, {
+  id: "wf5ef68fb51bb",
+  term: "同舟共济",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 425
+}, {
+  id: "w42e55317ac5f",
+  term: "吹毛求疵",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 426
+}, {
+  id: "w8239e111a70a",
+  term: "唇齿相依",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 427
+}, {
+  id: "w582bc81f7418",
+  term: "大张旗鼓",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 428
+}, {
+  id: "w557c0c310167",
+  term: "如雷贯耳",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 429
+}, {
+  id: "w656a94464c26",
+  term: "家喻户晓",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 430
+}, {
+  id: "w2e9438e7d1c9",
+  term: "日积月累",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 431
+}, {
+  id: "w5d91b9f3f66e",
+  term: "滥竽充数",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 432
+}, {
+  id: "wdfe24c7fbb13",
+  term: "烟消云散",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 433
+}, {
+  id: "w5228c0f4e8d4",
+  term: "盘根错节",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 434
+}, {
+  id: "w6fe9855c529f",
+  term: "瞬息万变",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 435
+}, {
+  id: "wc753aefeefb0",
+  term: "粉墨登场",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 436
+}, {
+  id: "w9f97d9e30185",
+  term: "继往开来",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 437
+}, {
+  id: "w31a9f81ca121",
+  term: "聚精会神",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 438
+}, {
+  id: "w67d027ae22dc",
+  term: "言简意赅",
+  count: 5,
+  route: "/idiomStudy4/study",
+  position: 439
+}];

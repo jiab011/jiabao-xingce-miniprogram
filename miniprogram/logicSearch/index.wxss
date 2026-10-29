@@ -1,0 +1,32 @@
+page{background:#f6f7fa}
+.question-search-page{padding:25rpx 24rpx 50rpx}
+.search-box{-webkit-align-items:center;align-items:center;background:#fff;border:2rpx solid #467eff;border-radius:50rpx;display:-webkit-flex;display:flex;gap:12rpx;padding:12rpx 18rpx}
+.question-search-input{-webkit-flex:1;flex:1;font-size:28rpx;height:60rpx;min-width:0}
+.search-box .search-confirm{background:transparent;color:#3b78ff;font-size:28rpx;margin:0;padding:5rpx 8rpx;width:auto!important}
+.search-filters{display:-webkit-flex;display:flex;gap:10rpx;margin:26rpx 0}
+.search-filters button{background:#fff;border-radius:30rpx;color:#8592a5;-webkit-flex:1;flex:1;font-size:25rpx;margin:0;min-width:0;padding:10rpx 0;width:0!important}
+.search-filters .active{background:#3b78ff;color:#fff}
+.search-result-top{-webkit-align-items:center;align-items:center;color:#8d9bb0;display:-webkit-flex;display:flex;font-size:24rpx;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:20rpx}
+.search-result-top .practice-results{background:transparent;color:#3b78ff;font-size:23rpx;margin:0;padding:4rpx 0;width:auto!important}
+.search-question{background:#fff;border-radius:24rpx;line-height:1.8;margin-bottom:20rpx;padding:26rpx!important;text-align:left;width:100%!important}
+.search-question-source{color:#8d9bb0;font-size:22rpx}
+.search-question-stem{-webkit-box-orient:vertical;-webkit-line-clamp:4;color:#263144;display:-webkit-box;font-size:27rpx;margin:15rpx 0;overflow:hidden}
+.match-tags{display:-webkit-flex;display:flex;gap:10rpx}
+.match-tags text{background:#edf3ff;border-radius:8rpx;color:#3b78ff;font-size:20rpx;padding:3rpx 10rpx}
+.search-empty{color:#9eabbd;font-size:24rpx;line-height:1.9;padding:40rpx 10rpx;text-align:center}
+@media (min-width:760px){.question-search-page{padding:15.625px 15px 31.25px}
+.search-box{-webkit-align-items:center;align-items:center;background:#fff;border:1.25px solid #467eff;border-radius:31.25px;display:-webkit-flex;display:flex;gap:7.5px;padding:7.5px 11.25px}
+.question-search-input{-webkit-flex:1;flex:1;font-size:17.5px;height:37.5px;min-width:0}
+.search-box .search-confirm{background:transparent;color:#3b78ff;font-size:17.5px;margin:0;padding:3.125px 5px;width:auto!important}
+.search-filters{display:-webkit-flex;display:flex;gap:6.25px;margin:16.25px 0}
+.search-filters button{background:#fff;border-radius:18.75px;color:#8592a5;-webkit-flex:1;flex:1;font-size:15.625px;margin:0;min-width:0;padding:6.25px 0;width:0!important}
+.search-result-top{-webkit-align-items:center;align-items:center;color:#8d9bb0;display:-webkit-flex;display:flex;font-size:15px;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:12.5px}
+.search-result-top .practice-results{background:transparent;color:#3b78ff;font-size:14.375px;margin:0;padding:2.5px 0;width:auto!important}
+.search-question{background:#fff;border-radius:15px;line-height:1.8;margin-bottom:12.5px;padding:16.25px!important;text-align:left;width:100%!important}
+.search-question-source{color:#8d9bb0;font-size:13.75px}
+.search-question-stem{-webkit-box-orient:vertical;-webkit-line-clamp:4;color:#263144;display:-webkit-box;font-size:16.875px;margin:9.375px 0;overflow:hidden}
+.match-tags{display:-webkit-flex;display:flex;gap:6.25px}
+.match-tags text{background:#edf3ff;border-radius:5px;color:#3b78ff;font-size:12.5px;padding:1.875px 6.25px}
+.search-empty{color:#9eabbd;font-size:15px;line-height:1.9;padding:25px 6.25px;text-align:center}
+}
+@import "/styles/tablet-layout.wxss";

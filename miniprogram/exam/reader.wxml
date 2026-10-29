@@ -1,0 +1,325 @@
+<page-meta page-style="height:100%;overflow:hidden" />
+<view class="quiz-page exam-reader" style="--reader-font:{{fontSize}}">
+  <block wx:if="{{(ready && !resultOpen ? 1 : resultOpen ? 2 : error ? 3 : 0) === 1}}">
+    <view class="reader-source-title">
+      <block wx:if="{{(question ? 1 : 0) === 1}}">{{question.shortSource}}第 {{position}} 题<block wx:if="{{(question.sectionLabel ? 1 : 0) === 1}}">
+  <text> · {{question.sectionLabel}}</text>
+</block></block>
+    </view>
+    <view class="quiz-topbar {{inkMode ? 'ink-active' : ''}}">
+      <button class="quiz-position" catchtap="showAnswerCard">
+        <view class="position-number">{{position}}<text class="position-total"> / {{total}}</text><text class="position-chevron">⌄</text></view>
+        <text class="position-caption">答题卡</text>
+      </button>
+      <block wx:if="{{(inkMode ? 1 : 0) === 1}}">
+        <view class="header-ink-palette">
+          <button class="ink-color black {{inkTool === 'pen' && penColor === '#202124' ? 'current' : ''}}" aria-label="黑色画笔" catchtap="inkColor" data-color="#202124">
+            <view />
+          </button>
+          <button class="ink-color red {{inkTool === 'pen' && penColor === '#f25561' ? 'current' : ''}}" aria-label="红色画笔" catchtap="inkColor" data-color="#f25561">
+            <view />
+          </button>
+          <button class="ink-eraser {{inkTool === 'eraser' ? 'chosen' : ''}}" catchtap="eraser">橡皮擦</button>
+          <button class="ink-clear" catchtap="clearInk">清屏</button>
+        </view>
+      </block>
+      <view class="quiz-actions">
+        <block wx:if="{{(!inkMode ? 1 : 0) === 1}}">
+          <button class="quiz-icon font-tool" catchtap="openFont">Aa</button>
+        </block>
+        <button class="quiz-icon pen-tool {{inkMode ? 'active' : ''}}" catchtap="toggleInk">✎</button>
+        <block wx:if="{{(!inkMode ? 1 : 0) === 1}}">
+          <button class="quiz-icon favorite-tool {{favorite ? 'saved' : ''}}" catchtap="favorite">{{favorite ? '★' : '☆'}}</button>
+        </block>
+      </view>
+      <block wx:if="{{(isExam ? 1 : 0) === 1}}">
+        <button class="quiz-clock" catchtap="askSubmit">
+          <text class="clock-time">{{submitted ? '查看成绩' : remainingText}}</text>
+          <text class="clock-caption">{{submitted ? '已交卷' : submitError ? '点击重试交卷' : '点击交卷'}}</text>
+        </button>
+      </block>
+    </view>
+    <block wx:if="{{(fontPanel ? 1 : 0) === 1}}">
+      <view class="font-popover">
+        <view class="font-heading">字号大小</view>
+        <view class="font-options">
+          <block wx:for="{{fontSizes}}" wx:for-item="item_U0" wx:for-index="index_V0" wx:key="*this">
+            <button class="font-choice {{fontSize === item_U0 ? 'chosen' : ''}}" catchtap="selectFont" data-size="{{item_U0}}">{{index_V0 === 0 ? '小' : index_V0 === 1 ? '标准' : index_V0 === 2 ? '大' : '特大'}}</button>
+          </block>
+        </view>
+      </view>
+    </block>
+    <view class="reader-layout {{materialSlidePhase}} {{material ? 'has-material' : ''}} {{materialExpanded ? 'material-expanded' : ''}}" style="transform:translate3d({{materialSlideX}}px,0,0)">
+      <block wx:if="{{(material ? 1 : 0) === 1}}">
+        <view class="material-pane" style="height:{{materialHeight}}px;flex-basis:{{materialHeight}}px">
+          <view class="material-heading">
+            <text>{{materialCaption}}</text>
+            <button catchtap="toggleMaterial">{{materialExpanded ? '收起' : '展开材料'}}</button>
+          </view>
+          <scroll-view class="material-scroll" scroll-y="{{!inkMode && !materialSwiping}}" bindtouchstart="materialSwipeStart" bindtouchmove="materialSwipeMove" bindtouchend="materialSwipeEnd" bindtouchcancel="materialSwipeCancel" enhanced="{{true}}" bounces="{{false}}" scroll-top="{{materialScrollTop}}" bindscroll="materialScroll">
+            <view class="material-content">
+              <exam-content parts="{{material.content}}" font-px="{{fontPx}}" bindmediaload="refreshInk" />
+              <exam-ink resource="{{material.id}}" font="{{fontSize}}" enabled="{{inkMode}}" color="{{penColor}}" tool="{{inkTool}}" id="materialInk" />
+            </view>
+          </scroll-view>
+        </view>
+      </block>
+      <block wx:if="{{(material ? 1 : 0) === 1}}">
+        <view class="material-divider {{materialResizing ? 'resizing' : ''}}" change:prop="{{a.sync}}" change:reset="{{a.reset}}" aria-label="拖动调整材料高度" prop="{{materialHeight}}" reset="{{materialReset}}" catchtouchstart="{{a.start}}" catchtouchmove="{{a.move}}" catchtouchend="{{a.end}}" catchtouchcancel="{{a.end}}" data-height="{{materialHeight}}" data-min="{{materialMin}}" data-max="{{materialMax}}">
+          <view class="material-grip" />
+        </view>
+      </block>
+      <view class="question-panel">
+        <block wx:if="{{(question && inkMode ? 1 : 0) === 1}}">
+          <view class="question-source-line">
+            <block wx:if="{{(inkMode ? 1 : 0) === 1}}">
+              <view class="inline-answer-keys">
+                <block wx:for="{{choices}}" wx:for-item="item_r0" wx:for-index="index_s0" wx:key="label">
+                  <button class="inline-answer {{item_r0.selected ? 'selected' : ''}}" catchtap="inkAnswer" disabled="{{revealed || loading}}" data-label="{{item_r0.label}}">{{item_r0.label}}</button>
+                </block>
+              </view>
+            </block>
+          </view>
+        </block>
+        <scroll-view class="quiz-reader question-scroll" style="--quiz-reader-height:{{readerHeight}}px" scroll-y="{{!inkMode && !horizontalSwipe}}" enhanced="{{true}}" bounces="{{false}}" show-scrollbar="{{false}}" scroll-into-view="question-top-{{question.id}}" bindscroll="questionScroll" bindtouchstart="swipeStart" bindtouchmove="swipeMove" bindtouchend="swipeEnd" bindtouchcancel="swipeCancel">
+          <view class="quiz-workspace {{slidePhase}} {{revealed ? 'reviewing' : ''}}" style="min-height:{{workspaceHeight}}px;transform:translate3d({{slideX}}px,0,0)" id="question-top-{{question.id}}">
+            <block wx:if="{{(onlyWrong ? 1 : 0) === 1}}">
+              <button class="wrong-filter" catchtap="showAll">仅看错题 · 显示全部</button>
+            </block>
+            <block wx:if="{{(question ? 1 : 0) === 1}}">
+              <view class="quiz-surface {{multiple ? 'is-multiple' : ''}}">
+                <block wx:if="{{(multiple ? 1 : 0) === 1}}">
+                  <view class="multiple-caption">多选题</view>
+                </block>
+                <view class="quiz-stem">
+                  <exam-content parts="{{question.stem}}" font-px="{{fontPx}}" bindmediaload="refreshInk" />
+                </view>
+                <block wx:for="{{choices}}" wx:for-item="item_F1" wx:for-index="index_G1" wx:key="label">
+                  <button class="quiz-option {{item_F1.state}}" style="font-size:{{fontPx}}px" catchtap="choose" disabled="{{loading}}" data-label="{{item_F1.label}}">
+                    <text class="quiz-option-label">{{item_F1.label}}</text>
+                    <view class="quiz-option-copy">
+                      <exam-content parts="{{item_F1.content}}" font-px="{{fontPx}}" option-label="{{item_F1.label}}" bindoptiontap="imageChoice" bindpreviewing="previewing" bindmediaload="refreshInk" />
+                    </view>
+                  </button>
+                </block>
+                <block wx:if="{{(multiple && !revealed ? 1 : 0) === 1}}">
+                  <button class="multiple-confirm" catchtap="confirmMultiple">确认选择，下一题</button>
+                </block>
+              </view>
+            </block>
+            <block wx:if="{{(revealed && question ? 1 : 0) === 1}}">
+              <view class="quiz-analysis">
+                <view class="analysis-heading">{{resultText}}</view>
+                <view class="analysis-note-trigger" catchtap="analysisNoteTap">
+                  <view class="simple-analysis-title">解析要点</view>
+                  <text>双击写笔记</text>
+                </view>
+                <block wx:if="{{(analysisLoading ? 1 : 0) === 1}}">
+                  <view class="analysis-loading">正在读取解析…</view>
+                </block>
+                <block wx:if="{{(analysisError ? 1 : 0) === 1}}">
+                  <view class="analysis-loading" catchtap="loadAnalysis">{{analysisError}} · 点击重试</view>
+                </block>
+                <view catchtap="analysisNoteTap">
+                  <exam-content parts="{{analysisSummary}}" font-px="{{fontPx - 1}}" bindmediaload="refreshInk" />
+                </view>
+                <block wx:for="{{analysisNotes}}" wx:for-item="item_Y1" wx:for-index="index_Z1" wx:key="id">
+                  <view class="published-analysis-note" catchtap="{{item_Y1.mine ? 'analysisNoteTap' : 'noop'}}" data-id="{{item_Y1.id}}">
+                    <block wx:if="{{(item_Y1.text ? 1 : 0) === 1}}">
+                      <text class="published-note-text">{{item_Y1.text}}</text>
+                    </block>
+                    <block wx:if="{{(item_Y1.imageUrl ? 1 : 0) === 1}}">
+                      <image class="published-note-ink" mode="widthFix" src="{{item_Y1.imageUrl}}" catchlongpress="previewNoteImage" bindload="refreshInk" data-src="{{item_Y1.imageUrl}}" />
+                    </block>
+                    <view class="published-note-author">
+                      <block wx:if="{{(item_Y1.author.avatarUrl ? 1 : 0) === 1}}">
+                        <image src="{{item_Y1.author.avatarUrl}}" />
+                      </block>
+                      <block wx:else>
+                        <view class="note-avatar-fallback">{{item_Y1.initial}}</view>
+                      </block>
+                      <text>{{item_Y1.author.nickname}}</text>
+                      <text>{{item_Y1.date}}</text>
+                    </view>
+                  </view>
+                </block>
+                <block wx:if="{{(noteListError ? 1 : 0) === 1}}">
+                  <button class="note-list-retry" catchtap="loadAnalysisNotes">解析笔记暂未读到 · 重试</button>
+                </block>
+                <button class="original-analysis-toggle" catchtap="toggleOriginal">原始解析<text>{{originalAnalysisOpen ? '收起 ∧' : '展开 ∨'}}</text></button>
+                <block wx:if="{{(originalAnalysisOpen ? 1 : 0) === 1}}">
+                  <exam-content parts="{{analysisParts}}" font-px="{{fontPx - 1}}" bindmediaload="refreshInk" />
+                </block>
+                <view class="analysis-actions">
+                  <block wx:if="{{(wrong ? 1 : 0) === 1}}">
+                    <button catchtap="removeWrong">移出当前错题本</button>
+                  </block>
+                </view>
+              </view>
+            </block>
+            <block wx:if="{{(question ? 1 : 0) === 1}}">
+              <exam-ink resource="{{question.id}}" font="{{fontSize}}" enabled="{{inkMode}}" color="{{penColor}}" tool="{{inkTool}}" id="questionInk" />
+            </block>
+          </view>
+        </scroll-view>
+        <block wx:if="{{(loading || error ? 1 : 0) === 1}}">
+          <view class="reader-loading">
+            <view>{{loading ? '正在读取题目…' : error}}</view>
+            <block wx:if="{{(error ? 1 : 0) === 1}}">
+              <button catchtap="retry">重试</button>
+            </block>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+  <block wx:elif="{{(ready && !resultOpen ? 1 : resultOpen ? 2 : error ? 3 : 0) === 2}}">
+    <scroll-view class="quiz-results-scroll" scroll-y="{{true}}" enhanced="{{true}}" bounces="{{false}}">
+      <view class="exam-results">
+        <view class="result-heading">
+          <view class="result-mark">✓</view>
+          <view class="result-title">本次练习已交卷</view>
+          <view class="result-subtitle">{{report.reason === 'timeout' ? '时间到，已自动交卷' : '本次作答已保存'}}</view>
+        </view>
+        <view class="result-stats">
+          <view>
+            <text class="stat-value">{{elapsedText}}</text>
+            <text class="stat-label">用时</text>
+          </view>
+          <view>
+            <text class="stat-value">{{report.completion}}%</text>
+            <text class="stat-label">完成率 {{report.answered}}/{{report.total}}</text>
+          </view>
+          <view>
+            <text class="stat-value accuracy">{{report.accuracy === null ? '—' : report.accuracy + '%'}}</text>
+            <text class="stat-label">正确率 {{report.correct}}/{{report.gradable}}</text>
+          </view>
+        </view>
+        <view class="result-answer-card">
+          <view class="result-card-title">答题情况<text>点击题号查看解析</text></view>
+          <view class="result-legend">
+            <text class="legend correct">答对 {{report.correct}}</text>
+            <text class="legend incorrect">答错 {{report.wrong}}</text>
+            <text class="legend unanswered">未答 {{report.unanswered}}</text>
+            <block wx:if="{{(report.ungraded ? 1 : 0) === 1}}">
+              <text class="legend answered">待核验 {{report.ungraded}}</text>
+            </block>
+          </view>
+          <view class="quiz-answer-grid">
+            <block wx:for="{{report.items}}" wx:for-item="item_W2" wx:for-index="index_X2" wx:key="id">
+              <button class="quiz-answer-cell {{item_W2.state}}" catchtap="jump" data-id="{{item_W2.id}}">{{item_W2.no}}</button>
+            </block>
+          </view>
+        </view>
+        <view class="result-buttons">
+          <button class="result-secondary" catchtap="reviewAll">查看全部解析</button>
+          <button class="result-primary" catchtap="reviewWrong" disabled="{{!report.wrong}}">只看错题 {{report.wrong}}</button>
+        </view>
+        <button class="result-back" catchtap="leave">返回试卷列表</button>
+      </view>
+    </scroll-view>
+  </block>
+  <block wx:elif="{{(ready && !resultOpen ? 1 : resultOpen ? 2 : error ? 3 : 0) === 3}}">
+    <view class="reader-loading">
+      <view>{{error}}</view>
+      <button catchtap="leave">返回</button>
+    </view>
+  </block>
+</view>
+<block wx:if="{{(answerCard ? 1 : 0) === 1}}">
+  <view class="quiz-answer-mask" catchtap="closeAnswerCard">
+    <view class="quiz-answer-sheet" catchtap="noop">
+      <view class="answer-sheet-heading">
+        <text>答题卡</text>
+        <button catchtap="closeAnswerCard">关闭</button>
+      </view>
+      <view class="answer-sheet-description">{{submitted ? '绿：答对\u3000红：答错\u3000灰：未作答' : '已答 ' + answeredCount + '/' + total + ' · 点击题号继续'}}</view>
+      <scroll-view style="height:{{answerSheetHeight}}px" scroll-y="{{true}}" enhanced="{{true}}" bounces="{{false}}">
+        <view class="quiz-answer-grid">
+          <block wx:for="{{answerItems}}" wx:for-item="item_o2" wx:for-index="index_p2" wx:key="id">
+            <button class="quiz-answer-cell {{item_o2.state}} {{item_o2.current ? 'current' : ''}}" catchtap="jump" data-id="{{item_o2.id}}">{{item_o2.no}}<block wx:if="{{(item_o2.state === 'answered' || item_o2.state === 'ungraded' ? 1 : 0) === 1}}">
+  <text class="answer-done-mark">✓</text>
+</block></button>
+          </block>
+        </view>
+      </scroll-view>
+      <block wx:if="{{(isExam ? 1 : 0) === 1}}">
+        <button class="answer-sheet-submit" catchtap="askSubmit">{{submitted ? '查看本次成绩' : '交卷并查看成绩'}}</button>
+      </block>
+    </view>
+  </view>
+</block>
+<block wx:if="{{(noteOpen ? 1 : 0) === 1}}">
+  <view class="analysis-editor-mask" catchtouchmove="noop">
+    <view class="analysis-editor" catchtap="noop">
+      <view class="note-editor-heading">
+        <view>解析笔记</view>
+        <button catchtap="closeAnalysisNote" disabled="{{noteBusy}}">关闭</button>
+      </view>
+      <view class="note-editor-tabs">
+        <button class="{{noteTab === 'text' ? 'selected' : ''}}" catchtap="selectNoteTab" disabled="{{noteBusy || !noteReady}}" data-tab="text">文字</button>
+        <button class="{{noteTab === 'ink' ? 'selected' : ''}}" catchtap="selectNoteTab" disabled="{{noteBusy || !noteReady}}" data-tab="ink">手写</button>
+        <button class="{{noteTab === 'preview' ? 'selected' : ''}}" catchtap="selectNoteTab" disabled="{{noteBusy || !noteReady}}" data-tab="preview">预览</button>
+      </view>
+      <scroll-view class="note-editor-body" scroll-y="{{noteTab !== 'ink'}}" enhanced="{{true}}" bounces="{{false}}">
+        <block wx:if="{{(noteTab === 'text' ? 1 : 0) === 1}}">
+          <view class="note-text-area">
+            <textarea value="{{noteText}}" maxlength="2000" placeholder="写下自己的解题思路、计算过程或提醒…" bindinput="noteTextInput" disabled="{{noteBusy || !noteReady}}" adjust-position="{{true}}" />
+            <view class="note-word-count">{{noteText.length}} / 2000</view>
+          </view>
+        </block>
+        <block wx:if="{{(noteTab === 'ink' ? 1 : 0) === 1}}">
+          <view class="note-ink-area">
+            <view class="note-ink-tools">
+              <button class="note-color {{noteTool === 'pen' && noteColor === '#202124' ? 'selected' : ''}}" aria-label="黑色笔" catchtap="notePen" disabled="{{noteBusy || !noteReady}}" data-color="#202124">
+                <view class="black" />
+              </button>
+              <button class="note-color {{noteTool === 'pen' && noteColor === '#f25561' ? 'selected' : ''}}" aria-label="红色笔" catchtap="notePen" disabled="{{noteBusy || !noteReady}}" data-color="#f25561">
+                <view class="red" />
+              </button>
+              <button class="note-text-tool {{noteTool === 'eraser' ? 'selected' : ''}}" catchtap="noteEraser" disabled="{{noteBusy || !noteReady}}">橡皮擦</button>
+              <button class="note-text-tool" catchtap="noteClear" disabled="{{noteBusy || !noteReady}}">清屏</button>
+            </view>
+            <view class="note-paper">
+              <analysis-note-pad value="{{noteSeed}}" color="{{noteColor}}" tool="{{noteTool}}" readonly="{{noteBusy || !noteReady}}" bindchange="noteInkChange" bindpaderror="notePadError" id="analysisNotePad" />
+            </view>
+          </view>
+        </block>
+        <block wx:if="{{(noteTab === 'preview' ? 1 : 0) === 1}}">
+          <view class="note-preview">
+            <block wx:if="{{(noteText ? 1 : 0) === 1}}">
+              <text class="published-note-text">{{noteText}}</text>
+            </block>
+            <block wx:if="{{(noteStrokes.length ? 1 : 0) === 1}}">
+              <analysis-note-pad value="{{noteStrokes}}" readonly="{{true}}" />
+            </block>
+            <block wx:if="{{(!noteText && !noteStrokes.length ? 1 : 0) === 1}}">
+              <view class="note-preview-empty">写下文字或手写笔记后，在这里预览</view>
+            </block>
+            <view class="published-note-author">
+              <text>{{noteAuthor}}</text>
+              <text>{{noteDate}}</text>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+      <block wx:if="{{(noteError ? 1 : 0) === 1}}">
+        <view class="note-editor-error">{{noteError}}</view>
+      </block>
+      <block wx:if="{{(!noteReady && !noteBusy && !noteConflict ? 1 : 0) === 1}}">
+        <view class="note-conflict-actions">
+          <button catchtap="retryAnalysisNote">重新读取</button>
+        </view>
+      </block>
+      <block wx:if="{{(noteConflict ? 1 : 0) === 1}}">
+        <view class="note-conflict-actions">
+          <button catchtap="resolveNoteConflict" data-version="cloud">使用云端版本</button>
+          <button catchtap="resolveNoteConflict" data-version="draft">继续本机草稿</button>
+        </view>
+      </block>
+      <view class="note-editor-footer">
+        <button class="note-publish" catchtap="publishAnalysisNote" loading="{{noteBusy}}" disabled="{{noteBusy || !noteReady}}">{{noteBusy ? '请稍候' : '保存发布'}}</button>
+      </view>
+    </view>
+  </view>
+</block>

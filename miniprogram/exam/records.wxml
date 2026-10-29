@@ -1,0 +1,25 @@
+<view class="exam-page">
+  <view class="page-title">做题记录</view>
+  <block wx:for="{{rows}}" wx:for-item="item_e" wx:for-index="index_f" wx:key="id">
+    <button class="record-card" bindtap="open" data-id="{{item_e.id}}">
+      <view class="record-date">{{item_e.date}}<text>›</text></view>
+      <view class="record-stats">
+        <view>
+          <text>{{item_e.elapsed}}</text>
+          <text>用时</text>
+        </view>
+        <view>
+          <text>{{item_e.accuracy === null ? '—' : item_e.accuracy + '%'}}</text>
+          <text>正确率 {{item_e.correct}}/{{item_e.gradable}}</text>
+        </view>
+        <view>
+          <text>{{item_e.completion}}%</text>
+          <text>完成率 {{item_e.answered}}/{{item_e.total}}</text>
+        </view>
+      </view>
+    </button>
+  </block>
+  <block wx:if="{{(!rows.length ? 1 : 0) === 1}}">
+    <view class="exam-empty">还没有符合条件的做题记录</view>
+  </block>
+</view>

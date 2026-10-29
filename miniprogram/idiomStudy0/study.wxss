@@ -1,0 +1,4 @@
+
+@import "/styles/idiom-study.wxss";
+
+@import "/styles/tablet-layout.wxss";

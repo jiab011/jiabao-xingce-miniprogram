@@ -1,0 +1,9 @@
+<view class="placeholder">
+  <image class="placeholder-icon" src="/assets/modules/logicfill.png" />
+  <view class="placeholder-title">训练</view>
+  <view class="placeholder-copy">
+    <view>先从逻辑填空开始。</view>
+    <view>刷题、错题和测验页面，后续逐步完善。</view>
+  </view>
+  <button class="primary-button" bindtap="openLogic" hover-class="tap-hover">逻辑填空入口</button>
+</view>

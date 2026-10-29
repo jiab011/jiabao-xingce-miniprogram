@@ -1,0 +1,23 @@
+<view class="logic-page">
+  <view class="panel">
+    <view class="heading">{{title}}</view>
+    <view class="muted">对照侧重点，再回到真题语境。下方“辨析提示”为学习整理。</view>
+  </view>
+  <block wx:for="{{pairs}}" wx:for-item="item_g" wx:for-index="index_h" wx:key="id">
+    <view class="panel">
+      <view class="pair-title">{{item_g.left.term}}　VS　{{item_g.right.term}}</view>
+      <view class="pair-columns">
+        <view class="pair-word">
+          <button class="btn" bindtap="word" data-id="{{item_g.left.id}}">{{item_g.left.term}} ›</button>
+          <view class="pair-excerpt">{{item_g.left.excerpt || '点开词语查看关联真题'}}</view>
+        </view>
+        <view class="pair-word">
+          <button class="btn" bindtap="word" data-id="{{item_g.right.id}}">{{item_g.right.term}} ›</button>
+          <view class="pair-excerpt">{{item_g.right.excerpt || '点开词语查看关联真题'}}</view>
+        </view>
+      </view>
+      <view class="pair-note">辨析提示：{{item_g.note}}</view>
+      <button class="btn light wide actions" bindtap="questions" data-id="{{item_g.id}}">看关联真题</button>
+    </view>
+  </block>
+</view>

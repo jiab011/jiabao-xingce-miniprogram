@@ -1,0 +1,74 @@
+<view class="account-page">
+  <view class="account-card">
+    <view class="account-header">
+      <block wx:if="{{(signedIn && avatar ? 1 : 0) === 1}}">
+        <image class="account-avatar" src="{{avatar}}" mode="aspectFill" />
+      </block>
+      <block wx:else>
+        <view class="account-avatar account-placeholder">我</view>
+      </block>
+      <view class="account-intro">
+        <view class="account-name">{{signedIn ? nickname || '完善个人资料' : '欢迎来到佳宝学习用'}}</view>
+        <view class="account-caption">{{signedIn ? '一份资料，用于各模块的学习笔记' : '登录后，使用自己的头像昵称分享笔记'}}</view>
+      </view>
+    </view>
+    <block wx:if="{{(!signedIn ? 1 : !editing ? 2 : 0) === 1}}">
+      <button class="wechat-login account-primary" bindtap="login" loading="{{busy}}" disabled="{{busy}}">微信登录</button>
+    </block>
+    <block wx:elif="{{(!signedIn ? 1 : !editing ? 2 : 0) === 2}}">
+      <button class="edit-account" bindtap="editProfile">修改头像与昵称 ›</button>
+    </block>
+    <block wx:if="{{(signedIn && editing ? 1 : 0) === 1}}">
+      <form class="account-form" bindsubmit="saveProfile">
+        <view class="account-form-heading">确认头像与昵称</view>
+        <button class="account-avatar-choice" open-type="chooseAvatar" bindchooseavatar="chooseAvatar">
+          <block wx:if="{{(editAvatar ? 1 : 0) === 1}}">
+            <image src="{{editAvatar}}" mode="aspectFill" />
+          </block>
+          <block wx:else>
+            <view>选择头像</view>
+          </block>
+        </button>
+        <view class="avatar-caption">点击头像，从微信提供的选项中选择</view>
+        <input class="account-nickname" name="nickname" type="nickname" value="{{editNickname}}" bindinput="nicknameInput" maxlength="24" placeholder="点击填写昵称" />
+        <block wx:if="{{(profileError ? 1 : 0) === 1}}">
+          <view class="profile-error">{{profileError}}</view>
+        </block>
+        <view class="account-form-actions">
+          <button bindtap="cancelEdit">取消</button>
+          <button class="account-primary save-account" form-type="submit" loading="{{busy}}" disabled="{{busy}}">保存资料</button>
+        </view>
+      </form>
+    </block>
+  </view>
+  <view class="account-collections">
+    <button bindtap="openCollection" data-type="words">
+      <text>{{wordFavorites}}</text>
+      <text>词语收藏</text>
+    </button>
+    <button bindtap="openCollection" data-type="favorites">
+      <text>{{questionFavorites}}</text>
+      <text>题目收藏</text>
+    </button>
+    <button bindtap="openCollection" data-type="wrong">
+      <text>{{wrongCount}}</text>
+      <text>错题集</text>
+    </button>
+  </view>
+  <block wx:if="{{(signedIn ? 1 : 0) === 1}}">
+    <view class="account-settings">
+      <view class="account-section-title">笔记设置</view>
+      <view class="account-setting-row">
+        <view>
+          <view>分享我的新笔记</view>
+          <view class="setting-caption">开启后，新笔记可供其他同学阅读</view>
+        </view>
+        <switch checked="{{shareNotes}}" bindchange="changeShare" color="#3b78ff" />
+      </view>
+      <view class="account-private-tip">用法总结中的个人修改始终仅自己可见。</view>
+    </view>
+  </block>
+  <block wx:if="{{(signedIn ? 1 : 0) === 1}}">
+    <button class="logout-account" bindtap="logout">退出登录</button>
+  </block>
+</view>

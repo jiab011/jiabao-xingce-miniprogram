@@ -1,0 +1,46 @@
+<view class="question-search-page">
+  <view class="search-box">
+    <input class="question-search-input" value="{{query}}" bindinput="input" bindconfirm="confirm" confirm-type="search" placeholder="输入词语或题干关键词" />
+    <button class="search-confirm" bindtap="confirm">搜题</button>
+  </view>
+  <view class="search-filters">
+    <button class="{{mode === 'all' ? 'active' : ''}}" bindtap="filter" data-mode="all">全部</button>
+    <button class="{{mode === 'correct' ? 'active' : ''}}" bindtap="filter" data-mode="correct">正选词</button>
+    <button class="{{mode === 'distractor' ? 'active' : ''}}" bindtap="filter" data-mode="distractor">干扰词</button>
+    <button class="{{mode === 'stem' ? 'active' : ''}}" bindtap="filter" data-mode="stem">题干</button>
+  </view>
+  <block wx:if="{{(searched ? 1 : 0) === 1}}">
+    <view class="search-result-top">
+      <text>找到 {{total}} 道题</text>
+      <block wx:if="{{(total ? 1 : 0) === 1}}">
+        <button class="practice-results" bindtap="practice">练习搜索结果 ›</button>
+      </block>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="search-empty">输入成语，查它作正选或干扰项的题目；也可输入题干关键词查题。</view>
+  </block>
+  <block wx:for="{{visible}}" wx:for-item="item_t" wx:for-index="index_u" wx:key="id">
+    <button class="search-question" bindtap="open" data-id="{{item_t.id}}">
+      <view class="search-question-source">{{item_t.title}} · 第 {{item_t.no}} 题</view>
+      <view class="search-question-stem">{{item_t.stem}}</view>
+      <view class="match-tags">
+        <block wx:if="{{(item_t.matchCorrect ? 1 : 0) === 1}}">
+          <text>正选词命中</text>
+        </block>
+        <block wx:if="{{(item_t.matchDistractor ? 1 : 0) === 1}}">
+          <text>干扰词命中</text>
+        </block>
+        <block wx:if="{{(item_t.matchStem ? 1 : 0) === 1}}">
+          <text>题干命中</text>
+        </block>
+      </view>
+    </button>
+  </block>
+  <block wx:if="{{(searched && !total ? 1 : 0) === 1}}">
+    <view class="search-empty">没有找到匹配题目，试试较短的关键词。</view>
+  </block>
+  <block wx:if="{{(more ? 1 : 0) === 1}}">
+    <view class="search-empty">继续上滑，加载更多</view>
+  </block>
+</view>

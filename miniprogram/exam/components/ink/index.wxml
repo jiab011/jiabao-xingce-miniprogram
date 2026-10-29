@@ -1,0 +1,8 @@
+<block wx:if="{{(enabled || hasMarks ? 1 : 0) === 1}}">
+  <block wx:if="{{(enabled ? 1 : 0) === 1}}">
+    <canvas class="ink-layer-canvas enabled" type="2d" disable-scroll="{{true}}" catchtouchstart="start" catchtouchmove="move" catchtouchend="end" catchtouchcancel="end" />
+  </block>
+  <block wx:else>
+    <canvas class="ink-layer-canvas passive" type="2d" />
+  </block>
+</block>

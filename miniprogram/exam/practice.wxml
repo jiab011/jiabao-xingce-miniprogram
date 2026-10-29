@@ -1,0 +1,43 @@
+<block wx:if="{{(module ? 1 : 0) === 1}}">
+  <view class="exam-page">
+    <button class="exam-search" bindtap="search">
+      <text>搜索题干、选项，查找真题</text>
+      <view class="search-glass" />
+    </button>
+    <view class="page-title">{{module.name}}刷题</view>
+    <view class="exam-groups">
+      <block wx:for="{{module.groups}}" wx:for-item="item_k" wx:for-index="index_l" wx:key="id">
+        <button class="exam-group" bindtap="open" disabled="{{!item_k.papers}}" data-id="{{item_k.id}}" data-count="{{item_k.papers}}">
+          <view class="group-title">{{item_k.name}}<text>›</text></view>
+          <view class="group-stats"><text>{{item_k.papers}}</text>套试卷　<text>{{item_k.count}}</text>道题</view>
+        </button>
+      </block>
+    </view>
+    <view class="exam-card random-card">
+      <view class="card-title">跨省随机练习</view>
+      <view class="filter-row">
+        <picker range="{{years}}" value="{{yearIndex}}" bindchange="year">
+          <view class="exam-picker">{{years[yearIndex]}}⌄</view>
+        </picker>
+        <picker range="{{scopes}}" value="{{scopeIndex}}" bindchange="scope">
+          <view class="exam-picker">{{scopes[scopeIndex]}}⌄</view>
+        </picker>
+      </view>
+      <view class="count-row">
+        <input type="number" value="{{count}}" bindinput="count" maxlength="3" />
+        <text>道题</text>
+        <block wx:for="{{[10, 20, 30, 50]}}" wx:for-item="item_v" wx:for-index="index_w" wx:key="*this">
+          <button bindtap="quickCount" data-count="{{item_v}}">{{item_v}}</button>
+        </block>
+      </view>
+      <view class="material-note">共用材料的小题整组抽取，可能少于所选题数。</view>
+      <button class="exam-primary" bindtap="start" loading="{{busy}}" disabled="{{busy}}">开始随机练习</button>
+      <block wx:if="{{(resume ? 1 : 0) === 1}}">
+        <button class="exam-secondary" bindtap="resume">{{resume.submitted ? '查看上次随机练习成绩' : '继续上次随机练习'}}</button>
+      </block>
+      <block wx:if="{{(error ? 1 : 0) === 1}}">
+        <view class="exam-error">{{error}}</view>
+      </block>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,222 @@
+<page-meta page-style="overflow:hidden;height:100%;" />
+<block wx:if="{{(question ? 1 : 0) === 1}}">
+  <view class="quiz-page">
+    <block wx:if="{{(!resultOpen ? 1 : 0) === 1}}">
+      <view class="quiz-topbar">
+        <button class="quiz-position" catchtap="showAnswerCard" aria-label="打开答题卡，当前第{{position}}题，共{{total}}题">
+          <view class="position-number">{{position}}<text class="position-total"> / {{total}}</text><text class="position-chevron">⌄</text></view>
+          <text class="position-caption">答题卡</text>
+        </button>
+        <view class="quiz-actions">
+          <button class="quiz-icon font-tool {{fontPanel ? 'active' : ''}}" catchtap="openFont" aria-label="调整字号">Aa</button>
+          <button class="quiz-icon pen-tool {{inkMode ? 'active' : ''}}" catchtap="toggleInk" aria-label="手写标记">
+            <text>✎</text>
+          </button>
+          <button class="quiz-icon favorite-tool {{favorite ? 'saved' : ''}}" catchtap="favorite" aria-label="{{favorite ? '取消收藏题目' : '收藏题目'}}">{{favorite ? '★' : '☆'}}</button>
+        </view>
+        <block wx:if="{{(isExam ? 1 : 0) === 1}}">
+          <button class="quiz-clock {{submitError ? 'clock-error' : ''}}" catchtap="askSubmit">
+            <text class="clock-time">{{submitted ? '查看成绩' : remainingText}}</text>
+            <text class="clock-caption">{{submitted ? '已交卷' : submitError ? '点击重试交卷' : '点击交卷'}}</text>
+          </button>
+        </block>
+      </view>
+      <block wx:if="{{(fontPanel ? 1 : 0) === 1}}">
+        <view class="font-popover">
+          <view class="font-heading">字号大小</view>
+          <view class="font-options">
+            <block wx:for="{{fontSizes}}" wx:for-item="item_D0" wx:for-index="index_E0" wx:key="*this">
+              <button class="font-choice {{fontSize === item_D0 ? 'chosen' : ''}}" bindtap="selectFont" data-size="{{item_D0}}">{{index_E0 === 0 ? '小' : index_E0 === 1 ? '标准' : index_E0 === 2 ? '大' : '特大'}}</button>
+            </block>
+          </view>
+          <view class="font-caption">手写标记按题目与字号分别保留</view>
+        </view>
+      </block>
+      <block wx:if="{{(inkMode ? 1 : 0) === 1}}">
+        <view class="ink-tools">
+          <view class="ink-tool-row">
+            <button class="ink-color black {{inkTool === 'pen' && penColor === '#202124' ? 'current' : ''}}" catchtap="inkColor" aria-label="黑色画笔" data-color="#202124">
+              <view />
+            </button>
+            <button class="ink-color red {{inkTool === 'pen' && penColor === '#f25561' ? 'current' : ''}}" catchtap="inkColor" aria-label="红色画笔" data-color="#f25561">
+              <view />
+            </button>
+            <button class="ink-eraser {{inkTool === 'eraser' ? 'chosen' : ''}}" catchtap="selectEraser">橡皮擦</button>
+            <button class="ink-clear" catchtap="clearInk">清屏</button>
+          </view>
+          <view class="ink-answer-keys">
+            <block wx:for="{{choices}}" wx:for-item="item_Q0" wx:for-index="index_R0" wx:key="label">
+              <button class="ink-answer-key {{selected === item_Q0.label ? 'selected' : ''}}" catchtap="inkAnswer" disabled="{{revealed}}" data-label="{{item_Q0.label}}">{{item_Q0.label}}</button>
+            </block>
+          </view>
+        </view>
+      </block>
+      <scroll-view class="quiz-reader" style="--quiz-reader-height:{{readerHeight}}px" scroll-y="{{readerCanScroll && !inkMode && !wordDragging && !wordPreviewOpen && !horizontalSwipe}}" scroll-x="{{false}}" enhanced="{{true}}" bounces="{{false}}" show-scrollbar="{{false}}" scroll-top="{{readerScrollTop}}" bindscroll="readerScroll" bindtouchstart="swipeStart" catchtouchmove="swipeMove" bindtouchend="swipeEnd" bindtouchcancel="swipeCancel">
+        <view class="quiz-workspace {{slidePhase}} {{revealed ? 'reviewing' : ''}}" style="min-height:{{workspaceHeight}}px;transform:translate3d({{slideX}}px,0,0);opacity:{{slideOpacity}}">
+          <block wx:if="{{(onlyWrong ? 1 : 0) === 1}}">
+            <button class="wrong-filter" bindtap="showAllQuestions">仅看错题 · 点击显示全部</button>
+          </block>
+          <view class="quiz-surface">
+            <view class="quiz-source">{{question.source.title}} · 第 {{question.source.no}} 题</view>
+            <view class="quiz-stem" style="font-size:{{fontSize}}rpx;--reader-font:{{fontSize}}">
+              <block wx:for="{{stemParts}}" wx:for-item="item_Z0" wx:for-index="index_a0" wx:key="index">
+                <text bindtouchstart="wordTouchStart" catchlongpress="startWordDrag" data-word-id="{{item_Z0.id}}">{{item_Z0.text}}</text>
+              </block>
+            </view>
+            <block wx:for="{{choices}}" wx:for-item="item_a0" wx:for-index="index_b0" wx:key="label">
+              <button class="quiz-option option-{{item_a0.label}} {{item_a0.state}}" style="font-size:{{fontSize}}rpx;--reader-font:{{fontSize}}" bindtap="choose" data-label="{{item_a0.label}}">
+                <text class="quiz-option-label">{{item_a0.label}}</text>
+                <view class="quiz-option-copy">
+                  <block wx:for="{{item_a0.parts}}" wx:for-item="item_j0" wx:for-index="index_k0" wx:key="index">
+                    <text bindtouchstart="wordTouchStart" catchlongpress="startWordDrag" data-word-id="{{item_j0.id}}">{{item_j0.text}}</text>
+                  </block>
+                </view>
+              </button>
+            </block>
+          </view>
+          <block wx:if="{{(revealed ? 1 : 0) === 1}}">
+            <view class="quiz-analysis">
+              <view class="quiz-analysis-content">
+                <view class="analysis-heading">{{result}}</view>
+                <view class="simple-analysis-title">简易解析</view>
+                <view class="simple-analysis" style="font-size:{{fontSize - 2}}rpx;--reader-font:{{fontSize - 2}}">
+                  <block wx:for="{{question.simpleAnalysis}}" wx:for-item="item_i0" wx:for-index="index_j0" wx:key="index">
+                    <view class="simple-analysis-row">{{item_i0}}</view>
+                  </block>
+                </view>
+                <button class="original-analysis-toggle" bindtap="toggleOriginalAnalysis" aria-expanded="{{originalAnalysisOpen}}">原始解析<text>{{originalAnalysisOpen ? '收起 ∧' : '展开 ∨'}}</text></button>
+                <block wx:if="{{(originalAnalysisOpen ? 1 : 0) === 1}}">
+                  <view class="analysis-copy" style="font-size:{{fontSize - 2}}rpx;--reader-font:{{fontSize - 2}}">{{question.analysis || '原库暂未提供解析，可先收藏待补充。'}}</view>
+                </block>
+              </view>
+              <view class="analysis-actions">
+                <block wx:if="{{(!isExam ? 1 : 0) === 1}}">
+                  <button bindtap="redo">重做本题</button>
+                </block>
+                <block wx:if="{{(wrong ? 1 : 0) === 1}}">
+                  <button bindtap="removeWrong">移出当前错题本</button>
+                </block>
+              </view>
+            </view>
+          </block>
+          <canvas class="quiz-ink {{inkMode ? 'drawing' : ''}}" type="2d" disable-scroll="{{inkMode}}" catchtouchstart="inkStart" catchtouchmove="inkMove" catchtouchend="inkEnd" catchtouchcancel="inkEnd" id="quiz-ink-workspace" />
+        </view>
+      </scroll-view>
+    </block>
+    <block wx:else>
+      <scroll-view class="quiz-results-scroll" scroll-y="{{true}}" enhanced="{{true}}" bounces="{{false}}">
+        <view class="exam-results">
+          <view class="result-heading">
+            <view class="result-mark">✓</view>
+            <view class="result-title">本次练习已交卷</view>
+            <view class="result-subtitle">{{report.reason === 'timeout' ? '时间到，已自动交卷' : '本次作答已保存'}}</view>
+          </view>
+          <view class="result-stats">
+            <view>
+              <text class="stat-value">{{elapsedText}}</text>
+              <text class="stat-label">用时</text>
+            </view>
+            <view>
+              <text class="stat-value">{{report.completion}}%</text>
+              <text class="stat-label">完成率 {{report.answered}}/{{report.total}}</text>
+            </view>
+            <view>
+              <text class="stat-value accuracy">{{report.accuracy === null ? '—' : report.accuracy + '%'}}</text>
+              <text class="stat-label">正确率 {{report.correct}}/{{report.gradable}}</text>
+            </view>
+          </view>
+          <view class="result-paper-title">{{question.source.title}}</view>
+          <view class="result-answer-card">
+            <view class="result-card-title">答题情况<text>点击题号查看解析</text></view>
+            <view class="result-legend">
+              <text class="legend correct">答对 {{report.correct}}</text>
+              <text class="legend incorrect">答错 {{report.wrong}}</text>
+              <text class="legend unanswered">未答 {{report.unanswered}}</text>
+              <block wx:if="{{(report.ungraded ? 1 : 0) === 1}}">
+                <text class="legend answered">待核验 {{report.ungraded}}</text>
+              </block>
+            </view>
+            <view class="quiz-answer-grid">
+              <block wx:for="{{report.items}}" wx:for-item="item_Y1" wx:for-index="index_Z1" wx:key="id">
+                <button class="quiz-answer-cell {{item_Y1.state}}" catchtap="jumpQuestion" data-id="{{item_Y1.id}}">{{item_Y1.no}}</button>
+              </block>
+            </view>
+            <block wx:if="{{(report.unknownAnswers ? 1 : 0) === 1}}">
+              <view class="result-note">{{report.unknownAnswers}} 道题暂无标准答案，不计入正确率。</view>
+            </block>
+          </view>
+          <view class="result-buttons">
+            <button class="result-secondary" bindtap="reviewAll">查看全部解析</button>
+            <button class="result-primary" bindtap="reviewWrong" disabled="{{!report.wrong}}">只看错题 {{report.wrong}}</button>
+          </view>
+          <button class="result-back" bindtap="leaveExam">返回试卷列表</button>
+        </view>
+      </scroll-view>
+    </block>
+  </view>
+</block>
+<block wx:if="{{(answerCard ? 1 : 0) === 1}}">
+  <view class="quiz-answer-mask" catchtap="closeAnswerCard">
+    <view class="quiz-answer-sheet" catchtap="noop">
+      <view class="answer-sheet-heading">
+        <text>答题卡</text>
+        <button catchtap="closeAnswerCard">关闭</button>
+      </view>
+      <view class="answer-sheet-description">{{isExam && !submitted ? '已答 ' + answeredCount + '/' + total + ' · 点击题号继续作答' : '绿：答对\u3000红：答错\u3000灰：未作答'}}</view>
+      <scroll-view style="height:{{answerSheetHeight}}px" scroll-y="{{true}}" enhanced="{{true}}" bounces="{{false}}">
+        <view class="quiz-answer-grid">
+          <block wx:for="{{answerItems}}" wx:for-item="item_q1" wx:for-index="index_r1" wx:key="id">
+            <button class="quiz-answer-cell {{item_q1.state}} {{item_q1.current ? 'current' : ''}}" catchtap="jumpQuestion" aria-label="第{{item_q1.no}}题，{{item_q1.state === 'unanswered' ? '未答' : '已答'}}" data-id="{{item_q1.id}}">{{item_q1.no}}<block wx:if="{{(item_q1.state === 'answered' || item_q1.state === 'ungraded' ? 1 : 0) === 1}}">
+  <text class="answer-done-mark">✓</text>
+</block></button>
+          </block>
+        </view>
+      </scroll-view>
+      <block wx:if="{{(isExam ? 1 : 0) === 1}}">
+        <button class="answer-sheet-submit" catchtap="askSubmit">{{submitted ? '查看本次成绩' : '交卷并查看成绩'}}</button>
+      </block>
+    </view>
+  </view>
+</block>
+<block wx:if="{{(wordDragging ? 1 : 0) === 1}}">
+  <view class="word-drop-targets">
+    <view class="word-drop-view {{wordDragTarget === 'view' ? 'over' : ''}}">查看词义</view>
+    <view class="word-drop-learn {{wordDragTarget === 'learn' ? 'over' : ''}}">加入需要学习</view>
+  </view>
+</block>
+<block wx:if="{{(wordDragging ? 1 : 0) === 1}}">
+  <view class="word-drag-pill" style="left:{{wordDragX}}px;top:{{wordDragY}}px">{{dragWord}}</view>
+</block>
+<block wx:if="{{(wordPreviewOpen ? 1 : 0) === 1}}">
+  <view class="word-preview-mask" catchtap="closeWordMeaning">
+    <view class="word-preview-card" catchtap="noop">
+      <view class="word-preview-title">{{previewWord.term}}</view>
+      <scroll-view class="word-preview-scroll" scroll-y="{{true}}">
+        <view class="word-preview-label">核心含义</view>
+        <view class="word-preview-core">{{previewCore}}</view>
+        <block wx:if="{{(previewMemory ? 1 : 0) === 1}}">
+          <view class="word-preview-simple">
+            <text>简易理解</text>
+            <view>{{previewMemory}}</view>
+          </view>
+        </block>
+        <block wx:if="{{(previewExample ? 1 : 0) === 1}}">
+          <view class="word-preview-example">
+            <view>{{previewExample.text}}</view>
+            <text>{{previewExample.site}} · {{previewExample.date}}</text>
+          </view>
+        </block>
+        <block wx:if="{{(previewNotice ? 1 : 0) === 1}}">
+          <view class="word-preview-notice">{{previewNotice}}</view>
+        </block>
+        <block wx:if="{{(previewError ? 1 : 0) === 1}}">
+          <button class="word-preview-retry" bindtap="retryWordMeaning">重试</button>
+        </block>
+      </scroll-view>
+      <view class="word-preview-actions">
+        <button bindtap="closeWordMeaning">关闭</button>
+        <button bindtap="openWordLearning">完整学习 ›</button>
+      </view>
+    </view>
+  </view>
+</block>

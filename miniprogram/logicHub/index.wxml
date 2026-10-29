@@ -1,0 +1,72 @@
+<view class="logic-hub">
+  <button class="search-entry" bindtap="openSearch" hover-class="tap-hover">
+    <text>搜索词语，查找真题</text>
+    <view class="search-symbol" />
+  </button>
+  <view class="collections-row">
+    <button class="collection-entry paper-practice-entry" bindtap="openPractice" hover-class="tap-hover">
+      <view class="collection-icon paper-book">
+        <view class="paper-lines">☷</view>
+      </view>
+      <text class="collection-name">开始刷题</text>
+    </button>
+    <button class="collection-entry" bindtap="openCollection" hover-class="tap-hover" data-type="words">
+      <view class="collection-icon word-star">★</view>
+      <text class="collection-name">词语收藏</text>
+      <text class="collection-count">{{wordFavorites}}</text>
+    </button>
+    <button class="collection-entry" bindtap="openCollection" hover-class="tap-hover" data-type="favorites">
+      <view class="collection-icon question-heart">♥</view>
+      <text class="collection-name">题目收藏</text>
+      <text class="collection-count">{{questionFavorites}}</text>
+    </button>
+    <button class="collection-entry" bindtap="openCollection" hover-class="tap-hover" data-type="wrong">
+      <view class="collection-icon wrong-book">
+        <view class="mini-book">×</view>
+      </view>
+      <text class="collection-name">错题集</text>
+      <text class="collection-count">{{wrongCount}}</text>
+    </button>
+  </view>
+  <view class="card libraries-card">
+    <view class="hub-heading">
+      <text class="hub-title">热门词库</text>
+      <button class="more-link" bindtap="openMore">更多词库 ›</button>
+    </view>
+    <view class="libraries-grid">
+      <block wx:for="{{libraries}}" wx:for-item="item_D0" wx:for-index="index_E0" wx:key="id">
+        <button class="library-tile" bindtap="openLibrary" hover-class="tap-hover" data-id="{{item_D0.id}}">
+          <text class="library-name">{{item_D0.name}}</text>
+          <view class="library-count">
+            <text>{{item_D0.learned}} / {{item_D0.count}}</text>
+            <text class="count-unit"> 词</text>
+          </view>
+        </button>
+      </block>
+    </view>
+  </view>
+  <view class="card study-progress-card">
+    <view class="hub-heading">
+      <text class="hub-title">学习进度</text>
+    </view>
+    <view class="progress-stat">
+      <text>{{targetLearned}}<text class="progress-denominator"> / {{targetTotal}} 词</text></text>
+      <view class="progress-controls">
+        <picker mode="selector" range="{{targetNames}}" value="{{targetIndex}}" bindchange="targetChange">
+          <view class="progress-picker">{{targetNames[targetIndex]}} ⌄</view>
+        </picker>
+        <text class="progress-percent">{{targetPercent}}%</text>
+      </view>
+    </view>
+    <view class="progress-track rainbow">
+      <view style="width:{{targetPercent}}%" />
+    </view>
+  </view>
+  <button class="card needs-entry" bindtap="openNeeds">
+    <view>
+      <text class="hub-title">需要学习</text>
+      <text class="needs-entry-caption">成语 · 实词</text>
+    </view>
+    <view class="needs-entry-total">{{needLearned}} / {{needTotal}}<text> ›</text></view>
+  </button>
+</view>

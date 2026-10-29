@@ -1,0 +1,52 @@
+page{background:#f6f7fa}
+.practice-page{padding:32rpx 26rpx 60rpx}
+.practice-heading{color:#1b2638;font-size:39rpx;font-weight:600}
+.practice-caption{color:#98a5b7;font-size:24rpx;line-height:1.8;margin:12rpx 0 28rpx}
+.practice-page .practice-group{background:#e1f3ff;border-radius:26rpx;color:#202b3b;line-height:1.7;margin:24rpx 0!important;max-width:none!important;padding:32rpx 28rpx!important;text-align:left;width:100%!important}
+.practice-group-top{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;font-size:34rpx;font-weight:600;-webkit-justify-content:space-between;justify-content:space-between}
+.practice-arrow{color:#8cb0d7;font-size:48rpx;line-height:1}
+.practice-group-description{color:#8297b0;font-size:24rpx;margin:12rpx 0 24rpx}
+.practice-group-count{color:#99a6b5;font-size:24rpx}
+.practice-group-count text{color:#3b78ff;font-size:29rpx;margin-left:17rpx}
+.practice-group-count text:first-child{margin-left:0}
+.practice-footnote{color:#a4adba;font-size:22rpx;line-height:1.8;margin-top:32rpx;text-align:center}
+.practice-search-entry{background:#fff;border:2rpx solid #467eff;border-radius:48rpx;color:#9ba6b7;display:-webkit-flex;display:flex;font-size:26rpx;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:28rpx;max-width:none!important;padding:20rpx 25rpx!important;width:100%!important}
+.practice-search-entry text:last-child{color:#3b78ff}
+.random-card{background:#fff;border-radius:26rpx;margin-top:25rpx;padding:30rpx}
+.random-heading{color:#263144;font-size:33rpx;font-weight:600}
+.random-caption{color:#9ca8ba;font-size:23rpx;line-height:1.8;margin:12rpx 0 22rpx}
+.random-form-row{-webkit-align-items:center;align-items:center;color:#64768e;display:-webkit-flex;display:flex;font-size:26rpx;-webkit-justify-content:space-between;justify-content:space-between;margin:20rpx 0}
+.random-form-row picker{width:75%}
+.random-picker{background:#f3f7ff;border-radius:14rpx;color:#3b78ff;padding:18rpx}
+.random-count-wrap{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:14rpx;width:75%}
+.random-count{background:#f3f7ff;border-radius:14rpx;color:#3b78ff;-webkit-flex:1;flex:1;height:72rpx;min-width:0;padding:0 18rpx}
+.random-quick{display:-webkit-flex;display:flex;gap:12rpx;margin-top:20rpx}
+.random-quick button{background:#edf4ff;color:#7296cd;-webkit-flex:1;flex:1;font-size:24rpx;margin:0;padding:10rpx 0;width:0!important}
+.random-available{color:#a4afbf;font-size:22rpx;margin:22rpx 0}
+.random-card .start-random{background:#3b78ff;border-radius:18rpx;color:#fff;font-size:28rpx;padding:19rpx!important;width:100%!important}
+.random-card .resume-random{background:transparent;color:#7796c6;font-size:23rpx;padding:18rpx 0!important;width:100%!important}
+@media (min-width:760px){.practice-page{padding:20px 16.25px 37.5px}
+.practice-heading{color:#1b2638;font-size:24.375px;font-weight:600}
+.practice-caption{color:#98a5b7;font-size:15px;line-height:1.8;margin:7.5px 0 17.5px}
+.practice-page .practice-group{background:#e1f3ff;border-radius:16.25px;color:#202b3b;line-height:1.7;margin:15px 0!important;max-width:none!important;padding:20px 17.5px!important;text-align:left;width:100%!important}
+.practice-group-top{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;font-size:21.25px;font-weight:600;-webkit-justify-content:space-between;justify-content:space-between}
+.practice-arrow{color:#8cb0d7;font-size:30px;line-height:1}
+.practice-group-description{color:#8297b0;font-size:15px;margin:7.5px 0 15px}
+.practice-group-count{color:#99a6b5;font-size:15px}
+.practice-group-count text{color:#3b78ff;font-size:18.125px;margin-left:10.625px}
+.practice-footnote{color:#a4adba;font-size:13.75px;line-height:1.8;margin-top:20px;text-align:center}
+.practice-search-entry{background:#fff;border:1.25px solid #467eff;border-radius:30px;color:#9ba6b7;display:-webkit-flex;display:flex;font-size:16.25px;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:17.5px;max-width:none!important;padding:12.5px 15.625px!important;width:100%!important}
+.random-card{background:#fff;border-radius:16.25px;margin-top:15.625px;padding:18.75px}
+.random-heading{color:#263144;font-size:20.625px;font-weight:600}
+.random-caption{color:#9ca8ba;font-size:14.375px;line-height:1.8;margin:7.5px 0 13.75px}
+.random-form-row{-webkit-align-items:center;align-items:center;color:#64768e;display:-webkit-flex;display:flex;font-size:16.25px;-webkit-justify-content:space-between;justify-content:space-between;margin:12.5px 0}
+.random-picker{background:#f3f7ff;border-radius:8.75px;color:#3b78ff;padding:11.25px}
+.random-count-wrap{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:8.75px;width:75%}
+.random-count{background:#f3f7ff;border-radius:8.75px;color:#3b78ff;-webkit-flex:1;flex:1;height:45px;min-width:0;padding:0 11.25px}
+.random-quick{display:-webkit-flex;display:flex;gap:7.5px;margin-top:12.5px}
+.random-quick button{background:#edf4ff;color:#7296cd;-webkit-flex:1;flex:1;font-size:15px;margin:0;padding:6.25px 0;width:0!important}
+.random-available{color:#a4afbf;font-size:13.75px;margin:13.75px 0}
+.random-card .start-random{background:#3b78ff;border-radius:11.25px;color:#fff;font-size:17.5px;padding:11.875px!important;width:100%!important}
+.random-card .resume-random{background:transparent;color:#7796c6;font-size:14.375px;padding:11.25px 0!important;width:100%!important}
+}
+@import "/styles/tablet-layout.wxss";

@@ -1,0 +1,110 @@
+.logic-page{padding:22rpx 22rpx 44rpx}
+.logic-page .btn{background:#fff;border-radius:14rpx;color:#3b78ff;font-size:26rpx;line-height:1.6;margin:0;max-width:none;min-width:0;padding:16rpx 22rpx}
+.logic-page .primary{background:#3b78ff;color:#fff}
+.logic-page .light{background:#eef4ff;color:#3b78ff}
+.logic-page .wide{width:100%}
+.logic-page .panel{background:#fff;border-radius:24rpx;margin-bottom:20rpx;padding:26rpx}
+.logic-page .heading{color:#171d2b;font-size:33rpx;font-weight:600}
+.logic-page .muted{color:#9098a6;font-size:24rpx;line-height:1.7;margin-top:10rpx}
+.logic-page .search-input{background:#fff;border:2rpx solid #4a7dff;border-radius:50rpx;box-sizing:border-box;font-size:28rpx;height:84rpx;margin-bottom:22rpx;padding:18rpx 26rpx}
+.logic-page .row{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}
+.logic-page .row>.btn+.btn{margin-left:16rpx}
+.logic-page .question-row,.logic-page .word-row{background:#fff;border-bottom:1rpx solid #edf0f5;border-radius:0;color:#222;display:block;line-height:1.6;margin:0;max-width:none;min-width:0;padding:23rpx 22rpx;text-align:left;width:100%}
+.logic-page .question-row:last-child,.logic-page .word-row:last-child{border-bottom:0}
+.logic-page .word-term{font-size:33rpx;font-weight:500}
+.logic-page .small{color:#8993a3;font-size:22rpx}
+.logic-page .blue{color:#3b78ff}
+.logic-page .pill{background:#eef4ff;border-radius:20rpx;color:#3b78ff;display:inline-block;font-size:20rpx;margin-left:12rpx;padding:2rpx 14rpx}
+.logic-page .empty{background:#fff;border-radius:24rpx;color:#8993a3;font-size:28rpx;line-height:1.9;padding:70rpx 30rpx;text-align:center}
+.logic-page .empty .btn{display:block;margin:30rpx auto 0;width:80%}
+.logic-page .footer-note{color:#a0a8b4;font-size:21rpx;padding:24rpx 0;text-align:center}
+.logic-page .library-grid{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-between;justify-content:space-between}
+.logic-page .library-card{background:#e2f4ff;border-radius:20rpx;font-size:26rpx;line-height:1.6;margin:0 0 20rpx;max-width:none;min-width:0;padding:28rpx 13rpx;width:48.5%}
+.logic-page .library-card .number{color:#3b78ff;display:block;font-size:27rpx;margin-top:10rpx}
+.logic-page .word-title{font-size:60rpx;font-weight:600;letter-spacing:8rpx;margin:20rpx 0;text-align:center}
+.logic-page .statistics{display:-webkit-flex;display:flex;-webkit-justify-content:space-around;justify-content:space-around;padding:14rpx 0;text-align:center}
+.logic-page .stat-value{color:#3b78ff;font-size:36rpx}
+.logic-page .stat-label{color:#8993a3;font-size:22rpx}
+.logic-page .excerpt{color:#343c4b;font-size:29rpx;line-height:1.9;margin-top:18rpx;white-space:pre-wrap}
+.logic-page .source{color:#8d96a6;font-size:21rpx;line-height:1.7;margin-top:18rpx}
+.logic-page .actions{margin:22rpx 0}
+.logic-page .actions .btn{-webkit-flex:1;flex:1}
+.logic-page .question-preview{color:#333;font-size:28rpx;line-height:1.8;margin-top:12rpx}
+.logic-page .pair-title{color:#3b78ff;font-size:30rpx;font-weight:600;margin-bottom:20rpx}
+.logic-page .pair-columns{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}
+.logic-page .pair-word{background:#f2f7ff;border-radius:18rpx;padding:20rpx 15rpx;width:48%}
+.logic-page .pair-word+.pair-word{background:#fff7ee}
+.logic-page .pair-word .btn{background:transparent;font-size:30rpx;padding:0;text-align:left;width:100%}
+.logic-page .pair-excerpt{color:#667386;font-size:24rpx;line-height:1.8;margin-top:12rpx;white-space:pre-wrap}
+.logic-page .pair-note{background:#edf3ff;border-radius:16rpx;font-size:27rpx;line-height:1.8;margin-top:20rpx;padding:20rpx}
+.logic-page .bank-rule{color:#8d96a6;font-size:23rpx;line-height:1.8;margin-top:12rpx}
+.logic-page .stem{color:#222;font-size:32rpx;line-height:1.95;margin:25rpx 0;white-space:pre-wrap}
+.logic-page .option{-webkit-align-items:center;align-items:center;background:#fff;border:2rpx solid #e8edf5;border-radius:18rpx;color:#303846;display:-webkit-flex;display:flex;font-size:29rpx;line-height:1.8;margin:0 0 16rpx;max-width:none;min-width:0;padding:20rpx;text-align:left;width:100%}
+.logic-page .option-label{border:1rpx solid #d8e0ec;border-radius:50%;-webkit-flex-shrink:0;flex-shrink:0;height:52rpx;line-height:50rpx;margin-right:18rpx;text-align:center;width:52rpx}
+.logic-page .option.correct{background:#e7faf2;border-color:#24bf91}
+.logic-page .option.incorrect{background:#fff0f0;border-color:#fb7d83}
+.logic-page .answer-result{color:#3b78ff;font-size:30rpx;font-weight:600;margin-bottom:16rpx}
+.logic-page .analysis{color:#515d70;font-size:27rpx;line-height:1.95;white-space:pre-wrap}
+.logic-page .question-toolbar{background:#f6f6f6;bottom:0;padding:18rpx 0 calc(16rpx + env(safe-area-inset-bottom));position:-webkit-sticky;position:sticky}
+.logic-page .question-toolbar .btn{-webkit-flex:1;flex:1;margin-right:12rpx}
+.logic-page .question-toolbar .btn:last-child{margin-right:0}
+.logic-page .question-toolbar .btn[disabled]{opacity:.4}
+.logic-page .source-title{color:#7a879a;font-size:24rpx;line-height:1.8}
+.logic-page .wrong-remove{background:transparent;color:#e77676;font-size:23rpx;padding:14rpx 0}
+.answer-mask{-webkit-align-items:flex-end;align-items:flex-end;background:#0006;display:-webkit-flex;display:flex;inset:0;position:fixed;z-index:50}
+.answer-sheet{background:#fff;border-radius:28rpx 28rpx 0 0;padding:26rpx 28rpx calc(28rpx + env(safe-area-inset-bottom));width:100%}
+.answer-sheet-title{display:-webkit-flex;display:flex;font-size:32rpx;font-weight:600;-webkit-justify-content:space-between;justify-content:space-between}
+.answer-sheet-title button{background:transparent;color:#3b78ff;font-size:26rpx;margin:0}
+.answer-sheet-hint{color:#929daf;font-size:22rpx;margin:14rpx 0 25rpx}
+.answer-grid{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:18rpx}
+.answer-grid .answer-cell{background:#f1f4f9;border:2rpx solid transparent;border-radius:15rpx;color:#7f8b9c;font-size:27rpx;height:80rpx;line-height:76rpx;margin:0;min-width:0;width:80rpx}
+.answer-grid .correct{background:#e4f9f1;color:#13b68a}
+.answer-grid .incorrect{background:#fff0f1;color:#f05a66}
+.answer-grid .current{border-color:#3b78ff}
+.answer-grid .answered{background:#e5efff;color:#4a7cd7}
+@media (min-width:760px){.logic-page{padding:13.75px 13.75px 27.5px}
+.logic-page .btn{background:#fff;border-radius:8.75px;color:#3b78ff;font-size:16.25px;line-height:1.6;margin:0;max-width:none;min-width:0;padding:10px 13.75px}
+.logic-page .panel{background:#fff;border-radius:15px;margin-bottom:12.5px;padding:16.25px}
+.logic-page .heading{color:#171d2b;font-size:20.625px;font-weight:600}
+.logic-page .muted{color:#9098a6;font-size:15px;line-height:1.7;margin-top:6.25px}
+.logic-page .search-input{background:#fff;border:1.25px solid #4a7dff;border-radius:31.25px;box-sizing:border-box;font-size:17.5px;height:52.5px;margin-bottom:13.75px;padding:11.25px 16.25px}
+.logic-page .row>.btn+.btn{margin-left:10px}
+.logic-page .question-row,.logic-page .word-row{background:#fff;border-bottom:.625px solid #edf0f5;border-radius:0;color:#222;display:block;line-height:1.6;margin:0;max-width:none;min-width:0;padding:14.375px 13.75px;text-align:left;width:100%}
+.logic-page .word-term{font-size:20.625px;font-weight:500}
+.logic-page .small{color:#8993a3;font-size:13.75px}
+.logic-page .pill{background:#eef4ff;border-radius:12.5px;color:#3b78ff;display:inline-block;font-size:12.5px;margin-left:7.5px;padding:1.25px 8.75px}
+.logic-page .empty{background:#fff;border-radius:15px;color:#8993a3;font-size:17.5px;line-height:1.9;padding:43.75px 18.75px;text-align:center}
+.logic-page .empty .btn{display:block;margin:18.75px auto 0;width:80%}
+.logic-page .footer-note{color:#a0a8b4;font-size:13.125px;padding:15px 0;text-align:center}
+.logic-page .library-card{background:#e2f4ff;border-radius:12.5px;font-size:16.25px;line-height:1.6;margin:0 0 12.5px;max-width:none;min-width:0;padding:17.5px 8.125px;width:48.5%}
+.logic-page .library-card .number{color:#3b78ff;display:block;font-size:16.875px;margin-top:6.25px}
+.logic-page .word-title{font-size:37.5px;font-weight:600;letter-spacing:5px;margin:12.5px 0;text-align:center}
+.logic-page .statistics{display:-webkit-flex;display:flex;-webkit-justify-content:space-around;justify-content:space-around;padding:8.75px 0;text-align:center}
+.logic-page .stat-value{color:#3b78ff;font-size:22.5px}
+.logic-page .stat-label{color:#8993a3;font-size:13.75px}
+.logic-page .excerpt{color:#343c4b;font-size:18.125px;line-height:1.9;margin-top:11.25px;white-space:pre-wrap}
+.logic-page .source{color:#8d96a6;font-size:13.125px;line-height:1.7;margin-top:11.25px}
+.logic-page .actions{margin:13.75px 0}
+.logic-page .question-preview{color:#333;font-size:17.5px;line-height:1.8;margin-top:7.5px}
+.logic-page .pair-title{color:#3b78ff;font-size:18.75px;font-weight:600;margin-bottom:12.5px}
+.logic-page .pair-word{background:#f2f7ff;border-radius:11.25px;padding:12.5px 9.375px;width:48%}
+.logic-page .pair-word .btn{background:transparent;font-size:18.75px;padding:0;text-align:left;width:100%}
+.logic-page .pair-excerpt{color:#667386;font-size:15px;line-height:1.8;margin-top:7.5px;white-space:pre-wrap}
+.logic-page .pair-note{background:#edf3ff;border-radius:10px;font-size:16.875px;line-height:1.8;margin-top:12.5px;padding:12.5px}
+.logic-page .bank-rule{color:#8d96a6;font-size:14.375px;line-height:1.8;margin-top:7.5px}
+.logic-page .stem{color:#222;font-size:20px;line-height:1.95;margin:15.625px 0;white-space:pre-wrap}
+.logic-page .option{-webkit-align-items:center;align-items:center;background:#fff;border:1.25px solid #e8edf5;border-radius:11.25px;color:#303846;display:-webkit-flex;display:flex;font-size:18.125px;line-height:1.8;margin:0 0 10px;max-width:none;min-width:0;padding:12.5px;text-align:left;width:100%}
+.logic-page .option-label{border:.625px solid #d8e0ec;border-radius:50%;-webkit-flex-shrink:0;flex-shrink:0;height:32.5px;line-height:31.25px;margin-right:11.25px;text-align:center;width:32.5px}
+.logic-page .answer-result{color:#3b78ff;font-size:18.75px;font-weight:600;margin-bottom:10px}
+.logic-page .analysis{color:#515d70;font-size:16.875px;line-height:1.95;white-space:pre-wrap}
+.logic-page .question-toolbar{background:#f6f6f6;bottom:0;padding:11.25px 0 calc(10px + env(safe-area-inset-bottom));position:-webkit-sticky;position:sticky}
+.logic-page .question-toolbar .btn{-webkit-flex:1;flex:1;margin-right:7.5px}
+.logic-page .source-title{color:#7a879a;font-size:15px;line-height:1.8}
+.logic-page .wrong-remove{background:transparent;color:#e77676;font-size:14.375px;padding:8.75px 0}
+.answer-sheet{background:#fff;border-radius:17.5px 17.5px 0 0;padding:16.25px 17.5px calc(17.5px + env(safe-area-inset-bottom));width:100%}
+.answer-sheet-title{display:-webkit-flex;display:flex;font-size:20px;font-weight:600;-webkit-justify-content:space-between;justify-content:space-between}
+.answer-sheet-title button{background:transparent;color:#3b78ff;font-size:16.25px;margin:0}
+.answer-sheet-hint{color:#929daf;font-size:13.75px;margin:8.75px 0 15.625px}
+.answer-grid{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:11.25px}
+.answer-grid .answer-cell{background:#f1f4f9;border:1.25px solid transparent;border-radius:9.375px;color:#7f8b9c;font-size:16.875px;height:50px;line-height:47.5px;margin:0;min-width:0;width:50px}
+}

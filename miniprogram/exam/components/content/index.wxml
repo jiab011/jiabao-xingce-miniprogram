@@ -1,0 +1,13 @@
+<view class="content-flow" style="font-size:{{fontPx}}px">
+  <block wx:for="{{parts}}" wx:for-item="item_d" wx:for-index="index_e" wx:key="index">
+    <block wx:if="{{(item_d.type === 'text' ? 1 : item_d.formula ? 2 : 0) === 1}}">
+      <text style="text-decoration:{{item_d.underline ? 'underline' : 'none'}};font-weight:{{item_d.bold ? 600 : 400}}">{{item_d.text}}</text>
+    </block>
+    <block wx:elif="{{(item_d.type === 'text' ? 1 : item_d.formula ? 2 : 0) === 2}}">
+      <image class="formula" style="height:{{fontPx * 1.25}}px;width:{{fontPx * 1.25 * item_d.ratio}}px" src="{{item_d.src}}" mode="aspectFit" catchtap="tapImage" catchlongpress="longImage" bindload="loaded" data-src="{{item_d.src}}" />
+    </block>
+    <block wx:else>
+      <image class="figure" style="max-width:{{item_d.width * 1.35}}px" src="{{item_d.src}}" mode="widthFix" catchtap="tapImage" catchlongpress="longImage" bindload="loaded" data-src="{{item_d.src}}" />
+    </block>
+  </block>
+</view>

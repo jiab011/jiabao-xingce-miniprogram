@@ -1,0 +1,197 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/train/index",
+    "pages/writing/index",
+    "pages/profile/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "词境考公",
+    "navigationBarBackgroundColor": "#3b78ff",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle": "dark"
+  },
+  "subPackages": [
+    {
+      "root": "logic",
+      "pages": [
+        "libraries/index",
+        "words/index",
+        "word/index",
+        "questions/index",
+        "compare/index",
+        "intro/index",
+        "word-simple/index",
+        "book/index"
+      ],
+      "name": "logic"
+    },
+    {
+      "root": "logicQuiz0",
+      "pages": [
+        "index"
+      ],
+      "name": "logicQuiz0"
+    },
+    {
+      "root": "logicQuiz1",
+      "pages": [
+        "index"
+      ],
+      "name": "logicQuiz1"
+    },
+    {
+      "root": "logicQuiz2",
+      "pages": [
+        "index"
+      ],
+      "name": "logicQuiz2"
+    },
+    {
+      "root": "logicQuiz3",
+      "pages": [
+        "index"
+      ],
+      "name": "logicQuiz3"
+    },
+    {
+      "root": "idiomStudy0",
+      "pages": [
+        "study",
+        "book"
+      ],
+      "name": "idiomStudy0"
+    },
+    {
+      "root": "idiomStudy1",
+      "pages": [
+        "study",
+        "book"
+      ],
+      "name": "idiomStudy1"
+    },
+    {
+      "root": "idiomStudy2",
+      "pages": [
+        "study",
+        "book"
+      ],
+      "name": "idiomStudy2"
+    },
+    {
+      "root": "idiomStudy3",
+      "pages": [
+        "study",
+        "book"
+      ],
+      "name": "idiomStudy3"
+    },
+    {
+      "root": "idiomStudy4",
+      "pages": [
+        "study",
+        "book"
+      ],
+      "name": "idiomStudy4"
+    },
+    {
+      "root": "logicSearch",
+      "pages": [
+        "index",
+        "records",
+        "needs"
+      ],
+      "name": "logicSearch"
+    },
+    {
+      "root": "logicHub",
+      "pages": [
+        "index",
+        "intro",
+        "practice",
+        "papers",
+        "wrong-books"
+      ],
+      "name": "logicHub"
+    },
+    {
+      "root": "foundation",
+      "pages": [
+        "index"
+      ],
+      "name": "foundation"
+    },
+    {
+      "root": "exam",
+      "pages": [
+        "hub",
+        "practice",
+        "papers",
+        "search",
+        "collections",
+        "records",
+        "reader"
+      ],
+      "name": "exam"
+    }
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ef512e",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/recovered-tabs/0-iconPath.png",
+        "selectedIconPath": "assets/recovered-tabs/0-selectedIconPath.png"
+      },
+      {
+        "pagePath": "pages/train/index",
+        "text": "训练",
+        "iconPath": "assets/recovered-tabs/1-iconPath.png",
+        "selectedIconPath": "assets/recovered-tabs/1-selectedIconPath.png"
+      },
+      {
+        "pagePath": "pages/writing/index",
+        "text": "写作",
+        "iconPath": "assets/recovered-tabs/2-iconPath.png",
+        "selectedIconPath": "assets/recovered-tabs/2-selectedIconPath.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "assets/recovered-tabs/3-iconPath.png",
+        "selectedIconPath": "assets/recovered-tabs/3-selectedIconPath.png"
+      }
+    ]
+  },
+  "resizable": true,
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "exam",
+        "logicHub",
+        "foundation"
+      ]
+    },
+    "logicHub/index": {
+      "network": "all",
+      "packages": [
+        "logic"
+      ]
+    },
+    "logicHub/intro": {
+      "network": "all",
+      "packages": [
+        "idiomStudy0"
+      ]
+    }
+  },
+  "style": "v2",
+  "renderer": "webview",
+  "componentFramework": "glass-easel"
+}

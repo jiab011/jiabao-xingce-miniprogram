@@ -1,0 +1,2 @@
+.pad-area{background:#fff;border-radius:12px;height:0;overflow:hidden;padding-bottom:75%;position:relative;width:100%}
+.pad-canvas{height:100%;left:0;position:absolute;top:0;touch-action:none;width:100%}

@@ -1,0 +1,9 @@
+<block wx:if="{{(module ? 1 : 0) === 1}}">
+  <view class="placeholder">
+    <image class="placeholder-icon" src="/assets/modules/{{module.icon}}.png" mode="aspectFit" />
+    <view class="placeholder-title">{{module.name}}</view>
+    <view class="placeholder-copy">{{module.description}}</view>
+    <view class="placeholder-note">内容准备中</view>
+    <button class="primary-button" bindtap="goHome" hover-class="tap-hover">回到首页</button>
+  </view>
+</block>

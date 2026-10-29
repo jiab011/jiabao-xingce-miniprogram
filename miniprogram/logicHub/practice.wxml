@@ -1,0 +1,56 @@
+<view class="practice-page">
+  <button class="practice-search-entry" bindtap="openSearch">
+    <text>搜词语、搜题干关键词</text>
+    <text>搜题 ›</text>
+  </button>
+  <view class="practice-heading">逻辑填空刷题</view>
+  <view class="practice-caption">按考试和试卷练习，继续上次未完成的题目</view>
+  <block wx:for="{{groups}}" wx:for-item="item_i" wx:for-index="index_j" wx:key="id">
+    <button class="practice-group practice-{{item_i.id}}" bindtap="open" data-id="{{item_i.id}}">
+      <view class="practice-group-top">
+        <text>{{item_i.name}}</text>
+        <text class="practice-arrow">›</text>
+      </view>
+      <view class="practice-group-description">{{item_i.description}}</view>
+      <view class="practice-group-count"><text>{{item_i.papers}}</text>套试卷<text>{{item_i.questions}}</text>道题</view>
+    </button>
+  </block>
+  <view class="random-card">
+    <block wx:if="{{(initError ? 1 : 0) === 1}}">
+      <button class="random-retry" bindtap="initialize">随机练习暂未准备好，点击重试</button>
+    </block>
+    <view class="random-heading">跨省随机练习</view>
+    <view class="random-caption">选定年份后，从题库中随机抽题，打乱省份与题目顺序。</view>
+    <view class="random-form-row">
+      <text>年份</text>
+      <picker range="{{years}}" value="{{yearIndex}}" bindchange="year">
+        <view class="random-picker random-year">{{years[yearIndex]}} ⌄</view>
+      </picker>
+    </view>
+    <view class="random-form-row">
+      <text>范围</text>
+      <picker range="{{scopes}}" value="{{scopeIndex}}" bindchange="scope">
+        <view class="random-picker random-scope">{{scopes[scopeIndex]}} ⌄</view>
+      </picker>
+    </view>
+    <view class="random-form-row">
+      <text>题数</text>
+      <view class="random-count-wrap">
+        <input class="random-count" type="number" maxlength="4" value="{{questionCount}}" bindinput="count" />
+        <text>道</text>
+      </view>
+    </view>
+    <view class="random-quick">
+      <button bindtap="quickCount" data-count="10">10道</button>
+      <button bindtap="quickCount" data-count="20">20道</button>
+      <button bindtap="quickCount" data-count="30">30道</button>
+      <button bindtap="quickCount" data-count="50">50道</button>
+    </view>
+    <view class="random-available">当前可选 {{available}} 道去重题，不重复抽取 · 每题折算 1 分钟</view>
+    <button class="start-random" bindtap="startRandom" disabled="{{!available}}">开始随机练习</button>
+    <block wx:if="{{(canResume ? 1 : 0) === 1}}">
+      <button class="resume-random" bindtap="resumeRandom">{{randomResumeText}} ›</button>
+    </block>
+  </view>
+  <view class="practice-footnote">根据本地已收录题目整理，试卷中仅保留逻辑填空部分。</view>
+</view>

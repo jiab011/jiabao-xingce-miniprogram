@@ -1,0 +1,29 @@
+# Dependencies and editor state
+node_modules/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local credentials and WeChat developer settings
+*.key
+*.pem
+*.p12
+*.pfx
+.env*
+project.private.config.json
+
+# Local recovery inputs, archives and generated outputs
+*.log
+*.zip
+*.wxapkg
+.recovery-tools/
+recovery/packages/
+recovery/unpacked/
+recovery/recovered-code/
+recovery/restored-project/
+recovery/cloud-function-archives/
+recovery/cloud-data-readable/
+recovery/validation-project/
+recovery/render-comparisons/
+recovery/source-map.zip

@@ -1,0 +1,37 @@
+{
+  "appid": "wx54427ecbe711c90c",
+  "uploadedVersion": "recovery.20261026",
+  "completedAt": "2026-10-26T16:03:15.467Z",
+  "recovery": {
+    "pageCount": 42,
+    "recoveredModules": 234,
+    "missingPageFiles": [],
+    "missingImports": [],
+    "templateDiagnosticCount": 0,
+    "readyForDeployment": true
+  },
+  "verification": {
+    "sourceSha256": "6a40640bdd441385bd16eb4573597655a21cdd150d5ce1f16374b187651bae44",
+    "compiledFiles": 421,
+    "runtimePages": [
+      "pages/index/index",
+      "pages/train/index",
+      "pages/writing/index",
+      "pages/profile/index",
+      "logicHub/index",
+      "logicSearch/needs",
+      "logicHub/practice",
+      "exam/hub",
+      "exam/practice"
+    ],
+    "runtimeExceptions": 0,
+    "renderFixtures": 271,
+    "matchingRenderFixtures": 271
+  },
+  "cloudBackup": {
+    "functionArchivesSaved": true,
+    "databaseExported": false,
+    "storagePacksSaved": 0,
+    "storagePacksRequired": 36
+  }
+}

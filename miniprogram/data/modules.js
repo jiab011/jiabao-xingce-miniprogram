@@ -1,0 +1,46 @@
+module.exports = [{
+  id: "logicfill",
+  name: "逻辑填空",
+  icon: "logicfill",
+  ready: !0
+}, {
+  id: "verbal",
+  name: "片段阅读",
+  icon: "verbal",
+  ready: !0
+}, {
+  id: "figure",
+  name: "图形推理",
+  icon: "figure",
+  ready: !0
+}, {
+  id: "analogy",
+  name: "类比推理",
+  icon: "analogy",
+  ready: !0
+}, {
+  id: "definition",
+  name: "定义判断",
+  icon: "definition",
+  ready: !0
+}, {
+  id: "deduction",
+  name: "论证与形式逻辑",
+  icon: "deduction",
+  ready: !0
+}, {
+  id: "quantity",
+  name: "数量关系",
+  icon: "quantity",
+  ready: !0
+}, {
+  id: "analysis",
+  name: "资料分析",
+  icon: "analysis",
+  ready: !0
+}, {
+  id: "common",
+  name: "常识基础",
+  icon: "common",
+  ready: !0
+}];

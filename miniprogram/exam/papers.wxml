@@ -1,0 +1,43 @@
+<view class="exam-page">
+  <input class="exam-input" placeholder="搜索试卷" value="{{query}}" bindinput="input" />
+  <view class="filter-row">
+    <picker range="{{years}}" value="{{yearIndex}}" bindchange="year">
+      <view class="exam-picker">{{years[yearIndex]}}⌄</view>
+    </picker>
+    <block wx:if="{{(showRegions ? 1 : 0) === 1}}">
+      <picker range="{{regions}}" value="{{regionIndex}}" bindchange="region">
+        <view class="exam-picker">{{regions[regionIndex]}}⌄</view>
+      </picker>
+    </block>
+  </view>
+  <block wx:if="{{(loading ? 1 : 0) === 1}}">
+    <view class="exam-empty">正在读取试卷…</view>
+  </block>
+  <block wx:if="{{(error ? 1 : 0) === 1}}">
+    <view class="exam-error">{{error}}<button bindtap="load">重试</button></view>
+  </block>
+  <block wx:for="{{rows}}" wx:for-item="item_s" wx:for-index="index_t" wx:key="id">
+    <view class="paper-tile">
+      <button class="paper-open" bindtouchstart="prepare" bindtap="open" loading="{{busy === item_s.id}}" data-id="{{item_s.id}}">
+        <view class="paper-title">{{item_s.title}}</view>
+        <block wx:if="{{(item_s.sections ? 1 : 0) === 1}}">
+          <view class="paper-sections">
+            <block wx:for="{{item_s.sections}}" wx:for-item="item_E0" wx:for-index="index_F0" wx:key="id">
+              <text>{{index_F0 ? ' · ' : ''}}{{item_E0.name}} {{item_E0.count}}题</text>
+            </block>
+          </view>
+        </block>
+        <view class="paper-meta">
+          <text>共 <text class="blue">{{item_s.count}}</text> 题</text>
+          <text class="paper-status">{{item_s.status}}</text>
+        </view>
+      </button>
+      <block wx:if="{{(item_s.hasReport ? 1 : 0) === 1}}">
+        <button class="paper-records" bindtap="records" data-id="{{item_s.id}}">上次成绩 ›</button>
+      </block>
+    </view>
+  </block>
+  <block wx:if="{{(!loading && !error && !rows.length ? 1 : 0) === 1}}">
+    <view class="exam-empty">该范围暂未收录试卷</view>
+  </block>
+</view>

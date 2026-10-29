@@ -1,0 +1,34 @@
+<block wx:if="{{(bank ? 1 : 0) === 1}}">
+  <view class="intro-page">
+    <view class="intro-card">
+      <view class="intro-title">{{bank.name}}</view>
+      <view class="intro-stars">★ ★ ★ ★ ★</view>
+      <view class="intro-date">整理时间：2026-10-23</view>
+      <view class="intro-tags">
+        <text>真题词库</text>
+        <text>{{kind}}</text>
+      </view>
+      <view class="intro-description">{{bank.description}} 本词库共 {{total}} 个词语，结合已收录逻辑填空真题学习，支持收藏、已学标记和关联题目练习。词语详情中的解释注明原题解析出处。</view>
+      <view class="intro-tip">点击“标记已学”记录掌握情况；阅读位置自动保存，可继续上次学习。</view>
+    </view>
+    <view class="intro-stats">
+      <view>
+        <text class="blue">{{total}}</text>
+        <text>总词数</text>
+      </view>
+      <view>
+        <text class="green">{{learned}}</text>
+        <text>已学习</text>
+      </view>
+      <view>
+        <text class="gold">{{remaining}}</text>
+        <text>未学习</text>
+      </view>
+    </view>
+    <view class="intro-actions">
+      <button class="start-study" bindtap="start">{{hasProgress ? '继续学习' : '开始学习'}}</button>
+      <button class="browse-words" bindtap="browse">查看词语列表</button>
+      <button class="clear-progress" bindtap="clear">清除进度</button>
+    </view>
+  </view>
+</block>

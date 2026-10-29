@@ -1,0 +1,42 @@
+<view class="page home-page">
+  <view class="card modules-card">
+    <view class="section-heading">
+      <text class="section-title">行测模块</text>
+      <text class="section-subtitle">分模块学习＋刷题</text>
+    </view>
+    <view class="modules-grid">
+      <block wx:for="{{moduleRows}}" wx:for-item="item_i" wx:for-index="index_j" wx:key="id">
+        <view class="module-row">
+          <block wx:for="{{item_i.items}}" wx:for-item="item_p" wx:for-index="index_q" wx:key="id">
+            <button class="module-item" bindtap="onModuleTap" hover-class="tap-hover" aria-label="{{item_p.name}}" data-id="{{item_p.id}}">
+              <image class="module-icon" src="/assets/modules/{{item_p.icon}}.png" mode="aspectFit" />
+              <text class="module-name">{{item_p.name}}</text>
+            </button>
+          </block>
+          <block wx:for="{{item_i.spacers}}" wx:for-item="item_q" wx:for-index="index_r" wx:key="*this">
+            <view class="module-spacer" aria-hidden="true" />
+          </block>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="card modules-card foundations-card">
+    <view class="section-heading">
+      <text class="section-title">综合与基础</text>
+      <text class="section-subtitle">整卷训练 · 政治 · 省情</text>
+    </view>
+    <block wx:for="{{foundationRows}}" wx:for-item="item_n" wx:for-index="index_o" wx:key="id">
+      <view class="module-row">
+        <block wx:for="{{item_n.items}}" wx:for-item="item_u" wx:for-index="index_v" wx:key="id">
+          <button class="module-item foundation-item" bindtap="onFoundationTap" hover-class="tap-hover" aria-label="{{item_u.name}}" data-id="{{item_u.id}}">
+            <image class="module-icon" src="/assets/modules/{{item_u.icon}}.png" mode="aspectFit" />
+            <text class="module-name">{{item_u.name}}</text>
+          </button>
+        </block>
+        <block wx:for="{{item_n.spacers}}" wx:for-item="item_v" wx:for-index="index_w" wx:key="*this">
+          <view class="module-spacer" aria-hidden="true" />
+        </block>
+      </view>
+    </block>
+  </view>
+</view>

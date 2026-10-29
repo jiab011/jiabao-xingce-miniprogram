@@ -1,0 +1,24 @@
+<block wx:if="{{(module ? 1 : 0) === 1}}">
+  <view class="exam-page hub-page">
+    <button class="exam-search" bindtap="search">
+      <text>搜索题干、选项，查找真题</text>
+      <view class="search-glass" />
+    </button>
+    <view class="module-shortcuts">
+      <button bindtap="practice">
+        <view class="shortcut-icon practice-icon">☷</view>
+        <text>开始刷题</text>
+      </button>
+      <button bindtap="favorites">
+        <view class="shortcut-icon favorites-icon">♥</view>
+        <text>题目收藏</text>
+        <text class="shortcut-count">{{favorites}}</text>
+      </button>
+      <button bindtap="wrongs">
+        <view class="shortcut-icon wrongs-icon">⊠</view>
+        <text>错题集</text>
+        <text class="shortcut-count">{{wrongs}}</text>
+      </button>
+    </view>
+  </view>
+</block>

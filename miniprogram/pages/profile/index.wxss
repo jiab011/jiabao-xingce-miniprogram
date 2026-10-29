@@ -1,0 +1,59 @@
+page{background:#f6f7fa}
+.account-page{color:#202a3b;padding:30rpx 26rpx 80rpx}
+.account-page button{border-radius:18rpx;font-size:27rpx;line-height:1.6;margin:0}
+.account-card,.account-settings{background:#fff;border-radius:26rpx;margin-bottom:26rpx;padding:34rpx 28rpx}
+.account-header{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:22rpx;margin-bottom:32rpx}
+.account-avatar{border-radius:50%;-webkit-flex-shrink:0;flex-shrink:0;height:112rpx;width:112rpx}
+.account-placeholder{-webkit-align-items:center;align-items:center;background:#eaf1ff;color:#4b7ce7;display:-webkit-flex;display:flex;font-size:43rpx;-webkit-justify-content:center;justify-content:center}
+.account-intro{-webkit-flex:1;flex:1;min-width:0}
+.account-name{font-size:34rpx;font-weight:600;line-height:1.6}
+.account-caption{color:#97a1b1;font-size:23rpx;line-height:1.8;margin-top:7rpx}
+.account-primary{background:#3b78ff!important;color:#fff!important;padding:20rpx 15rpx!important}
+.wechat-login{width:100%}
+.edit-account{background:#f3f7ff!important;color:#7490c2!important;font-size:24rpx!important;padding:16rpx!important}
+.account-collections{background:#fff;border-radius:26rpx;display:-webkit-flex;display:flex;margin-bottom:26rpx;padding:28rpx 0}
+.account-collections button{background:transparent;color:#8c98aa;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;font-size:24rpx;gap:10rpx;width:33.33%}
+.account-collections button text:first-child{color:#416fff;font-size:36rpx;font-weight:600}
+.account-form{border-top:1rpx solid #edf1f7;padding-top:25rpx}
+.account-form-heading,.account-section-title{font-size:29rpx;font-weight:600}
+.account-avatar-choice{-webkit-align-items:center;align-items:center;background:#edf4ff!important;border-radius:50%!important;color:#6990d2;display:-webkit-flex;display:flex;font-size:24rpx!important;height:140rpx!important;-webkit-justify-content:center;justify-content:center;margin:28rpx auto 14rpx!important;padding:0!important;width:140rpx!important}
+.account-avatar-choice image{height:140rpx;width:140rpx}
+.avatar-caption{color:#a1aabb;font-size:21rpx;margin-bottom:22rpx;text-align:center}
+.account-nickname{background:#f3f7fd;border-radius:14rpx;box-sizing:border-box;font-size:29rpx;height:82rpx;margin-bottom:28rpx;padding:16rpx 20rpx}
+.account-form-actions{display:-webkit-flex;display:flex;gap:18rpx}
+.account-form-actions button{background:#f3f5f9;color:#909aab;padding:20rpx 15rpx;width:50%}
+.account-setting-row{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;font-size:27rpx;gap:15rpx;-webkit-justify-content:space-between;justify-content:space-between;padding:32rpx 0 26rpx}
+.setting-caption{color:#a0aabc;font-size:21rpx;line-height:1.8;margin-top:10rpx}
+.account-private-tip{border-top:1rpx solid #edf1f7;color:#9ba8bb;font-size:21rpx;line-height:1.8;padding-top:22rpx}
+.logout-account{background:#fff!important;color:#9ba7b9!important;padding:20rpx!important;width:100%}
+.account-page .edit-account,.account-page .logout-account,.account-page .wechat-login{display:block;max-width:none!important;width:100%!important}
+.account-form-actions button{width:50%!important}
+.profile-error{color:#e85b68;font-size:23rpx;line-height:1.8;margin-top:18rpx}
+@media (min-width:760px){.account-page{color:#202a3b;padding:18.75px 16.25px 50px}
+.account-page button{border-radius:11.25px;font-size:16.875px;line-height:1.6;margin:0}
+.account-card,.account-settings{background:#fff;border-radius:16.25px;margin-bottom:16.25px;padding:21.25px 17.5px}
+.account-header{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:13.75px;margin-bottom:20px}
+.account-avatar{border-radius:50%;-webkit-flex-shrink:0;flex-shrink:0;height:70px;width:70px}
+.account-placeholder{-webkit-align-items:center;align-items:center;background:#eaf1ff;color:#4b7ce7;display:-webkit-flex;display:flex;font-size:26.875px;-webkit-justify-content:center;justify-content:center}
+.account-name{font-size:21.25px;font-weight:600;line-height:1.6}
+.account-caption{color:#97a1b1;font-size:14.375px;line-height:1.8;margin-top:4.375px}
+.account-primary{background:#3b78ff!important;color:#fff!important;padding:12.5px 9.375px!important}
+.edit-account{background:#f3f7ff!important;color:#7490c2!important;font-size:15px!important;padding:10px!important}
+.account-collections{background:#fff;border-radius:16.25px;display:-webkit-flex;display:flex;margin-bottom:16.25px;padding:17.5px 0}
+.account-collections button{background:transparent;color:#8c98aa;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;font-size:15px;gap:6.25px;width:33.33%}
+.account-collections button text:first-child{color:#416fff;font-size:22.5px;font-weight:600}
+.account-form{border-top:.625px solid #edf1f7;padding-top:15.625px}
+.account-form-heading,.account-section-title{font-size:18.125px;font-weight:600}
+.account-avatar-choice{-webkit-align-items:center;align-items:center;background:#edf4ff!important;border-radius:50%!important;color:#6990d2;display:-webkit-flex;display:flex;font-size:15px!important;height:87.5px!important;-webkit-justify-content:center;justify-content:center;margin:17.5px auto 8.75px!important;padding:0!important;width:87.5px!important}
+.account-avatar-choice image{height:87.5px;width:87.5px}
+.avatar-caption{color:#a1aabb;font-size:13.125px;margin-bottom:13.75px;text-align:center}
+.account-nickname{background:#f3f7fd;border-radius:8.75px;box-sizing:border-box;font-size:18.125px;height:51.25px;margin-bottom:17.5px;padding:10px 12.5px}
+.account-form-actions{display:-webkit-flex;display:flex;gap:11.25px}
+.account-form-actions button{background:#f3f5f9;color:#909aab;padding:12.5px 9.375px;width:50%}
+.account-setting-row{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;font-size:16.875px;gap:9.375px;-webkit-justify-content:space-between;justify-content:space-between;padding:20px 0 16.25px}
+.setting-caption{color:#a0aabc;font-size:13.125px;line-height:1.8;margin-top:6.25px}
+.account-private-tip{border-top:.625px solid #edf1f7;color:#9ba8bb;font-size:13.125px;line-height:1.8;padding-top:13.75px}
+.logout-account{background:#fff!important;color:#9ba7b9!important;padding:12.5px!important;width:100%}
+.profile-error{color:#e85b68;font-size:14.375px;line-height:1.8;margin-top:11.25px}
+}
+@import "/styles/tablet-layout.wxss";

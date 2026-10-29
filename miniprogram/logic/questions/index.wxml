@@ -1,0 +1,25 @@
+<view class="logic-page">
+  <view class="panel">
+    <view class="heading">{{title}}</view>
+    <view class="muted">共 {{total}} 道真题</view>
+  </view>
+  <block wx:if="{{(total ? 1 : 0) === 1}}">
+    <view class="card">
+      <block wx:for="{{visible}}" wx:for-item="item_j" wx:for-index="index_k" wx:key="id">
+        <button class="question-row" bindtap="open" data-id="{{item_j.id}}">
+          <view class="small">{{item_j.title}} · 第 {{item_j.no}} 题</view>
+          <view class="question-preview">{{item_j.preview}}…</view>
+        </button>
+      </block>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="empty">
+      <view>{{mode === 'wrong' ? '作答错误的题目会自动加入这里' : '收藏题目后，可以在这里继续查看'}}</view>
+      <button class="btn primary" bindtap="all">去做真题</button>
+    </view>
+  </block>
+  <block wx:if="{{(total ? 1 : 0) === 1}}">
+    <view class="footer-note">{{hasMore ? '继续上滑加载更多' : '已显示全部题目'}}</view>
+  </block>
+</view>

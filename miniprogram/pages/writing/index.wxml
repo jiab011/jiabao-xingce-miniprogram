@@ -1,0 +1,8 @@
+<view class="placeholder">
+  <image class="placeholder-icon" src="/assets/tabs/writing-active.png" />
+  <view class="placeholder-title">写作</view>
+  <view class="placeholder-copy">
+    <view>这里预留申论写作入口。</view>
+    <view>本轮先完成首页，后续再一起完善。</view>
+  </view>
+</view>

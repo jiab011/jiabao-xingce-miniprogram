@@ -1,0 +1,14 @@
+<view class="logic-page">
+  <view class="panel">
+    <view class="heading">全部词库</view>
+    <view class="bank-rule">词频按去重真题计数，同题同词只计一次。正选指词语出现在正确选项中。</view>
+  </view>
+  <view class="library-grid">
+    <block wx:for="{{libraries}}" wx:for-item="item_h" wx:for-index="index_i" wx:key="id">
+      <button class="library-card" bindtap="open" data-id="{{item_h.id}}">
+        <text>{{item_h.name}}</text>
+        <text class="number">{{item_h.count}} 词</text>
+      </button>
+    </block>
+  </view>
+</view>

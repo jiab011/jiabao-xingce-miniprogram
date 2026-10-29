@@ -1,0 +1,67 @@
+function setHeight(owner, height) {
+  var pane = owner.selectComponent('.material-pane');
+  if (pane) pane.setStyle({
+    height: height + 'px',
+    'flex-basis': height + 'px'
+  });
+}
+;
+function start(e, owner) {
+  if (!e.touches || e.touches.length !== 1) return false;
+  ;
+  var data = e.instance.getDataset();
+  owner.getState().materialDivider = {
+    active: true,
+    y: e.touches[0].clientY,
+    start: +data.height,
+    height: +data.height,
+    min: +data.min,
+    max: +data.max
+  };
+  owner.callMethod('startMaterialResize', {});
+  return false;
+}
+;
+function move(e, owner) {
+  var state = owner.getState().materialDivider;
+  if (!state || !state.active || !e.touches || !e.touches[0]) return false;
+  ;
+  var height = state.start + e.touches[0].clientY - state.y;
+  height = height < state.min ? state.min : height > state.max ? state.max : height;
+  state.height = height;
+  setHeight(owner, height);
+  return false;
+}
+;
+function end(e, owner) {
+  var state = owner.getState().materialDivider;
+  if (state && state.active) {
+    state.active = false;
+    owner.callMethod('finishMaterialResize', {
+      height: state.height
+    });
+  }
+  ;
+  return false;
+}
+;
+function sync(height, oldHeight, owner) {
+  var state = owner.getState().materialDivider;
+  if (!state || !state.active) setHeight(owner, height);
+}
+;
+function reset(value, oldValue, owner, instance) {
+  var state = owner.getState().materialDivider;
+  if (state) state.active = false;
+  ;
+  var data = instance.getDataset();
+  setHeight(owner, +data.height);
+}
+;
+module.exports = {
+  reset: reset,
+  start: start,
+  move: move,
+  end: end,
+  sync: sync
+};

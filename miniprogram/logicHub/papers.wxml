@@ -1,0 +1,32 @@
+<view class="papers-page">
+  <view class="papers-controls">
+    <input class="paper-search" placeholder="搜索年份或试卷名称" value="{{query}}" bindinput="input" />
+    <view class="papers-filter-row">
+      <picker range="{{years}}" value="{{yearIndex}}" bindchange="yearChange">
+        <view>{{years[yearIndex]}} ⌄</view>
+      </picker>
+      <block wx:if="{{(showRegions ? 1 : 0) === 1}}">
+        <picker range="{{regions}}" value="{{regionIndex}}" bindchange="regionChange">
+          <view>{{regions[regionIndex]}} ⌄</view>
+        </picker>
+      </block>
+      <text>共 {{total}} 套</text>
+    </view>
+  </view>
+  <block wx:for="{{papers}}" wx:for-item="item_n" wx:for-index="index_o" wx:key="id">
+    <button class="paper-item" bindtap="open" data-id="{{item_n.id}}">
+      <view class="paper-title">{{item_n.title}}</view>
+      <view class="paper-duration">限时 {{item_n.count}} 分钟</view>
+      <view class="paper-bottom">
+        <text>共 <text class="paper-count">{{item_n.count}}</text> 题 · 逻辑填空</text>
+        <text class="paper-status {{item_n.inProgress ? 'ongoing' : item_n.completed ? 'completed' : ''}}">{{item_n.status}}</text>
+        <block wx:if="{{(item_n.hasReport ? 1 : 0) === 1}}">
+          <text class="paper-report-link" catchtap="lastResult" data-id="{{item_n.id}}">上次成绩 ›</text>
+        </block>
+      </view>
+    </button>
+  </block>
+  <block wx:if="{{(!papers.length ? 1 : 0) === 1}}">
+    <view class="papers-empty">没有符合筛选条件的试卷</view>
+  </block>
+</view>

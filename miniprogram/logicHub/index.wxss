@@ -1,0 +1,91 @@
+.logic-hub{padding:18rpx 18rpx 40rpx}
+.logic-hub .search-entry{-webkit-align-items:center;align-items:center;background:#fff;border:3rpx solid #467eff;border-radius:48rpx;color:#999;display:-webkit-flex;display:flex;font-size:29rpx;-webkit-justify-content:space-between;justify-content:space-between;max-width:none;min-height:82rpx;padding:16rpx 24rpx;text-align:left;width:100%}
+.search-symbol{border:3rpx solid #aaa;border-radius:50%;height:30rpx;margin-right:6rpx;position:relative;width:30rpx}
+.search-symbol::after{background:#aaa;bottom:-7rpx;content:"";height:3rpx;position:absolute;right:-12rpx;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:19rpx}
+.collections-row{display:-webkit-flex;display:flex;padding:28rpx 10rpx 26rpx}
+.collections-row .collection-entry{background:transparent;-webkit-flex:1 1 0%;flex:1 1 0%;-webkit-flex-direction:column;flex-direction:column;margin:0;max-width:none;min-width:0;width:0}
+.collection-icon,.collections-row .collection-entry{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex}
+.collection-icon{border-radius:50%;color:#fff;font-size:63rpx;height:84rpx;-webkit-justify-content:center;justify-content:center;line-height:1;width:84rpx}
+.word-star{background:#f05a38}
+.question-heart{background:#ed343e}
+.wrong-book{background:#ff927f}
+.mini-book{border:4rpx solid #fff;border-left-width:9rpx;border-radius:3rpx;font-size:35rpx;height:43rpx;line-height:35rpx;width:38rpx}
+.collection-name{color:#333;font-size:26rpx;line-height:1.5;margin-top:10rpx}
+.collection-count{color:#999;font-size:21rpx;line-height:1.3}
+.compare-card,.libraries-card{padding:23rpx 14rpx 18rpx}
+.hub-heading{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;padding:0 16rpx 21rpx}
+.hub-title{color:#111;font-size:33rpx;font-weight:600}
+.hub-heading .more-link{background:transparent;color:#999;font-size:25rpx;line-height:1.6;margin:0;max-width:none;min-width:0;padding:0;width:auto}
+.libraries-grid{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-between;justify-content:space-between}
+.libraries-grid .library-tile{-webkit-align-items:center;align-items:center;background:#e2f4ff;border-radius:20rpx;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;line-height:1.45;margin:0 0 22rpx;max-width:none;min-height:110rpx;min-width:0;padding:20rpx 5rpx 17rpx;width:48.5%}
+.library-name{color:#16212b;font-size:25rpx;font-weight:600;white-space:nowrap}
+.library-count{color:#467eff;font-size:25rpx;margin-top:9rpx}
+.count-unit{color:#999;font-size:21rpx}
+.data-caption{color:#aaa;font-size:19rpx;line-height:1.6;padding:0 10rpx;text-align:center}
+.compare-card{margin-top:20rpx;padding-bottom:22rpx}
+.compare-grid{padding:0 3rpx}
+.compare-grid,.compare-grid .compare-entry{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}
+.compare-grid .compare-entry{background:#fff;border:1rpx solid #e9edef;border-radius:14rpx;color:#222;font-size:26rpx;font-weight:500;margin:0;max-width:none;min-width:0;padding:20rpx 14rpx;width:48.5%}
+.compare-grid .compare-entry,.compare-mark{-webkit-align-items:center;align-items:center}
+.compare-mark{background:#ff656a;border-radius:50%;color:#fff;display:-webkit-flex;display:flex;font-size:28rpx;font-weight:600;height:55rpx;-webkit-justify-content:center;justify-content:center;margin-left:8rpx;width:55rpx}
+.paper-book{background:#3b78ff}
+.paper-lines{font-size:58rpx;line-height:1}
+.collections-row .collection-name{font-size:23rpx;white-space:nowrap}
+.paper-practice-entry .collection-count{font-size:16rpx;white-space:nowrap}
+.study-progress-card{padding:28rpx}
+.progress-picker{color:#8299be;font-size:23rpx;padding:8rpx 0 8rpx 12rpx}
+.progress-stat{-webkit-align-items:baseline;align-items:baseline;color:#3b78ff;display:-webkit-flex;display:flex;font-size:45rpx;-webkit-justify-content:space-between;justify-content:space-between;margin:25rpx 0 22rpx}
+.progress-denominator{color:#9daabe;font-size:25rpx}
+.progress-percent{color:#8c9cb3;font-size:26rpx}
+.progress-track{background:#edf2f9;border-radius:15rpx;height:16rpx;overflow:hidden}
+.progress-track>view{background:#4d86ff;border-radius:15rpx;height:100%;transition:width .2s}
+.progress-controls{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:18rpx}
+.progress-picker{background:#eaf1ff;border:1rpx solid #cbdcff;border-radius:15rpx;color:#4378d8;font-size:24rpx;font-weight:500;padding:12rpx 16rpx}
+.progress-track.rainbow>view{background:linear-gradient(90deg,#f16e72,#f0ba54,#b9cc58,#58c6a5,#5aa5e8,#8b83e8)}
+.logic-hub .needs-entry{-webkit-align-items:center;align-items:center;background:#fffaf2;border:1rpx solid #f9e8d1;display:-webkit-flex;display:flex;font-weight:400;-webkit-justify-content:space-between;justify-content:space-between;line-height:1.6;max-width:none;min-width:0;padding:30rpx 28rpx;text-align:left;width:100%}
+.needs-entry>view:first-child{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}
+.needs-entry-caption{color:#c0a98a;font-size:22rpx;margin-top:7rpx}
+.needs-entry-total{color:#e99b43;font-size:38rpx;font-weight:500}
+.needs-entry-total>text{color:#cebaa0;font-size:32rpx}
+@media (min-width:760px){.logic-hub{padding:11.25px 11.25px 25px}
+.logic-hub .search-entry{-webkit-align-items:center;align-items:center;background:#fff;border:1.875px solid #467eff;border-radius:30px;color:#999;display:-webkit-flex;display:flex;font-size:18.125px;-webkit-justify-content:space-between;justify-content:space-between;max-width:none;min-height:51.25px;padding:10px 15px;text-align:left;width:100%}
+.search-symbol{border:1.875px solid #aaa;border-radius:50%;height:18.75px;margin-right:3.75px;position:relative;width:18.75px}
+.search-symbol::after{background:#aaa;bottom:-4.375px;content:"";height:1.875px;position:absolute;right:-7.5px;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:11.875px}
+.collections-row{display:-webkit-flex;display:flex;padding:17.5px 6.25px 16.25px}
+.collection-icon{-webkit-align-items:center;align-items:center;border-radius:50%;color:#fff;display:-webkit-flex;display:flex;font-size:39.375px;height:52.5px;-webkit-justify-content:center;justify-content:center;line-height:1;width:52.5px}
+.mini-book{border:2.5px solid #fff;border-left-width:5.625px;border-radius:1.875px;font-size:21.875px;height:26.875px;line-height:21.875px;width:23.75px}
+.collection-name{color:#333;font-size:16.25px;line-height:1.5;margin-top:6.25px}
+.collection-count{color:#999;font-size:13.125px;line-height:1.3}
+.compare-card,.libraries-card{padding:14.375px 8.75px 11.25px}
+.hub-heading{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;padding:0 10px 13.125px}
+.hub-title{color:#111;font-size:20.625px;font-weight:600}
+.hub-heading .more-link{background:transparent;color:#999;font-size:15.625px;line-height:1.6;margin:0;max-width:none;min-width:0;padding:0;width:auto}
+.libraries-grid .library-tile{-webkit-align-items:center;align-items:center;background:#e2f4ff;border-radius:12.5px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;line-height:1.45;margin:0 0 13.75px;max-width:none;min-height:68.75px;min-width:0;padding:12.5px 3.125px 10.625px;width:48.5%}
+.library-name{color:#16212b;font-size:15.625px;font-weight:600;white-space:nowrap}
+.library-count{color:#467eff;font-size:15.625px;margin-top:5.625px}
+.count-unit{color:#999;font-size:13.125px}
+.data-caption{color:#aaa;font-size:11.875px;line-height:1.6;padding:0 6.25px;text-align:center}
+.compare-card{margin-top:12.5px;padding-bottom:13.75px}
+.compare-grid{padding:0 1.875px}
+.compare-grid,.compare-grid .compare-entry{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}
+.compare-grid .compare-entry{background:#fff;border:.625px solid #e9edef;border-radius:8.75px;color:#222;font-size:16.25px;font-weight:500;margin:0;max-width:none;min-width:0;padding:12.5px 8.75px;width:48.5%}
+.compare-grid .compare-entry,.compare-mark{-webkit-align-items:center;align-items:center}
+.compare-mark{background:#ff656a;border-radius:50%;color:#fff;display:-webkit-flex;display:flex;font-size:17.5px;font-weight:600;height:34.375px;-webkit-justify-content:center;justify-content:center;margin-left:5px;width:34.375px}
+.paper-lines{font-size:36.25px;line-height:1}
+.collections-row .collection-name{font-size:14.375px;white-space:nowrap}
+.paper-practice-entry .collection-count{font-size:10px;white-space:nowrap}
+.study-progress-card{padding:17.5px}
+.progress-picker{color:#8299be;font-size:14.375px;padding:5px 0 5px 7.5px}
+.progress-stat{-webkit-align-items:baseline;align-items:baseline;color:#3b78ff;display:-webkit-flex;display:flex;font-size:28.125px;-webkit-justify-content:space-between;justify-content:space-between;margin:15.625px 0 13.75px}
+.progress-denominator{color:#9daabe;font-size:15.625px}
+.progress-percent{color:#8c9cb3;font-size:16.25px}
+.progress-track{background:#edf2f9;border-radius:9.375px;height:10px;overflow:hidden}
+.progress-track>view{background:#4d86ff;border-radius:9.375px;height:100%;transition:width .2s}
+.progress-controls{-webkit-align-items:center;align-items:center;display:-webkit-flex;display:flex;gap:11.25px}
+.progress-picker{background:#eaf1ff;border:.625px solid #cbdcff;border-radius:9.375px;color:#4378d8;font-size:15px;font-weight:500;padding:7.5px 10px}
+.logic-hub .needs-entry{-webkit-align-items:center;align-items:center;background:#fffaf2;border:.625px solid #f9e8d1;display:-webkit-flex;display:flex;font-weight:400;-webkit-justify-content:space-between;justify-content:space-between;line-height:1.6;max-width:none;min-width:0;padding:18.75px 17.5px;text-align:left;width:100%}
+.needs-entry-caption{color:#c0a98a;font-size:13.75px;margin-top:4.375px}
+.needs-entry-total{color:#e99b43;font-size:23.75px;font-weight:500}
+.needs-entry-total>text{color:#cebaa0;font-size:20px}
+}
+@import "/styles/tablet-layout.wxss";

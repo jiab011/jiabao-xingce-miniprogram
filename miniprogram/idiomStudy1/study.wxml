@@ -1,0 +1,262 @@
+<block wx:if="{{(word ? 1 : 0) === 1}}">
+  <view class="study-page">
+    <view class="word-hero">
+      <view class="progress-label">{{position}} / {{total}}<button class="study-word-clock" bindtap="studyClockTap">{{studyClockText}}</button></view>
+      <view class="letter-boxes">
+        <block wx:for="{{letters}}" wx:for-item="item_j" wx:for-index="index_k" wx:key="index">
+          <text class="letter-box">{{item_j}}</text>
+        </block>
+      </view>
+      <view class="pinyin">{{word.pinyin}}</view>
+      <view class="frequency">
+        <text class="stars">★★★★★</text>
+        <text>本库累计考查 <text class="red">{{word.count}}</text> 题</text>
+        <button class="word-learned-button {{learned ? 'is-learned' : ''}}" bindtap="learn">{{learned ? '✓ 已学习' : '学会了'}}</button>
+      </view>
+    </view>
+    <view class="meaning-card">
+      <view><text class="label">词性：</text>{{word.pos}}<block wx:if="{{(word.tone ? 1 : 0) === 1}}">
+  <text class="tone-label">{{word.tone}}</text>
+</block></view>
+      <block wx:for="{{word.usageLabels}}" wx:for-item="item_w" wx:for-index="index_x" wx:key="*this">
+        <view class="usage-label">{{item_w}}</view>
+      </block>
+      <view class="core"><text class="label">核心含义：</text>{{word.core}}</view>
+      <view class="memory">
+        <text class="label">简易理解：</text>
+        <text class="red understanding-text" bindtap="tapUnderstanding">{{simpleUnderstanding}}</text>
+        <view class="understanding-tap-tip">{{understandingStatus === 'pending' ? '我的版本 · 内容检查中，通过后公开' : '双击理解文字，编辑并公开分享'}}</view>
+      </view>
+      <view class="other-understandings">
+        <view class="other-understanding-heading">其他用户的理解</view>
+        <block wx:for="{{otherUnderstandings}}" wx:for-item="item_F0" wx:for-index="index_G0" wx:key="id">
+          <view class="other-understanding">
+            <view class="understanding-author">
+              <block wx:if="{{(item_F0.avatar ? 1 : 0) === 1}}">
+                <image src="{{item_F0.avatar}}" mode="aspectFill" />
+              </block>
+              <block wx:else>
+                <text class="understanding-avatar">{{item_F0.initial}}</text>
+              </block>
+              <text>{{item_F0.name}}</text>
+              <text class="understanding-time">{{item_F0.timeText}}</text>
+            </view>
+            <view>{{item_F0.text}}</view>
+          </view>
+        </block>
+        <block wx:if="{{(!otherUnderstandings.length ? 1 : 0) === 1}}">
+          <view class="understanding-empty">还没有其他同学分享理解</view>
+        </block>
+      </view>
+    </view>
+    <view class="examples-block">
+      <view class="section-title">权威例句</view>
+      <block wx:for="{{shownExamples}}" wx:for-item="item_L0" wx:for-index="index_M0" wx:key="sourceKey">
+        <view class="example-row">
+          <text class="example-number">{{index_M0 + 1}}</text>
+          <view class="example-content">
+            <text class="example-text" selectable="{{true}}">
+              <block wx:for="{{item_L0.parts}}" wx:for-item="item_V0" wx:for-index="index_W0" wx:key="index">
+                <text class="example-{{item_V0.kind}} {{item_V0.cue ? 'context-cue' : ''}}">{{item_V0.text}}</text>
+              </block>
+            </text>
+            <button class="example-source" bindtap="source" data-index="{{index_M0}}">{{item_L0.site}} · {{item_L0.date}}<text class="blue">查看出处 ›</text></button>
+          </view>
+        </view>
+      </block>
+      <block wx:if="{{(word.examples.length > 4 ? 1 : 0) === 1}}">
+        <button class="expand-examples" bindtap="toggleExamples">{{examplesExpanded ? '收起例句 ⌃' : '展开其余 ' + (word.examples.length - 4) + ' 条例句 ⌄'}}</button>
+      </block>
+    </view>
+    <view class="study-tabs">
+      <button class="study-tab tab-questions {{tab === 'questions' ? 'active' : ''}}" bindtap="switchTab" data-tab="questions">考查真题</button>
+      <button class="study-tab tab-compare {{tab === 'compare' ? 'active' : ''}}" bindtap="switchTab" data-tab="compare">{{realWord ? '形近对比' : '易混辨析'}}</button>
+      <button class="study-tab tab-notes {{tab === 'notes' ? 'active' : ''}}" bindtap="switchTab" data-tab="notes">学习笔记</button>
+    </view>
+    <view class="tab-content">
+      <block wx:if="{{(tab === 'compare' ? 1 : tab === 'questions' ? 2 : tab === 'notes' ? 3 : 0) === 1}}">
+        <block wx:for="{{word.pairs}}" wx:for-item="item_W0" wx:for-index="index_X0" wx:key="id">
+          <view class="compare-card">
+            <view class="compare-heading">
+              <text class="blue">{{word.term}} VS </text>
+              <button class="other-term" bindtap="openOther" data-id="{{item_W0.other.id}}">{{item_W0.other.term}}</button>
+              <text class="cooccurrence">同空出现 {{item_W0.count}} 题</text>
+            </view>
+            <view class="compare-columns">
+              <view class="compare-left">
+                <view class="compare-caption">选 {{word.term}}</view>
+                <view class="compare-memory blue">{{word.memory}}</view>
+                <view class="compare-core">{{word.core}}</view>
+              </view>
+              <view class="compare-right">
+                <button class="compare-caption" bindtap="openOther" data-id="{{item_W0.other.id}}">选 {{item_W0.other.term}} ›</button>
+                <view class="compare-memory orange">{{item_W0.other.memory}}</view>
+                <view class="compare-core">{{item_W0.other.core}}</view>
+              </view>
+            </view>
+          </view>
+        </block>
+        <block wx:if="{{(!word.pairs.length ? 1 : 0) === 1}}">
+          <view class="blank-state">本库暂未发现同一空位的其他成语选项。</view>
+        </block>
+      </block>
+      <block wx:elif="{{(tab === 'compare' ? 1 : tab === 'questions' ? 2 : tab === 'notes' ? 3 : 0) === 2}}">
+        <view class="mode-buttons">
+          <button class="green-button practice-mode" bindtap="practice">做题模式练习</button>
+        </view>
+        <view class="stats-table">
+          <view class="stats-row stats-head">
+            <text />
+            <text>考查(题)</text>
+            <text>正选(题)</text>
+            <text>正选占比</text>
+          </view>
+          <block wx:for="{{word.stats}}" wx:for-item="item_i0" wx:for-index="index_j0" wx:key="name">
+            <view class="stats-row">
+              <text class="stats-name">{{item_i0.name}}</text>
+              <text>{{item_i0.total}}</text>
+              <text>{{item_i0.correct}}</text>
+              <text>{{item_i0.ratio}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="fine-print">正选指该词出现在正确选项中。此处占比为题库统计，不是你的作答正确率。分类按原试卷出处识别，未收录的类型显示 0。</view>
+      </block>
+      <block wx:elif="{{(tab === 'compare' ? 1 : tab === 'questions' ? 2 : tab === 'notes' ? 3 : 0) === 3}}">
+        <view class="notes-feed">
+          <block wx:for="{{posts}}" wx:for-item="item_l0" wx:for-index="index_m0" wx:key="displayId">
+            <view class="posted-note">
+              <view class="posted-author">
+                <block wx:if="{{(item_l0.avatar ? 1 : 0) === 1}}">
+                  <image class="note-avatar" src="{{item_l0.avatar}}" mode="aspectFill" />
+                </block>
+                <block wx:else>
+                  <text class="note-avatar avatar-initial">{{item_l0.initial}}</text>
+                </block>
+                <text class="posted-name">{{item_l0.authorName}}<block wx:if="{{(item_l0.mine ? 1 : 0) === 1}}">
+  <text class="mine-tag">我</text>
+</block></text>
+                <text class="posted-time">{{item_l0.timeText}}</text>
+              </view>
+              <view class="posted-text" selectable="{{true}}">{{item_l0.text}}</view>
+              <view class="posted-footer">
+                <text>{{item_l0.statusText}}</text>
+                <block wx:if="{{(item_l0.mine ? 1 : 0) === 1}}">
+                  <view>
+                    <block wx:if="{{(item_l0.status === 'local' && cloudReady ? 1 : 0) === 1}}">
+                      <button class="retry-note" bindtap="retryPost" data-id="{{item_l0.localId}}">分享</button>
+                    </block>
+                    <button class="delete-note" bindtap="deletePost" data-id="{{item_l0.displayId}}">删除</button>
+                  </view>
+                </block>
+              </view>
+            </view>
+          </block>
+          <block wx:if="{{(notesMore ? 1 : 0) === 1}}">
+            <button class="notes-more" bindtap="moreNotes">查看更多笔记</button>
+          </block>
+          <block wx:if="{{(cloudReady ? 1 : 0) === 1}}">
+            <button class="notes-refresh" bindtap="refreshNotes">{{notesLoading ? '正在同步…' : '刷新同学笔记'}}</button>
+          </block>
+        </view>
+        <view class="note-card">
+          <view class="note-heading">给“{{word.term}}”记一笔</view>
+          <textarea class="study-note" value="{{note}}" bindinput="noteInput" bindblur="flushNote" maxlength="2000" placeholder="写下容易混淆的地方，或用自己的话造个句子……" auto-height="{{true}}" show-confirm-bar="{{false}}" adjust-position="{{true}}" />
+          <button class="green-button save-note" bindtap="saveNote" loading="{{noteSaving}}" disabled="{{noteSaving}}">{{shareNotes ? '保存并分享' : '保存笔记'}}</button>
+        </view>
+      </block>
+    </view>
+    <view class="study-footer">
+      <button class="previous-word" bindtap="previous" disabled="{{!hasPrevious}}">
+        <text class="footer-circle">⌃</text>
+        <text>上一词</text>
+      </button>
+      <button class="word-list" bindtap="openList">
+        <text class="footer-list">☷</text>
+        <text>列表</text>
+      </button>
+      <button class="favorite-word" bindtap="favorite">
+        <text class="footer-circle {{favorite ? 'filled' : ''}}">{{favorite ? '★' : '☆'}}</text>
+        <text>{{favorite ? '已收藏' : '收藏'}}</text>
+      </button>
+      <button class="next-word" bindtap="next" disabled="{{!hasNext}}">
+        <text class="footer-circle">⌄</text>
+        <text>下一词</text>
+      </button>
+    </view>
+    <block wx:if="{{(listOpen ? 1 : 0) === 1}}">
+      <view class="list-mask" bindtap="closeList">
+        <view class="word-sheet" catchtap="noop">
+          <view class="sheet-heading">词语列表<button bindtap="closeList">关闭</button></view>
+          <input class="sheet-search" value="{{listQuery}}" bindinput="filterList" placeholder="搜索当前词库" />
+          <scroll-view class="sheet-scroll" scroll-y="{{true}}">
+            <block wx:for="{{listWords}}" wx:for-item="item_R1" wx:for-index="index_S1" wx:key="id">
+              <button class="sheet-row" bindtap="jump" data-id="{{item_R1.id}}">
+                <text class="sheet-number">{{item_R1.position}}</text>
+                <text class="sheet-term">{{item_R1.term}}</text>
+                <text class="sheet-badge {{item_R1.current ? 'current' : item_R1.learned ? 'learned' : ''}}">{{item_R1.current ? '当前词语' : item_R1.learned ? '已学词语' : '未学词语'}}</text>
+              </button>
+            </block>
+            <block wx:if="{{(!listWords.length ? 1 : 0) === 1}}">
+              <view class="blank-state">没有匹配的词语</view>
+            </block>
+          </scroll-view>
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{(sourceOpen ? 1 : 0) === 1}}">
+      <view class="center-mask source-mask" bindtap="closeSource">
+        <view class="small-dialog source-dialog" catchtap="noop">
+          <view class="dialog-title">{{sourceTitle}}</view>
+          <view class="source-meta">{{sourceMeta}}</view>
+          <scroll-view class="source-reader" scroll-y="{{true}}">
+            <view class="source-context">
+              <block wx:for="{{sourceParts}}" wx:for-item="item_d1" wx:for-index="index_e1" wx:key="index">
+                <text class="source-{{item_d1.kind}} {{item_d1.cue ? 'context-cue' : ''}}" selectable="{{true}}">{{item_d1.text}}</text>
+              </block>
+            </view>
+            <view class="highlight-legend">
+              <text class="legend-red">当前成语</text>
+              <text class="legend-yellow">其他成语</text>
+            </view>
+            <block wx:if="{{(sourceError ? 1 : 0) === 1}}">
+              <view class="source-reading-status {{sourceError ? 'source-error' : ''}}" bindtap="retrySource">{{sourceHint}}</view>
+            </block>
+          </scroll-view>
+          <view class="dialog-actions">
+            <button class="close-source" bindtap="closeSource">关闭</button>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{(understandingOpen ? 1 : 0) === 1}}">
+      <view class="center-mask understanding-mask" bindtap="closeUnderstanding">
+        <view class="small-dialog" catchtap="noop">
+          <view class="dialog-title">我的简易理解</view>
+          <view class="dialog-caption">保存后，其他同学也能看到这份理解。公共底稿和别人的版本会保留。</view>
+          <textarea class="understanding-editor usage-editor" value="{{understandingValue}}" bindinput="understandingInput" maxlength="120" />
+          <view class="dialog-actions">
+            <button bindtap="closeUnderstanding">取消</button>
+            <button class="save-understanding" bindtap="saveUnderstanding" loading="{{understandingSaving}}" disabled="{{understandingSaving}}">保存并公开</button>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{(editorOpen ? 1 : 0) === 1}}">
+      <view class="center-mask usage-editor-mask" bindtap="closeEditor">
+        <view class="small-dialog" catchtap="noop">
+          <view class="dialog-title">{{editorTitle}}</view>
+          <view class="dialog-caption">只修改自己的版本，公共底稿会保留。</view>
+          <textarea class="usage-editor" value="{{editorValue}}" bindinput="usageInput" maxlength="500" placeholder="写下你自己的理解……" />
+          <view class="editor-restore">
+            <button bindtap="restoreUsageField">恢复这项公共底稿</button>
+          </view>
+          <view class="dialog-actions">
+            <button bindtap="closeEditor">取消</button>
+            <button class="save-usage" bindtap="saveUsage">保存修改</button>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</block>

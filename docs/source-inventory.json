@@ -1,0 +1,2306 @@
+{
+  "sourceFiles": 460,
+  "sourceBytes": 56153015,
+  "files": [
+    {
+      "path": "cloudbaserc.json",
+      "bytes": 46,
+      "sha256": "ced822cd845007d2650d9531ca15b49fd2b34e0d8fcc7f87a1a98fac0632eb33"
+    },
+    {
+      "path": "cloudfunctions/analysisNotes/config.json",
+      "bytes": 77,
+      "sha256": "328196ba2bfcba950c6bfa434aeee927019598d3488ec0c616236a6fe653f93e"
+    },
+    {
+      "path": "cloudfunctions/analysisNotes/index.js",
+      "bytes": 543,
+      "sha256": "49f8f4238446b98d0125893c655276a6d96aafc641a80a9983d4f48f732cfa6e"
+    },
+    {
+      "path": "cloudfunctions/analysisNotes/ink.js",
+      "bytes": 2771,
+      "sha256": "d79af4554ea7c0ef91c41e0ae184337f54164544032eeafe769525bcfea095b6"
+    },
+    {
+      "path": "cloudfunctions/analysisNotes/package.json",
+      "bytes": 119,
+      "sha256": "36244d432cbcd89e7300cb730691a6e8086782c1de5d2b6b1eb9c041c32de862"
+    },
+    {
+      "path": "cloudfunctions/analysisNotes/resource-ids.json.br",
+      "bytes": 293626,
+      "sha256": "3e8ec8e5220868f9462dc0ff580984d048921c6222e6e5bc0cfe2b3a302a2fdd"
+    },
+    {
+      "path": "cloudfunctions/analysisNotes/service.js",
+      "bytes": 6125,
+      "sha256": "41c4f4f96b2797e05be034d7e39aa0ab66def7356ed97c97883d27af9ee6dd40"
+    },
+    {
+      "path": "cloudfunctions/examBank/analogy.json.br",
+      "bytes": 280241,
+      "sha256": "691f0f6ba812fb4492efe2ae2c037b482185dc176d99b149e2a98b3b95fe7444"
+    },
+    {
+      "path": "cloudfunctions/examBank/analysis.json.br",
+      "bytes": 428769,
+      "sha256": "b2a8702ad308794fec212cc6af9220de7e9bfbd964e585584b5f627c0a6e0a61"
+    },
+    {
+      "path": "cloudfunctions/examBank/bank.js",
+      "bytes": 6716,
+      "sha256": "1250cc6110228657167d2d5a2a70be720b8c46c090b60aaf15e79124213cc727"
+    },
+    {
+      "path": "cloudfunctions/examBank/catalog.json",
+      "bytes": 6092,
+      "sha256": "29c58d99364423649a0c322f7ec93e3e2af92fbb1bf374a2962116848a475ee0"
+    },
+    {
+      "path": "cloudfunctions/examBank/common.json.br",
+      "bytes": 789824,
+      "sha256": "370088a257e41e0ae5acf4fe1a17ee13654aab2f55655d9ae448881090436500"
+    },
+    {
+      "path": "cloudfunctions/examBank/deduction.json.br",
+      "bytes": 587401,
+      "sha256": "9207ec3217363ada8465eeee1cb1fa433b0109d00d64240f6fed08febf80d67c"
+    },
+    {
+      "path": "cloudfunctions/examBank/definition.json.br",
+      "bytes": 484975,
+      "sha256": "052c284431de307b0684eb39cb732e58a1e133915fe7879d08b6a3789e2136f5"
+    },
+    {
+      "path": "cloudfunctions/examBank/figure.json.br",
+      "bytes": 98317,
+      "sha256": "d5907f4dec0351a884ecd474906dbc7704d9e83039de028fd92fdfd81e848f71"
+    },
+    {
+      "path": "cloudfunctions/examBank/index.js",
+      "bytes": 750,
+      "sha256": "e6c5a3c6b1beca57eb0da6362b2566a080050594ac40410fbc0026ba5a8bb804"
+    },
+    {
+      "path": "cloudfunctions/examBank/manifest.json.br",
+      "bytes": 3006357,
+      "sha256": "442d2d75c7bf39b19f17311c0409e2c923e5b1669b68c870da8ddd9e932d0997"
+    },
+    {
+      "path": "cloudfunctions/examBank/package.json",
+      "bytes": 113,
+      "sha256": "b515f25d385483d15d58c5b284f418c5b74ef3373dbca9f091b925b0929a8606"
+    },
+    {
+      "path": "cloudfunctions/examBank/politics.json.br",
+      "bytes": 216634,
+      "sha256": "8a9b9a9451a822cbbb6c23a4451b8e786d7e97f386cdee16461d5639c0afebac"
+    },
+    {
+      "path": "cloudfunctions/examBank/quantity.json.br",
+      "bytes": 424418,
+      "sha256": "1f0a35924c929deca91f861794c5f15515030086b071acb2a7d0839a5ea304cb"
+    },
+    {
+      "path": "cloudfunctions/examBank/question-ink.js",
+      "bytes": 4118,
+      "sha256": "357e9d15a20d05a3ce28b0f0a2be12594a4e5985d72dc1ae4f842bd8fda5f096"
+    },
+    {
+      "path": "cloudfunctions/examBank/resource-config.json",
+      "bytes": 5318,
+      "sha256": "b29a59af81294cce07630511895edac4c58761da84e4eb8a0159e57827728ad2"
+    },
+    {
+      "path": "cloudfunctions/examBank/resource-ids.json.br",
+      "bytes": 293626,
+      "sha256": "3e8ec8e5220868f9462dc0ff580984d048921c6222e6e5bc0cfe2b3a302a2fdd"
+    },
+    {
+      "path": "cloudfunctions/examBank/resources.js",
+      "bytes": 3147,
+      "sha256": "59ff700e4ef41cb85dd9bb681b0e1ebde9162d1b4c4984b7c7a2fda4cde44b97"
+    },
+    {
+      "path": "cloudfunctions/examBank/style-overrides.json.br",
+      "bytes": 129316,
+      "sha256": "362fe750a5fc3058f4cd7e3ae9c13d4d2e5ac1633e67b841c01896ecb366f68a"
+    },
+    {
+      "path": "cloudfunctions/examBank/verbal.json.br",
+      "bytes": 1515973,
+      "sha256": "22e42b1f9c82ed6f5503e75add98534832be7666b05b853c714f82723963a714"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/config.json",
+      "bytes": 53,
+      "sha256": "88e047d3805336df2a7fe5cc3ef0ee1b0c75e5513d31ec53599777b61d71da9f"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/idioms.json",
+      "bytes": 475414,
+      "sha256": "e447e390df657632eea768a597b2c3ac243007055db10f5b63c3a7fb492f4a15"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/index.js",
+      "bytes": 7766,
+      "sha256": "82f35ee2360b6013e06d8d0a042a750ff446c2f5519ca0ba0033ad394fff6ca0"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/package.json",
+      "bytes": 115,
+      "sha256": "1d973416a63bf864a6728aeb4b5b96be501658111ef8df338322bb585d250fa4"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/question-ids.json",
+      "bytes": 29634,
+      "sha256": "c5ef53dfaef11e88e1dde90ca7def073c6b0bb0a81db783224217a9e4ca75a3a"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/question-ink.js",
+      "bytes": 3986,
+      "sha256": "e6ec4a6f0db6771d8a12a8a93e924c99339939a34d754f3e11410301a71e21c1"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/source-reader.js",
+      "bytes": 5444,
+      "sha256": "2a8e2723b7250c90bcfe909f082d2216c50f1dc88876cc404de0bb12d03ccdb3"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/sources.json",
+      "bytes": 11348963,
+      "sha256": "6928d49e01655e4ff2ae162792d25d3fb76a0642936568530cec865f4b8dc674"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/THIRD-PARTY-NOTICES.txt",
+      "bytes": 2635,
+      "sha256": "b2eeb908a6e6067a8b5758b55184fcd40e3f8e604bfac1402b099c806508245b"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/word-cards.json",
+      "bytes": 18981075,
+      "sha256": "dde0856dda2d137ac9a4a32250a84d2218a7a66abd5a40a927568f741f6e135d"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/word-content.js",
+      "bytes": 1148,
+      "sha256": "f8cafd6f0cca6a2795c268462991732a272fdd6968e98e1a6d19175f1ce7b09b"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/word-questions.json",
+      "bytes": 4735266,
+      "sha256": "e9b4b46e0f71c69d870bbb816cf24b29c4c31c671a10215baee48403f758557c"
+    },
+    {
+      "path": "cloudfunctions/studyNotes/words.json",
+      "bytes": 230393,
+      "sha256": "c6adebaef9af23ae84977c28c9c2a4499bafa28e6cfbbc397d618f0fc286388c"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_array_like_to_array.js",
+      "bytes": 192,
+      "sha256": "2acb5327ec7ac7c8096e2ef6e1f2f7487ca26a92a800f60b482d3ea4fe2b4cfd"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_array_without_holes.js",
+      "bytes": 194,
+      "sha256": "d7dc0b553d1890562c9b3e5d8c144276b0e7f5f25868c366e699e71da27c25ad"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_async_to_generator.js",
+      "bytes": 592,
+      "sha256": "b36b41ec4344b641590b77cc9df78f6d79c0338d1fe73dab9fc085ff0d04851c"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_define_property.js",
+      "bytes": 210,
+      "sha256": "81dea491c1fbb282561b4a63aea5bbb36e3d2bbaa1bbba65fef305b8336622cd"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_instanceof.js",
+      "bytes": 170,
+      "sha256": "78087b4445cf8339e81746fd829eded8ddedb759a9c1e6c9ac334d3269a9446a"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_iterable_to_array.js",
+      "bytes": 173,
+      "sha256": "4e832f19a671b383bf2598f74c93acb087aef71ebeb071a32cb62fa00562b3b6"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_non_iterable_spread.js",
+      "bytes": 225,
+      "sha256": "be4cd42623b912d6c0daf1207fea2618439e5d5ad70d80dee78f6177565016b8"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_object_spread.js",
+      "bytes": 528,
+      "sha256": "41ce13df122c9582d02c90492bd3b310c0f288115e148398426ae04e1c6c9fae"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_object_spread_props.js",
+      "bytes": 613,
+      "sha256": "37295b7efbd42a5c73f544cdbaef94016044b0bfce5b0d37aaaa6a87ac409ed4"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_object_without_properties.js",
+      "bytes": 504,
+      "sha256": "0ff690408692827d26837e5fb1e10e6ff0d302a18c2ba9c974739edfc0bdcf07"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_object_without_properties_loose.js",
+      "bytes": 269,
+      "sha256": "3091cc807bfd935cadb9bb5e52bb465d501cfbc4609dc6eeb1106b840ff03861"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_to_consumable_array.js",
+      "bytes": 471,
+      "sha256": "9b9e75b873cecc3d037b646c4438d8ae920d1e9001ac9eaa640c036df625878e"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_ts_generator.js",
+      "bytes": 3018,
+      "sha256": "e269264aebbf11a426f0ff18e01bb79f7ad3ad59ab4a2c789e310fe460eda7a2"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_ts_values.js",
+      "bytes": 1129,
+      "sha256": "90e4cd0530ec005d7a964d1728e9a76ad49bc686447da72f9081a2f4d4182469"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_type_of.js",
+      "bytes": 132,
+      "sha256": "b15e2cb7022b315e17f33a0ae9afee28761a485ea98352631a492ac7d6277e28"
+    },
+    {
+      "path": "miniprogram/@swc/runtime/_unsupported_iterable_to_array.js",
+      "bytes": 538,
+      "sha256": "e53e3abb512cf843a3295fdce0f45d11248b97c7ca3aaef98f9eae2cf7450614"
+    },
+    {
+      "path": "miniprogram/app.js",
+      "bytes": 77,
+      "sha256": "2daf74e885e45ccb406d37ceb38dda3e1deb5cd471ae63cee36c9588cf19858a"
+    },
+    {
+      "path": "miniprogram/app.json",
+      "bytes": 3888,
+      "sha256": "85a93a81a6161dfa974f53ee4503926306b43e841eff46cbd512092369dfd48b"
+    },
+    {
+      "path": "miniprogram/app.wxss",
+      "bytes": 1711,
+      "sha256": "0008cd5cc00c3e8fc7b8814bcfcf704d535524b82ae299dce27a19905e5748f7"
+    },
+    {
+      "path": "miniprogram/assets/frequency.png",
+      "bytes": 7788,
+      "sha256": "6eddb6f60207fb1aba0cad179eb0fab32f6531b7d382a3aa1a4bb8d5364a379d"
+    },
+    {
+      "path": "miniprogram/assets/modules/analogy.png",
+      "bytes": 7086,
+      "sha256": "a78faa65df8408efd9880495cfd42bcda281990c1e182c6810cb0ac7f3f084ec"
+    },
+    {
+      "path": "miniprogram/assets/modules/analysis.png",
+      "bytes": 6882,
+      "sha256": "12e4c1e3c3bd69ee4dde9cba56bd214a362ee8b05b5537aa813e91820af6eda4"
+    },
+    {
+      "path": "miniprogram/assets/modules/common.png",
+      "bytes": 10855,
+      "sha256": "98b4dc9fa54fc1a7e56de67c7e4a2d68df432852b3f2db7b5c7e091c28a92f50"
+    },
+    {
+      "path": "miniprogram/assets/modules/deduction.png",
+      "bytes": 7479,
+      "sha256": "1058bbf68fdf326213c663de427142e59c953a84078745585d83fc3f8ad38276"
+    },
+    {
+      "path": "miniprogram/assets/modules/definition.png",
+      "bytes": 11082,
+      "sha256": "ef432f9aa5345b233a623c93c6770beefea7b6301e6acf6ebac52c34a1ea8be6"
+    },
+    {
+      "path": "miniprogram/assets/modules/figure.png",
+      "bytes": 9845,
+      "sha256": "fe007c8f4fdc0c1be0b15a760a885e584865ca8770cd4068864c4c44fb735ebc"
+    },
+    {
+      "path": "miniprogram/assets/modules/hebei.png",
+      "bytes": 9663,
+      "sha256": "93742c4d0c7b9e494564c5dfdce906950fe6c22f5eb3815b7232de06586b7897"
+    },
+    {
+      "path": "miniprogram/assets/modules/logicfill.png",
+      "bytes": 9330,
+      "sha256": "b083bb20b3850e2765dbd587b0a6e945ddd0b85424f18cf4a65975a43ff135bb"
+    },
+    {
+      "path": "miniprogram/assets/modules/politics.png",
+      "bytes": 9830,
+      "sha256": "ba40813d8757ec2fce2d59714e74067d49acbe122356200f630bc07dd6cad01a"
+    },
+    {
+      "path": "miniprogram/assets/modules/quantity.png",
+      "bytes": 8129,
+      "sha256": "98859f495ab297ec6be1530475c4f7eab8e96fff671573304a476429c8cf39dd"
+    },
+    {
+      "path": "miniprogram/assets/modules/verbal.png",
+      "bytes": 7426,
+      "sha256": "62bd3a8eff8a8599228e55f785e9aa4bb1a8a85f19e5d11587f98dcbff158e5f"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/0-iconPath.png",
+      "bytes": 1708,
+      "sha256": "0b2012c8400129550afe3df038fba382355d248a599f836d4557c72f334cb32c"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/0-selectedIconPath.png",
+      "bytes": 1730,
+      "sha256": "952e571814e2443d962381a6e9b9e1b67a1a549879f07d2ecc84940b2a55c82a"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/1-iconPath.png",
+      "bytes": 3540,
+      "sha256": "f4146f430526591972010bf76df5db5bcf8d049e192dc0152ef0543ba4b1d780"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/1-selectedIconPath.png",
+      "bytes": 3672,
+      "sha256": "13bd32f2b8e92d5ebd57fa71bccb88c8d573a6998f900804dc3fad0f6dc42175"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/2-iconPath.png",
+      "bytes": 1785,
+      "sha256": "4a1f5415768557339e97a2db9abb4d29f1bdf68bb2f7f08099403e8217f845e0"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/2-selectedIconPath.png",
+      "bytes": 1792,
+      "sha256": "780fe89f7cc01c2d332d04efb6733ab22dbc1169e1672a9bda2d526a944b3d76"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/3-iconPath.png",
+      "bytes": 3454,
+      "sha256": "fc6268712e171650c373361bee92ec4a177dbc605c98d0a32e74514f4923bc18"
+    },
+    {
+      "path": "miniprogram/assets/recovered-tabs/3-selectedIconPath.png",
+      "bytes": 3575,
+      "sha256": "6847cea9f0b1bd637cc0965b23f0a4e4121eb9623bdfa16d36f0f6f09de99dc6"
+    },
+    {
+      "path": "miniprogram/assets/tabs/home-active.png",
+      "bytes": 1730,
+      "sha256": "952e571814e2443d962381a6e9b9e1b67a1a549879f07d2ecc84940b2a55c82a"
+    },
+    {
+      "path": "miniprogram/assets/tabs/home.png",
+      "bytes": 1708,
+      "sha256": "0b2012c8400129550afe3df038fba382355d248a599f836d4557c72f334cb32c"
+    },
+    {
+      "path": "miniprogram/assets/tabs/practice-active.png",
+      "bytes": 3101,
+      "sha256": "b12fed5e4a4174cc08a747e80448551b0195a7e134828c8d1332e9b9c02e1717"
+    },
+    {
+      "path": "miniprogram/assets/tabs/practice.png",
+      "bytes": 2608,
+      "sha256": "8b13da3026fcf00d792abf55c5a6221490343a5b4a3655cc3b81192e3fb41cee"
+    },
+    {
+      "path": "miniprogram/assets/tabs/profile-active.png",
+      "bytes": 3575,
+      "sha256": "6847cea9f0b1bd637cc0965b23f0a4e4121eb9623bdfa16d36f0f6f09de99dc6"
+    },
+    {
+      "path": "miniprogram/assets/tabs/profile.png",
+      "bytes": 3454,
+      "sha256": "fc6268712e171650c373361bee92ec4a177dbc605c98d0a32e74514f4923bc18"
+    },
+    {
+      "path": "miniprogram/assets/tabs/train-active.png",
+      "bytes": 3672,
+      "sha256": "13bd32f2b8e92d5ebd57fa71bccb88c8d573a6998f900804dc3fad0f6dc42175"
+    },
+    {
+      "path": "miniprogram/assets/tabs/train.png",
+      "bytes": 3540,
+      "sha256": "f4146f430526591972010bf76df5db5bcf8d049e192dc0152ef0543ba4b1d780"
+    },
+    {
+      "path": "miniprogram/assets/tabs/writing-active.png",
+      "bytes": 1792,
+      "sha256": "780fe89f7cc01c2d332d04efb6733ab22dbc1169e1672a9bda2d526a944b3d76"
+    },
+    {
+      "path": "miniprogram/assets/tabs/writing.png",
+      "bytes": 1785,
+      "sha256": "4a1f5415768557339e97a2db9abb4d29f1bdf68bb2f7f08099403e8217f845e0"
+    },
+    {
+      "path": "miniprogram/config/study-cloud.js",
+      "bytes": 129,
+      "sha256": "7ec69c82a804ddfae6568de5def1ad029aef7eadec59c2b1207102473b7e6056"
+    },
+    {
+      "path": "miniprogram/data/foundations.js",
+      "bytes": 393,
+      "sha256": "49f5c1f7c54dbe040fe871cf4eb4468b2de00af3433b62c39c5583a76d4df82a"
+    },
+    {
+      "path": "miniprogram/data/logic-answer-index.js",
+      "bytes": 39374,
+      "sha256": "ae04fe1420cdfe3f5f7f8ffe8259b11c6713251cb47dc16f24e9fcf5155c28df"
+    },
+    {
+      "path": "miniprogram/data/logic-papers.js",
+      "bytes": 89189,
+      "sha256": "8ce89a9267cd8ab50c5e07a4fef1ff43d70106893d77dd0a89b11604a3410333"
+    },
+    {
+      "path": "miniprogram/data/logic-question-meta.js",
+      "bytes": 273265,
+      "sha256": "107bb027872e85e1d2e7c770e395cc97d24110f3d418a4b64d60a1a69e4b5e5c"
+    },
+    {
+      "path": "miniprogram/data/logic-question-routes.js",
+      "bytes": 20082,
+      "sha256": "0731bacdb62cdde6ed1b17bf3720a1107641c65ffe0ac1e99118593dbd535266"
+    },
+    {
+      "path": "miniprogram/data/modules.js",
+      "bytes": 733,
+      "sha256": "8415bcf1bc268fa1cdbc78d75402ff22d3ecb222387a335479da3c02339319b3"
+    },
+    {
+      "path": "miniprogram/data/question-word-options.js",
+      "bytes": 72973,
+      "sha256": "d10961a23b46d62b98b62ef789133dfc09d4dccec35bc90a27ffdb4abb140556"
+    },
+    {
+      "path": "miniprogram/data/word-id-index.js",
+      "bytes": 188892,
+      "sha256": "59a619b3c30461edbe655074408f56de625982baa2ec5f2ec12799616bd1200c"
+    },
+    {
+      "path": "miniprogram/data/word-kinds.js",
+      "bytes": 8350,
+      "sha256": "f8e5dff904325f1b954969d7c4aa29bea4bb5fa6c425d0820bf99b716b27337c"
+    },
+    {
+      "path": "miniprogram/exam/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/exam/catalog.js",
+      "bytes": 9729,
+      "sha256": "e2622567bc575fb6500d98b22e113747b5297b03e784f3c780c828174b859edf"
+    },
+    {
+      "path": "miniprogram/exam/collections.js",
+      "bytes": 6075,
+      "sha256": "513af6ad6fd147e13d4ce1651af4d633abb06caf9ebcd8afbc538f585d2c6f5a"
+    },
+    {
+      "path": "miniprogram/exam/collections.json",
+      "bytes": 46,
+      "sha256": "977f13fd0f36696819f969fdfb1a8feab7a4fb16ea8be5654db39bfb0d7de43c"
+    },
+    {
+      "path": "miniprogram/exam/collections.wxml",
+      "bytes": 2423,
+      "sha256": "5a8f847174f45ac5590035c31a3ce9d8d24895008d8c2cfd501b30c34cd98d06"
+    },
+    {
+      "path": "miniprogram/exam/collections.wxss",
+      "bytes": 30,
+      "sha256": "2d680dd54767af544f2c041fa75a5a536043ce100ae1b07003dd5a9b7477013e"
+    },
+    {
+      "path": "miniprogram/exam/common.wxss",
+      "bytes": 9222,
+      "sha256": "1353495cab0e195881830cffcd60a0b260bbfe90545a3e86153132a453a8dcb3"
+    },
+    {
+      "path": "miniprogram/exam/components/content/index.js",
+      "bytes": 1069,
+      "sha256": "9c6eb4bfb8756a81bd2659c724024c80ed194a820f7c4301383460c7a20b9b0d"
+    },
+    {
+      "path": "miniprogram/exam/components/content/index.json",
+      "bytes": 39,
+      "sha256": "f4794f58524bbba1e57041da3acc4f21b8746ed5fbbe02bcfd7f16cc279b8185"
+    },
+    {
+      "path": "miniprogram/exam/components/content/index.wxml",
+      "bytes": 978,
+      "sha256": "23f03fc91352b330914fa173dff8f199f8efbb06bdc866a70423a9a5b9044d8c"
+    },
+    {
+      "path": "miniprogram/exam/components/content/index.wxss",
+      "bytes": 266,
+      "sha256": "738daf088f97ea6229ce58bcd93e54c2d67643ef68d89ea44608122c9c6081ce"
+    },
+    {
+      "path": "miniprogram/exam/components/ink/index.js",
+      "bytes": 6998,
+      "sha256": "7e0679360673264187d0f0d3baa3d143cf461a5163141e7a419bcc4e79cdae82"
+    },
+    {
+      "path": "miniprogram/exam/components/ink/index.json",
+      "bytes": 39,
+      "sha256": "f4794f58524bbba1e57041da3acc4f21b8746ed5fbbe02bcfd7f16cc279b8185"
+    },
+    {
+      "path": "miniprogram/exam/components/ink/index.wxml",
+      "bytes": 382,
+      "sha256": "d5a1c393a6d0785813af2ea1e1ebed95773fe08b8b4c17141cc0008f35a5cd5d"
+    },
+    {
+      "path": "miniprogram/exam/components/ink/index.wxss",
+      "bytes": 140,
+      "sha256": "52353a42995af8fe2bb92d84c9763b0079e52447005117c5b503b6af310515a8"
+    },
+    {
+      "path": "miniprogram/exam/components/note-pad/index.js",
+      "bytes": 7269,
+      "sha256": "45c74fceb85bfbc884961fc94120a0cbf3277f9b42abd910c1524036b07899dd"
+    },
+    {
+      "path": "miniprogram/exam/components/note-pad/index.json",
+      "bytes": 39,
+      "sha256": "f4794f58524bbba1e57041da3acc4f21b8746ed5fbbe02bcfd7f16cc279b8185"
+    },
+    {
+      "path": "miniprogram/exam/components/note-pad/index.wxml",
+      "bytes": 210,
+      "sha256": "a6570e81d454dd8de0477d6946a859cde3a7c756adbbc22bd5fcf7b8c2170252"
+    },
+    {
+      "path": "miniprogram/exam/components/note-pad/index.wxss",
+      "bytes": 204,
+      "sha256": "29528cccf4366291fd9a9bf60c1f2d083652b3287a5ff05d20d942a9b998604f"
+    },
+    {
+      "path": "miniprogram/exam/data/bank.js",
+      "bytes": 674239,
+      "sha256": "5c492f47d723501f6a96096eb7cb5c28bafbaf48a4dc158c52621951cb920ac1"
+    },
+    {
+      "path": "miniprogram/exam/data/first-screens.js",
+      "bytes": 562591,
+      "sha256": "a2ce838c789e64cfd7cc3f95e20995147a8a7cd562f93b24bbdb0d9331e05943"
+    },
+    {
+      "path": "miniprogram/exam/hub.js",
+      "bytes": 1264,
+      "sha256": "cd23364ca2daceaa580241a25468def522851a3f295c2626ed258511296f49e9"
+    },
+    {
+      "path": "miniprogram/exam/hub.json",
+      "bytes": 46,
+      "sha256": "977f13fd0f36696819f969fdfb1a8feab7a4fb16ea8be5654db39bfb0d7de43c"
+    },
+    {
+      "path": "miniprogram/exam/hub.wxml",
+      "bytes": 845,
+      "sha256": "8ac3687331df2a4d947e39bb4c88ac54642502323e7db26f79a92495f7a3a609"
+    },
+    {
+      "path": "miniprogram/exam/hub.wxss",
+      "bytes": 30,
+      "sha256": "2d680dd54767af544f2c041fa75a5a536043ce100ae1b07003dd5a9b7477013e"
+    },
+    {
+      "path": "miniprogram/exam/papers.js",
+      "bytes": 4682,
+      "sha256": "061d01ed729747ed5d4db51e895c305630d3ad070e32aa0d78b7ac074da8f81b"
+    },
+    {
+      "path": "miniprogram/exam/papers.json",
+      "bytes": 46,
+      "sha256": "977f13fd0f36696819f969fdfb1a8feab7a4fb16ea8be5654db39bfb0d7de43c"
+    },
+    {
+      "path": "miniprogram/exam/papers.wxml",
+      "bytes": 2006,
+      "sha256": "fa26986879422a4d904af2fcec82cabab1b725dd6dd2dddd3ad434898f862792"
+    },
+    {
+      "path": "miniprogram/exam/papers.wxss",
+      "bytes": 182,
+      "sha256": "7de3aacf1b6db294bd98911c7b4db3070760a76fba387700203b25d9ec01309f"
+    },
+    {
+      "path": "miniprogram/exam/practice.js",
+      "bytes": 3361,
+      "sha256": "795fa81d2abe334eabf8b12d33993851150cd3f0f2e6598b554377355180dd0d"
+    },
+    {
+      "path": "miniprogram/exam/practice.json",
+      "bytes": 46,
+      "sha256": "977f13fd0f36696819f969fdfb1a8feab7a4fb16ea8be5654db39bfb0d7de43c"
+    },
+    {
+      "path": "miniprogram/exam/practice.wxml",
+      "bytes": 2199,
+      "sha256": "ae8af8762ea6b175e408cce88225121579d488e315af2df586a95c1f3860aa20"
+    },
+    {
+      "path": "miniprogram/exam/practice.wxss",
+      "bytes": 30,
+      "sha256": "2d680dd54767af544f2c041fa75a5a536043ce100ae1b07003dd5a9b7477013e"
+    },
+    {
+      "path": "miniprogram/exam/reader.js",
+      "bytes": 30772,
+      "sha256": "e0f4d48b195c18a28314802d041eb26eb0d0d7bdd4fb30c484734db7b671b828"
+    },
+    {
+      "path": "miniprogram/exam/reader.json",
+      "bytes": 105,
+      "sha256": "2741b0021d5a2b224702d6775c7b2ea4ce9120ac47abc2ac74f01c794dd38dd4"
+    },
+    {
+      "path": "miniprogram/exam/reader.wxml",
+      "bytes": 20061,
+      "sha256": "099fc005456a741cb9b275c610ad1d4adac31891ccbad330d3a91006755696bf"
+    },
+    {
+      "path": "miniprogram/exam/reader.wxss",
+      "bytes": 50340,
+      "sha256": "218d5cea016d987244f2877e92683bc747481c20a1f17dc8aed134afc624a0ed"
+    },
+    {
+      "path": "miniprogram/exam/records.js",
+      "bytes": 933,
+      "sha256": "48cdb00ce79e3e1535016acb0bf8b35510ea520f5c93bebd847e5b4aefb05380"
+    },
+    {
+      "path": "miniprogram/exam/records.json",
+      "bytes": 46,
+      "sha256": "977f13fd0f36696819f969fdfb1a8feab7a4fb16ea8be5654db39bfb0d7de43c"
+    },
+    {
+      "path": "miniprogram/exam/records.wxml",
+      "bytes": 952,
+      "sha256": "cad884cec6009bd907c3cf34800daed1c27d6b26b1782f1587118c0551c92ce6"
+    },
+    {
+      "path": "miniprogram/exam/records.wxss",
+      "bytes": 30,
+      "sha256": "2d680dd54767af544f2c041fa75a5a536043ce100ae1b07003dd5a9b7477013e"
+    },
+    {
+      "path": "miniprogram/exam/search.js",
+      "bytes": 2696,
+      "sha256": "9e22c5adf396cd92a378a3ae5850387fa86504e44895707ad4bc9b72ad387098"
+    },
+    {
+      "path": "miniprogram/exam/search.json",
+      "bytes": 46,
+      "sha256": "977f13fd0f36696819f969fdfb1a8feab7a4fb16ea8be5654db39bfb0d7de43c"
+    },
+    {
+      "path": "miniprogram/exam/search.wxml",
+      "bytes": 1376,
+      "sha256": "61158f892ba2f892bdcbe9f6a8aa8666cdfe510b6e482aff7480bb138e03c2ea"
+    },
+    {
+      "path": "miniprogram/exam/search.wxss",
+      "bytes": 30,
+      "sha256": "2d680dd54767af544f2c041fa75a5a536043ce100ae1b07003dd5a9b7477013e"
+    },
+    {
+      "path": "miniprogram/exam/utils/analysis-notes.js",
+      "bytes": 14894,
+      "sha256": "328d4e79654c0f5b65ba1b97f672e524398feb656ca558a04f51b1cfacafe296"
+    },
+    {
+      "path": "miniprogram/exam/utils/api.js",
+      "bytes": 18039,
+      "sha256": "bdaad099b27c3b26cca6377f653b9c3c0c328ba74b7f8a271e6fb2d732d285da"
+    },
+    {
+      "path": "miniprogram/exam/utils/cloud.js",
+      "bytes": 1022,
+      "sha256": "34cbc6316cdf81f3a00c4e7983f16d560bbc6d36eccb2c523422f3bae5705441"
+    },
+    {
+      "path": "miniprogram/exam/utils/composite-bank.js",
+      "bytes": 2765,
+      "sha256": "27e023a171f41ac5bc3142af57c22812dc60fd186b0d301eaa99a657841ac76e"
+    },
+    {
+      "path": "miniprogram/exam/utils/inflate.js",
+      "bytes": 38542,
+      "sha256": "43cb81c8b74747b46e741f656dd687ba7e56844d70b0bec0e28773e9acc897a9"
+    },
+    {
+      "path": "miniprogram/exam/utils/local-bank.js",
+      "bytes": 4480,
+      "sha256": "dffe53021a7a64c89e9a837253f80805bf345cbd05e66419ed4f5795b46f48b6"
+    },
+    {
+      "path": "miniprogram/exam/utils/material-divider.wxs",
+      "bytes": 1631,
+      "sha256": "852f96ba7b4e8df518e5e27c882585c815335a4251fb842f76075dd92ed4a337"
+    },
+    {
+      "path": "miniprogram/exam/utils/navigation.js",
+      "bytes": 1366,
+      "sha256": "428d593aee111f3e9a1945ee0cc8471636f88068623f225fd92e42ff9e3692fb"
+    },
+    {
+      "path": "miniprogram/exam/utils/question-annotations.js",
+      "bytes": 9152,
+      "sha256": "97e06ce425dcb41aa605f3a3d204cef677092c3d976b33cd88393f4c91256be6"
+    },
+    {
+      "path": "miniprogram/exam/utils/store.js",
+      "bytes": 7880,
+      "sha256": "2b9f3206e605b771f707050114532bda065bf410c4144c2e9c87096176dea9c5"
+    },
+    {
+      "path": "miniprogram/exam/utils/zlib-json.js",
+      "bytes": 581,
+      "sha256": "c7984329cb043c74f54f81fb4847f11ad2466559533d1bc9ad552dab520630fa"
+    },
+    {
+      "path": "miniprogram/foundation/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/foundation/index.js",
+      "bytes": 470,
+      "sha256": "6785604707d10b73c47b0840543834bb0adef74779378201d48179fe372aaa21"
+    },
+    {
+      "path": "miniprogram/foundation/index.json",
+      "bytes": 46,
+      "sha256": "b5bcfaef8fe0af8864695efdb5ca99de4da3df7e1631d0b7cab6eb716de2b27f"
+    },
+    {
+      "path": "miniprogram/foundation/index.wxml",
+      "bytes": 469,
+      "sha256": "337538aab2fa5ddeadd1e071ea9f30d47d6908ae20f22c4962790fa5202f93b2"
+    },
+    {
+      "path": "miniprogram/foundation/index.wxss",
+      "bytes": 3072,
+      "sha256": "32bb7abdd72b491eb0f2218c90c97f6ee1224cecb06835f7aa64a3e3409fcfeb"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/book.js",
+      "bytes": 75,
+      "sha256": "9ae3f3795f83b49d71fc4e8c9921b9df7da6602293cd00daa9cf1542c285e1a2"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/book.json",
+      "bytes": 46,
+      "sha256": "4b4d8c48411961afb3684b31f5c40291e443e530ac231a6854078645e68a65e4"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/book.wxml",
+      "bytes": 3193,
+      "sha256": "d77abc847b7ce7dfad6c09bf0fb92374bdb1fb1ad1a2510dde5584725609a0e3"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/book.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/data.js",
+      "bytes": 437423,
+      "sha256": "b7d9e8a4b6c716273bc81d3b17a451dbe4126483f4433a7c377f42322272d0c3"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/study.js",
+      "bytes": 76,
+      "sha256": "9f3efd245dadba89ee502085a47a0aa023e1eb94bea681f6336c72ab77767df0"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/study.json",
+      "bytes": 52,
+      "sha256": "98c40c6a123c73f69f0ae010c1464280f4468dd19c848b37d17a4b2f805c07ca"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/study.wxml",
+      "bytes": 14721,
+      "sha256": "222bc0bb55683a9b343c99ed455aee3d0f00c3a232be142651ba916ebe0b1c41"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/study.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/idiom-book-page.js",
+      "bytes": 5108,
+      "sha256": "4d5a39ae2f84d15482f743630c64485345e7aca9b65db364518eb2982b8c7a9b"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/idiom-example.js",
+      "bytes": 1695,
+      "sha256": "968f5238ec0fa526ceb572fd77aa4bb6b717777ddfbe8de1bf4aeda08f6f9f62"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/idiom-study-base.js",
+      "bytes": 5732,
+      "sha256": "5b010da3310f45345923df923c9fc395c330eb92b6e18a39dc03f33ba029e84c"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/idiom-study-page.js",
+      "bytes": 3126,
+      "sha256": "7031a2cb2f75c2a1937ff45827b6a9973e341988606ef11d5dc20c9423f8ab20"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/source-provider.js",
+      "bytes": 3277,
+      "sha256": "cf7f342371960cb77d0add61e26d6ba1c08e3403448bfcac1175a78f2c9495ba"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/study-notes-page.js",
+      "bytes": 8817,
+      "sha256": "576519de2874ea20c1d9a3a0dfde4502813f4b98ffc89c9e167a8df6bb60c504"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/study-understanding-page.js",
+      "bytes": 4641,
+      "sha256": "5f743a210a9881692c7e5c40af1dc4c5fb5f467d617046d665a632447d04b342"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/study-usage-page.js",
+      "bytes": 6619,
+      "sha256": "000a110b582feaec7116ba68cc8a9f860cb0db032c68b2994896fa2716cd67eb"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/word-study-clock-page.js",
+      "bytes": 3703,
+      "sha256": "2f07e2912b3e33247bd935bb767ef3f1e45b03c06ad6f34989476b3a9a238070"
+    },
+    {
+      "path": "miniprogram/idiomStudy0/_shared/utils/word-study-clock.js",
+      "bytes": 1374,
+      "sha256": "957b3a0ee4b0f944b121b0805196afadf6110bbaf8472d52955e027ec7a70af3"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/book.js",
+      "bytes": 75,
+      "sha256": "9ae3f3795f83b49d71fc4e8c9921b9df7da6602293cd00daa9cf1542c285e1a2"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/book.json",
+      "bytes": 46,
+      "sha256": "4b4d8c48411961afb3684b31f5c40291e443e530ac231a6854078645e68a65e4"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/book.wxml",
+      "bytes": 3193,
+      "sha256": "d77abc847b7ce7dfad6c09bf0fb92374bdb1fb1ad1a2510dde5584725609a0e3"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/book.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/data.js",
+      "bytes": 575530,
+      "sha256": "80496324bcd3c48ac2dae3afb48aff3d1b3b9a5f810de8f3727050c6e5bfe6de"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/study.js",
+      "bytes": 76,
+      "sha256": "9f3efd245dadba89ee502085a47a0aa023e1eb94bea681f6336c72ab77767df0"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/study.json",
+      "bytes": 52,
+      "sha256": "98c40c6a123c73f69f0ae010c1464280f4468dd19c848b37d17a4b2f805c07ca"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/study.wxml",
+      "bytes": 14721,
+      "sha256": "222bc0bb55683a9b343c99ed455aee3d0f00c3a232be142651ba916ebe0b1c41"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/study.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/idiom-book-page.js",
+      "bytes": 5108,
+      "sha256": "4d5a39ae2f84d15482f743630c64485345e7aca9b65db364518eb2982b8c7a9b"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/idiom-example.js",
+      "bytes": 1695,
+      "sha256": "968f5238ec0fa526ceb572fd77aa4bb6b717777ddfbe8de1bf4aeda08f6f9f62"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/idiom-study-base.js",
+      "bytes": 5732,
+      "sha256": "5b010da3310f45345923df923c9fc395c330eb92b6e18a39dc03f33ba029e84c"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/idiom-study-page.js",
+      "bytes": 3126,
+      "sha256": "7031a2cb2f75c2a1937ff45827b6a9973e341988606ef11d5dc20c9423f8ab20"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/source-provider.js",
+      "bytes": 3277,
+      "sha256": "cf7f342371960cb77d0add61e26d6ba1c08e3403448bfcac1175a78f2c9495ba"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/study-notes-page.js",
+      "bytes": 8817,
+      "sha256": "576519de2874ea20c1d9a3a0dfde4502813f4b98ffc89c9e167a8df6bb60c504"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/study-understanding-page.js",
+      "bytes": 4641,
+      "sha256": "5f743a210a9881692c7e5c40af1dc4c5fb5f467d617046d665a632447d04b342"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/study-usage-page.js",
+      "bytes": 6619,
+      "sha256": "000a110b582feaec7116ba68cc8a9f860cb0db032c68b2994896fa2716cd67eb"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/word-study-clock-page.js",
+      "bytes": 3703,
+      "sha256": "2f07e2912b3e33247bd935bb767ef3f1e45b03c06ad6f34989476b3a9a238070"
+    },
+    {
+      "path": "miniprogram/idiomStudy1/_shared/utils/word-study-clock.js",
+      "bytes": 1374,
+      "sha256": "957b3a0ee4b0f944b121b0805196afadf6110bbaf8472d52955e027ec7a70af3"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/book.js",
+      "bytes": 75,
+      "sha256": "9ae3f3795f83b49d71fc4e8c9921b9df7da6602293cd00daa9cf1542c285e1a2"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/book.json",
+      "bytes": 46,
+      "sha256": "4b4d8c48411961afb3684b31f5c40291e443e530ac231a6854078645e68a65e4"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/book.wxml",
+      "bytes": 3193,
+      "sha256": "d77abc847b7ce7dfad6c09bf0fb92374bdb1fb1ad1a2510dde5584725609a0e3"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/book.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/data.js",
+      "bytes": 653076,
+      "sha256": "bbe31b71b2ea6ae831bbd6a6296f5915a8844d23e036ab5a074b2725ab4f7efc"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/study.js",
+      "bytes": 76,
+      "sha256": "9f3efd245dadba89ee502085a47a0aa023e1eb94bea681f6336c72ab77767df0"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/study.json",
+      "bytes": 52,
+      "sha256": "98c40c6a123c73f69f0ae010c1464280f4468dd19c848b37d17a4b2f805c07ca"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/study.wxml",
+      "bytes": 14721,
+      "sha256": "222bc0bb55683a9b343c99ed455aee3d0f00c3a232be142651ba916ebe0b1c41"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/study.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/idiom-book-page.js",
+      "bytes": 5108,
+      "sha256": "4d5a39ae2f84d15482f743630c64485345e7aca9b65db364518eb2982b8c7a9b"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/idiom-example.js",
+      "bytes": 1695,
+      "sha256": "968f5238ec0fa526ceb572fd77aa4bb6b717777ddfbe8de1bf4aeda08f6f9f62"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/idiom-study-base.js",
+      "bytes": 5732,
+      "sha256": "5b010da3310f45345923df923c9fc395c330eb92b6e18a39dc03f33ba029e84c"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/idiom-study-page.js",
+      "bytes": 3126,
+      "sha256": "7031a2cb2f75c2a1937ff45827b6a9973e341988606ef11d5dc20c9423f8ab20"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/source-provider.js",
+      "bytes": 3277,
+      "sha256": "cf7f342371960cb77d0add61e26d6ba1c08e3403448bfcac1175a78f2c9495ba"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/study-notes-page.js",
+      "bytes": 8817,
+      "sha256": "576519de2874ea20c1d9a3a0dfde4502813f4b98ffc89c9e167a8df6bb60c504"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/study-understanding-page.js",
+      "bytes": 4641,
+      "sha256": "5f743a210a9881692c7e5c40af1dc4c5fb5f467d617046d665a632447d04b342"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/study-usage-page.js",
+      "bytes": 6619,
+      "sha256": "000a110b582feaec7116ba68cc8a9f860cb0db032c68b2994896fa2716cd67eb"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/word-study-clock-page.js",
+      "bytes": 3703,
+      "sha256": "2f07e2912b3e33247bd935bb767ef3f1e45b03c06ad6f34989476b3a9a238070"
+    },
+    {
+      "path": "miniprogram/idiomStudy2/_shared/utils/word-study-clock.js",
+      "bytes": 1374,
+      "sha256": "957b3a0ee4b0f944b121b0805196afadf6110bbaf8472d52955e027ec7a70af3"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/book.js",
+      "bytes": 75,
+      "sha256": "9ae3f3795f83b49d71fc4e8c9921b9df7da6602293cd00daa9cf1542c285e1a2"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/book.json",
+      "bytes": 46,
+      "sha256": "4b4d8c48411961afb3684b31f5c40291e443e530ac231a6854078645e68a65e4"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/book.wxml",
+      "bytes": 3193,
+      "sha256": "d77abc847b7ce7dfad6c09bf0fb92374bdb1fb1ad1a2510dde5584725609a0e3"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/book.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/data.js",
+      "bytes": 741689,
+      "sha256": "f4a983d646bbaca4038cb0b2bd6a0bae2136f8759b2c43b15b55494811683ccd"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/study.js",
+      "bytes": 76,
+      "sha256": "9f3efd245dadba89ee502085a47a0aa023e1eb94bea681f6336c72ab77767df0"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/study.json",
+      "bytes": 52,
+      "sha256": "98c40c6a123c73f69f0ae010c1464280f4468dd19c848b37d17a4b2f805c07ca"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/study.wxml",
+      "bytes": 14721,
+      "sha256": "222bc0bb55683a9b343c99ed455aee3d0f00c3a232be142651ba916ebe0b1c41"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/study.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/idiom-book-page.js",
+      "bytes": 5108,
+      "sha256": "4d5a39ae2f84d15482f743630c64485345e7aca9b65db364518eb2982b8c7a9b"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/idiom-example.js",
+      "bytes": 1695,
+      "sha256": "968f5238ec0fa526ceb572fd77aa4bb6b717777ddfbe8de1bf4aeda08f6f9f62"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/idiom-study-base.js",
+      "bytes": 5732,
+      "sha256": "5b010da3310f45345923df923c9fc395c330eb92b6e18a39dc03f33ba029e84c"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/idiom-study-page.js",
+      "bytes": 3126,
+      "sha256": "7031a2cb2f75c2a1937ff45827b6a9973e341988606ef11d5dc20c9423f8ab20"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/source-provider.js",
+      "bytes": 3277,
+      "sha256": "cf7f342371960cb77d0add61e26d6ba1c08e3403448bfcac1175a78f2c9495ba"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/study-notes-page.js",
+      "bytes": 8817,
+      "sha256": "576519de2874ea20c1d9a3a0dfde4502813f4b98ffc89c9e167a8df6bb60c504"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/study-understanding-page.js",
+      "bytes": 4641,
+      "sha256": "5f743a210a9881692c7e5c40af1dc4c5fb5f467d617046d665a632447d04b342"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/study-usage-page.js",
+      "bytes": 6619,
+      "sha256": "000a110b582feaec7116ba68cc8a9f860cb0db032c68b2994896fa2716cd67eb"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/word-study-clock-page.js",
+      "bytes": 3703,
+      "sha256": "2f07e2912b3e33247bd935bb767ef3f1e45b03c06ad6f34989476b3a9a238070"
+    },
+    {
+      "path": "miniprogram/idiomStudy3/_shared/utils/word-study-clock.js",
+      "bytes": 1374,
+      "sha256": "957b3a0ee4b0f944b121b0805196afadf6110bbaf8472d52955e027ec7a70af3"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/book.js",
+      "bytes": 75,
+      "sha256": "9ae3f3795f83b49d71fc4e8c9921b9df7da6602293cd00daa9cf1542c285e1a2"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/book.json",
+      "bytes": 46,
+      "sha256": "4b4d8c48411961afb3684b31f5c40291e443e530ac231a6854078645e68a65e4"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/book.wxml",
+      "bytes": 3193,
+      "sha256": "d77abc847b7ce7dfad6c09bf0fb92374bdb1fb1ad1a2510dde5584725609a0e3"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/book.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/data.js",
+      "bytes": 493098,
+      "sha256": "153602c73019ebaab64886f586b68df94464e8987d762631d4f1d917fe1c3925"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/study.js",
+      "bytes": 76,
+      "sha256": "9f3efd245dadba89ee502085a47a0aa023e1eb94bea681f6336c72ab77767df0"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/study.json",
+      "bytes": 52,
+      "sha256": "98c40c6a123c73f69f0ae010c1464280f4468dd19c848b37d17a4b2f805c07ca"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/study.wxml",
+      "bytes": 14721,
+      "sha256": "222bc0bb55683a9b343c99ed455aee3d0f00c3a232be142651ba916ebe0b1c41"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/study.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/idiom-book-page.js",
+      "bytes": 5108,
+      "sha256": "4d5a39ae2f84d15482f743630c64485345e7aca9b65db364518eb2982b8c7a9b"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/idiom-example.js",
+      "bytes": 1695,
+      "sha256": "968f5238ec0fa526ceb572fd77aa4bb6b717777ddfbe8de1bf4aeda08f6f9f62"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/idiom-study-base.js",
+      "bytes": 5732,
+      "sha256": "5b010da3310f45345923df923c9fc395c330eb92b6e18a39dc03f33ba029e84c"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/idiom-study-page.js",
+      "bytes": 3126,
+      "sha256": "7031a2cb2f75c2a1937ff45827b6a9973e341988606ef11d5dc20c9423f8ab20"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/source-provider.js",
+      "bytes": 3277,
+      "sha256": "cf7f342371960cb77d0add61e26d6ba1c08e3403448bfcac1175a78f2c9495ba"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/study-notes-page.js",
+      "bytes": 8817,
+      "sha256": "576519de2874ea20c1d9a3a0dfde4502813f4b98ffc89c9e167a8df6bb60c504"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/study-understanding-page.js",
+      "bytes": 4641,
+      "sha256": "5f743a210a9881692c7e5c40af1dc4c5fb5f467d617046d665a632447d04b342"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/study-usage-page.js",
+      "bytes": 6619,
+      "sha256": "000a110b582feaec7116ba68cc8a9f860cb0db032c68b2994896fa2716cd67eb"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/word-study-clock-page.js",
+      "bytes": 3703,
+      "sha256": "2f07e2912b3e33247bd935bb767ef3f1e45b03c06ad6f34989476b3a9a238070"
+    },
+    {
+      "path": "miniprogram/idiomStudy4/_shared/utils/word-study-clock.js",
+      "bytes": 1374,
+      "sha256": "957b3a0ee4b0f944b121b0805196afadf6110bbaf8472d52955e027ec7a70af3"
+    },
+    {
+      "path": "miniprogram/logic/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/logic/book/index.js",
+      "bytes": 4293,
+      "sha256": "9ab4dbe67bc7c7590d33fca62f9f4e729817d7f33017c7b75a06b2495659eee8"
+    },
+    {
+      "path": "miniprogram/logic/book/index.json",
+      "bytes": 46,
+      "sha256": "2e74c7c80ea14a2fbf6ef4c2772f8319add381453815b327742ba582b38eb84f"
+    },
+    {
+      "path": "miniprogram/logic/book/index.wxml",
+      "bytes": 3103,
+      "sha256": "5125d1e91db4642b068f10d4adf8e25275aaf26c051fb5a3f1dd35c90f168171"
+    },
+    {
+      "path": "miniprogram/logic/book/index.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/logic/compare/index.js",
+      "bytes": 591,
+      "sha256": "9bcb3b360eec3249e5d5cdd7fba1a61a1ded1a521e85057a87b1d9f95630dcae"
+    },
+    {
+      "path": "miniprogram/logic/compare/index.json",
+      "bytes": 46,
+      "sha256": "6d4d02e201ab9464b12bf20f7ce4cba008f5304837de96c4d337c8db4611e13e"
+    },
+    {
+      "path": "miniprogram/logic/compare/index.wxml",
+      "bytes": 1202,
+      "sha256": "4b8204a32765ef5165ed2f76d5c4f99eb03a3a9bd902eaf3c2fbdcd8a8e08d4c"
+    },
+    {
+      "path": "miniprogram/logic/compare/index.wxss",
+      "bytes": 77,
+      "sha256": "f61da7ddde205f087c15962ab866461c9b3d9cc4260a49332bae639d96010e13"
+    },
+    {
+      "path": "miniprogram/logic/data/libraries.js",
+      "bytes": 1326,
+      "sha256": "c5c7489d92b4b3db374142a9ed92f2fb35d18b2a9ba79f3a67aaca5a2401e9f3"
+    },
+    {
+      "path": "miniprogram/logic/data/question-ids.js",
+      "bytes": 27221,
+      "sha256": "6ff934e2b835c9cf113ee4e89f27e16221124f3ec162c9a84d274cf4260b3c24"
+    },
+    {
+      "path": "miniprogram/logic/data/words.js",
+      "bytes": 581904,
+      "sha256": "a1784db1543a99ec8b1e78715d39b66ae305e2f01756d09b876547a6bd296264"
+    },
+    {
+      "path": "miniprogram/logic/intro/index.js",
+      "bytes": 1929,
+      "sha256": "b973bf8a69e0989f579efe35a6951de678b608853780a0eee7295fdd47378083"
+    },
+    {
+      "path": "miniprogram/logic/intro/index.json",
+      "bytes": 46,
+      "sha256": "b4a1eadfe7651bb58e2b55a43868154ab3bae14a0f7da59ef82e6ee4bfcbd9e1"
+    },
+    {
+      "path": "miniprogram/logic/intro/index.wxml",
+      "bytes": 1461,
+      "sha256": "c4577dc1b93065f8322bc3458872b94ba86c2191d265a5698f5073eac55a1b95"
+    },
+    {
+      "path": "miniprogram/logic/intro/index.wxss",
+      "bytes": 2982,
+      "sha256": "fce2ddb92a11c64bfe488b79638d72c9351953da5e2e6d72978660978e742e86"
+    },
+    {
+      "path": "miniprogram/logic/lib.js",
+      "bytes": 2837,
+      "sha256": "523bf0fdb867f319b4bec25f5572b8489b7307eadfea8289fd87faa4ca058dba"
+    },
+    {
+      "path": "miniprogram/logic/libraries/index.js",
+      "bytes": 192,
+      "sha256": "4d434800568cc3ec9711ffbb78a33f7351673b40830038d4d3477d8739ca44a1"
+    },
+    {
+      "path": "miniprogram/logic/libraries/index.json",
+      "bytes": 46,
+      "sha256": "6231e9c4997f787406a06e2ebb607251806c273ab9a966d7f12fef3c136d78ec"
+    },
+    {
+      "path": "miniprogram/logic/libraries/index.wxml",
+      "bytes": 577,
+      "sha256": "872d5a999917ecefe0fea797cf6114a59092af35825e8087e9e24d23f4183f83"
+    },
+    {
+      "path": "miniprogram/logic/libraries/index.wxss",
+      "bytes": 77,
+      "sha256": "f61da7ddde205f087c15962ab866461c9b3d9cc4260a49332bae639d96010e13"
+    },
+    {
+      "path": "miniprogram/logic/questions/index.js",
+      "bytes": 2070,
+      "sha256": "ad42378c3c94071373a4ec90cd373b90b5f1444abb7c37703e08e60ee114cac0"
+    },
+    {
+      "path": "miniprogram/logic/questions/index.json",
+      "bytes": 46,
+      "sha256": "db999b7756d30505b16f93f4e638337ab8984500c62497f775735622f4bdcf4e"
+    },
+    {
+      "path": "miniprogram/logic/questions/index.wxml",
+      "bytes": 1038,
+      "sha256": "772c166f0ae9732986e092925f4760352037997ee408b39fe57b045dd0da72d2"
+    },
+    {
+      "path": "miniprogram/logic/questions/index.wxss",
+      "bytes": 77,
+      "sha256": "f61da7ddde205f087c15962ab866461c9b3d9cc4260a49332bae639d96010e13"
+    },
+    {
+      "path": "miniprogram/logic/word/index.js",
+      "bytes": 76,
+      "sha256": "6e96871c9f634a93880538661d02884f411b7b2b4249164d526b2e9c6e517d8d"
+    },
+    {
+      "path": "miniprogram/logic/word/index.json",
+      "bytes": 46,
+      "sha256": "a132d17702ab04af5cf9db3f9f2b4aa5d2a94afd3054cc5cb5b1f0d64fedd3f4"
+    },
+    {
+      "path": "miniprogram/logic/word/index.wxml",
+      "bytes": 15344,
+      "sha256": "3944f49cbc8e0f492176e55045dddc75aac3f8a51f9f9f3ad799b4b950dbf2a7"
+    },
+    {
+      "path": "miniprogram/logic/word/index.wxss",
+      "bytes": 76,
+      "sha256": "4e6214ef6ef44412c272477a51d9f936afacb7bb0a95aaac805ee745d5dc0476"
+    },
+    {
+      "path": "miniprogram/logic/word-simple/index.js",
+      "bytes": 2514,
+      "sha256": "c944d5991e11b0540c3466a20a208860dc80e1c369b3f75834972d873ff6fb5f"
+    },
+    {
+      "path": "miniprogram/logic/word-simple/index.json",
+      "bytes": 46,
+      "sha256": "c31135e8a021529095da46537326d4a975609b29e7f4653f640c8f10a30fced0"
+    },
+    {
+      "path": "miniprogram/logic/word-simple/index.wxml",
+      "bytes": 2412,
+      "sha256": "3f1b0a262fc37aad3a5eedae668b1c88aa98b0e2014c6b40ddaa670504ba264f"
+    },
+    {
+      "path": "miniprogram/logic/word-simple/index.wxss",
+      "bytes": 1055,
+      "sha256": "5646af49230beec3cd9836568d8a54b1c19167f178288a67dbdb0f193dd1fa48"
+    },
+    {
+      "path": "miniprogram/logic/words/index.js",
+      "bytes": 1903,
+      "sha256": "baef712b78b9ffc51aee1422ac55d85f4987e25668e4594c6341cf57c9175514"
+    },
+    {
+      "path": "miniprogram/logic/words/index.json",
+      "bytes": 46,
+      "sha256": "a132d17702ab04af5cf9db3f9f2b4aa5d2a94afd3054cc5cb5b1f0d64fedd3f4"
+    },
+    {
+      "path": "miniprogram/logic/words/index.wxml",
+      "bytes": 1538,
+      "sha256": "2aafe65b3556c58db6fa9b357e985c30941f1cda6a1f0f1c25134e8c2b518171"
+    },
+    {
+      "path": "miniprogram/logic/words/index.wxss",
+      "bytes": 77,
+      "sha256": "f61da7ddde205f087c15962ab866461c9b3d9cc4260a49332bae639d96010e13"
+    },
+    {
+      "path": "miniprogram/logic/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/logic/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/idiom-example.js",
+      "bytes": 1695,
+      "sha256": "968f5238ec0fa526ceb572fd77aa4bb6b717777ddfbe8de1bf4aeda08f6f9f62"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/idiom-study-base.js",
+      "bytes": 5732,
+      "sha256": "5b010da3310f45345923df923c9fc395c330eb92b6e18a39dc03f33ba029e84c"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/idiom-study-page.js",
+      "bytes": 3126,
+      "sha256": "7031a2cb2f75c2a1937ff45827b6a9973e341988606ef11d5dc20c9423f8ab20"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/source-provider.js",
+      "bytes": 3277,
+      "sha256": "cf7f342371960cb77d0add61e26d6ba1c08e3403448bfcac1175a78f2c9495ba"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/study-notes-page.js",
+      "bytes": 8817,
+      "sha256": "576519de2874ea20c1d9a3a0dfde4502813f4b98ffc89c9e167a8df6bb60c504"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/study-understanding-page.js",
+      "bytes": 4641,
+      "sha256": "5f743a210a9881692c7e5c40af1dc4c5fb5f467d617046d665a632447d04b342"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/study-usage-page.js",
+      "bytes": 6619,
+      "sha256": "000a110b582feaec7116ba68cc8a9f860cb0db032c68b2994896fa2716cd67eb"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/word-study-clock-page.js",
+      "bytes": 3703,
+      "sha256": "2f07e2912b3e33247bd935bb767ef3f1e45b03c06ad6f34989476b3a9a238070"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/word-study-clock.js",
+      "bytes": 1374,
+      "sha256": "957b3a0ee4b0f944b121b0805196afadf6110bbaf8472d52955e027ec7a70af3"
+    },
+    {
+      "path": "miniprogram/logic/_shared/utils/word-study-page.js",
+      "bytes": 3610,
+      "sha256": "b3dd2eb4b6aab9c26c2552a1f0cbad9b244639ccc888dd226c3f05e710f1243e"
+    },
+    {
+      "path": "miniprogram/logicHub/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/logicHub/index.js",
+      "bytes": 3213,
+      "sha256": "398622a1644ca17d83fb6d7ea078d3afcee6f3e74ec475585dc2a598f451b5aa"
+    },
+    {
+      "path": "miniprogram/logicHub/index.json",
+      "bytes": 46,
+      "sha256": "338230e2a557838f5ef7942d152b59b06514a39f42e8df7be57b3809ee56de55"
+    },
+    {
+      "path": "miniprogram/logicHub/index.wxml",
+      "bytes": 3209,
+      "sha256": "43fe99af8556dea3cd8d3ca7996d0c530db6ad495e4385c2047868a243de9f85"
+    },
+    {
+      "path": "miniprogram/logicHub/index.wxss",
+      "bytes": 10320,
+      "sha256": "00b033d730f6bc00a04cbd0d5a79428bbd72de51f6d266e748edd6c3ffcdfe47"
+    },
+    {
+      "path": "miniprogram/logicHub/intro.js",
+      "bytes": 1223,
+      "sha256": "7870bbe78abe00436fb55af50229a49a73c833e038edfeeeb6d6af950e501689"
+    },
+    {
+      "path": "miniprogram/logicHub/intro.json",
+      "bytes": 52,
+      "sha256": "98c40c6a123c73f69f0ae010c1464280f4468dd19c848b37d17a4b2f805c07ca"
+    },
+    {
+      "path": "miniprogram/logicHub/intro.wxml",
+      "bytes": 1397,
+      "sha256": "754dd36ce40c7b949d24b945a4e42e2cd4d675995b4f63e730e644d0d94f2b65"
+    },
+    {
+      "path": "miniprogram/logicHub/intro.wxss",
+      "bytes": 2982,
+      "sha256": "fce2ddb92a11c64bfe488b79638d72c9351953da5e2e6d72978660978e742e86"
+    },
+    {
+      "path": "miniprogram/logicHub/papers.js",
+      "bytes": 2981,
+      "sha256": "da9d2a9682d579e1f7f62829ed325128a888b5734e2e5d6445b6be10b8204e6c"
+    },
+    {
+      "path": "miniprogram/logicHub/papers.json",
+      "bytes": 46,
+      "sha256": "6a8f2903eabb36a7a84283a38ea5d247432081a34df687603d066ebe0216b309"
+    },
+    {
+      "path": "miniprogram/logicHub/papers.wxml",
+      "bytes": 1556,
+      "sha256": "bc53a24cef47fa3ad1ace8563115ad90d0eddd4a6e5389246af4669c74bd7cc1"
+    },
+    {
+      "path": "miniprogram/logicHub/papers.wxss",
+      "bytes": 3121,
+      "sha256": "655808b01e9bb537e9f000b6ed9b1983931dc97a415f8afa0e32ba842e2c5b10"
+    },
+    {
+      "path": "miniprogram/logicHub/practice.js",
+      "bytes": 2883,
+      "sha256": "066a1106770b717c92c92a553f380762fba87343ca3c98ce6b6a7b9f1921adcb"
+    },
+    {
+      "path": "miniprogram/logicHub/practice.json",
+      "bytes": 52,
+      "sha256": "8d5b87efc639a2cba7697877701224605e95ee8c8ecc63f8067804be64611180"
+    },
+    {
+      "path": "miniprogram/logicHub/practice.wxml",
+      "bytes": 2848,
+      "sha256": "c3a65c1bb7973da517b297c9b0a71af1a5dc2173c5053a198de06a8cc9345082"
+    },
+    {
+      "path": "miniprogram/logicHub/practice.wxss",
+      "bytes": 5520,
+      "sha256": "5fa6a02a1a1c0baf79ce429f95e3456690349a93d628ac385ea957b64336889b"
+    },
+    {
+      "path": "miniprogram/logicHub/wrong-books.js",
+      "bytes": 4390,
+      "sha256": "222d8f7659255c5a213571bfb88475f011b774101a75ca00975029d1dfdb5277"
+    },
+    {
+      "path": "miniprogram/logicHub/wrong-books.json",
+      "bytes": 43,
+      "sha256": "41b4931e5920e9ea08d1ef53b9abf2762e0f37e4ffde4255a10be366f27cd92d"
+    },
+    {
+      "path": "miniprogram/logicHub/wrong-books.wxml",
+      "bytes": 3751,
+      "sha256": "c6b479195eca1a8a6dc651baae9ae890dd8dc03f3b5aa440fccfa6d9d0a45d6a"
+    },
+    {
+      "path": "miniprogram/logicHub/wrong-books.wxss",
+      "bytes": 6240,
+      "sha256": "b5b06728ebb7a0dcf2712e11bce943277a29267593d749a4d016ec73bab105a0"
+    },
+    {
+      "path": "miniprogram/logicHub/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/logicHub/_shared/data/logic-catalog.js",
+      "bytes": 1524,
+      "sha256": "c74df071acc6965caaf457f13f02e99df157ae8241807c32c48ec98648de1384"
+    },
+    {
+      "path": "miniprogram/logicHub/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/logicHub/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/logicHub/_shared/utils/paper-practice.js",
+      "bytes": 3853,
+      "sha256": "12c9b5d0ffaea51e21158c901e751698bae8304496c0b5f87f284d86155cce54"
+    },
+    {
+      "path": "miniprogram/logicHub/_shared/utils/random-practice.js",
+      "bytes": 2129,
+      "sha256": "10e53ff816230ba3ba0d025036834591855c56e4916585d7f1969b57ff57df92"
+    },
+    {
+      "path": "miniprogram/logicHub/_shared/utils/wrong-books.js",
+      "bytes": 2719,
+      "sha256": "b7c11495c59a1dccfb0565bb69b61ad6837fe11034c8586c3ce4a69a38e9cdef"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/data.js",
+      "bytes": 583733,
+      "sha256": "6fe704e0a0c0307c79f2c8293cfd9381aebb11f21c8791cfebc8770cfb609c8a"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/index.js",
+      "bytes": 79,
+      "sha256": "65ff5f03c15bd27009bc1555b458da21696d28372aba8dcd884af0708f4f49f6"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/index.json",
+      "bytes": 111,
+      "sha256": "0a8362d115ef11a07064f95dc121ebf19ff15160b36cea70c52aeaea5fc628e6"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/index.wxml",
+      "bytes": 13664,
+      "sha256": "ae928545b1c554a85f4aeebb6d754dcc50226722c47809015b57602f45a60264"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/index.wxss",
+      "bytes": 36877,
+      "sha256": "20adff0f5a93dbd1b04ed6cc7cd6c85a85c54817c7806a67832168b7b7f3e0a2"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/utils/logic-question-page.js",
+      "bytes": 20167,
+      "sha256": "9ede51821e455745e4108541934af13920e3791a7e4cd78e8324cf9d9e35ff2c"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/utils/paper-practice.js",
+      "bytes": 3853,
+      "sha256": "12c9b5d0ffaea51e21158c901e751698bae8304496c0b5f87f284d86155cce54"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/utils/question-annotations.js",
+      "bytes": 9183,
+      "sha256": "255879262735145277c46d04716b264581d184738edcc460f88c325b820be513"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/utils/quiz-ink.js",
+      "bytes": 10178,
+      "sha256": "80f8eb0c7b779b610a50a4ed085935c7fb2d58344e77b4431142bc7211523e2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/utils/quiz-slide.js",
+      "bytes": 4354,
+      "sha256": "1a106aa284e52117fcadf3e5163c864aa90027b0a178f4c1f55e0918d69d4acc"
+    },
+    {
+      "path": "miniprogram/logicQuiz0/_shared/utils/quiz-word-actions.js",
+      "bytes": 6063,
+      "sha256": "585e6cd269eabada90a3f0aae6dbbe72cfbec399113d5c03fae3c7c7531902a6"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/data.js",
+      "bytes": 578649,
+      "sha256": "9abaaf13dbc1dc97ee41c3b3d4b64ec790a4b9040d128dc20876bf1d337b83a9"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/index.js",
+      "bytes": 79,
+      "sha256": "65ff5f03c15bd27009bc1555b458da21696d28372aba8dcd884af0708f4f49f6"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/index.json",
+      "bytes": 111,
+      "sha256": "0a8362d115ef11a07064f95dc121ebf19ff15160b36cea70c52aeaea5fc628e6"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/index.wxml",
+      "bytes": 13664,
+      "sha256": "ae928545b1c554a85f4aeebb6d754dcc50226722c47809015b57602f45a60264"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/index.wxss",
+      "bytes": 36877,
+      "sha256": "20adff0f5a93dbd1b04ed6cc7cd6c85a85c54817c7806a67832168b7b7f3e0a2"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/utils/logic-question-page.js",
+      "bytes": 20167,
+      "sha256": "9ede51821e455745e4108541934af13920e3791a7e4cd78e8324cf9d9e35ff2c"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/utils/paper-practice.js",
+      "bytes": 3853,
+      "sha256": "12c9b5d0ffaea51e21158c901e751698bae8304496c0b5f87f284d86155cce54"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/utils/question-annotations.js",
+      "bytes": 9183,
+      "sha256": "255879262735145277c46d04716b264581d184738edcc460f88c325b820be513"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/utils/quiz-ink.js",
+      "bytes": 10178,
+      "sha256": "80f8eb0c7b779b610a50a4ed085935c7fb2d58344e77b4431142bc7211523e2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/utils/quiz-slide.js",
+      "bytes": 4354,
+      "sha256": "1a106aa284e52117fcadf3e5163c864aa90027b0a178f4c1f55e0918d69d4acc"
+    },
+    {
+      "path": "miniprogram/logicQuiz1/_shared/utils/quiz-word-actions.js",
+      "bytes": 6063,
+      "sha256": "585e6cd269eabada90a3f0aae6dbbe72cfbec399113d5c03fae3c7c7531902a6"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/data.js",
+      "bytes": 580881,
+      "sha256": "7e8187414ddb2ba1e4e1485166c22f0d9bbe6e2ec9bfc182066bcc67ff66bb5b"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/index.js",
+      "bytes": 79,
+      "sha256": "65ff5f03c15bd27009bc1555b458da21696d28372aba8dcd884af0708f4f49f6"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/index.json",
+      "bytes": 111,
+      "sha256": "0a8362d115ef11a07064f95dc121ebf19ff15160b36cea70c52aeaea5fc628e6"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/index.wxml",
+      "bytes": 13664,
+      "sha256": "ae928545b1c554a85f4aeebb6d754dcc50226722c47809015b57602f45a60264"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/index.wxss",
+      "bytes": 36877,
+      "sha256": "20adff0f5a93dbd1b04ed6cc7cd6c85a85c54817c7806a67832168b7b7f3e0a2"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/utils/logic-question-page.js",
+      "bytes": 20167,
+      "sha256": "9ede51821e455745e4108541934af13920e3791a7e4cd78e8324cf9d9e35ff2c"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/utils/paper-practice.js",
+      "bytes": 3853,
+      "sha256": "12c9b5d0ffaea51e21158c901e751698bae8304496c0b5f87f284d86155cce54"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/utils/question-annotations.js",
+      "bytes": 9183,
+      "sha256": "255879262735145277c46d04716b264581d184738edcc460f88c325b820be513"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/utils/quiz-ink.js",
+      "bytes": 10178,
+      "sha256": "80f8eb0c7b779b610a50a4ed085935c7fb2d58344e77b4431142bc7211523e2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/utils/quiz-slide.js",
+      "bytes": 4354,
+      "sha256": "1a106aa284e52117fcadf3e5163c864aa90027b0a178f4c1f55e0918d69d4acc"
+    },
+    {
+      "path": "miniprogram/logicQuiz2/_shared/utils/quiz-word-actions.js",
+      "bytes": 6063,
+      "sha256": "585e6cd269eabada90a3f0aae6dbbe72cfbec399113d5c03fae3c7c7531902a6"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/data.js",
+      "bytes": 804489,
+      "sha256": "6ba4c1fa360e732a3a60795f3a906e17f0bc7a16150e4aaaec3e0125ffc28125"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/index.js",
+      "bytes": 79,
+      "sha256": "65ff5f03c15bd27009bc1555b458da21696d28372aba8dcd884af0708f4f49f6"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/index.json",
+      "bytes": 111,
+      "sha256": "0a8362d115ef11a07064f95dc121ebf19ff15160b36cea70c52aeaea5fc628e6"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/index.wxml",
+      "bytes": 13664,
+      "sha256": "ae928545b1c554a85f4aeebb6d754dcc50226722c47809015b57602f45a60264"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/index.wxss",
+      "bytes": 36877,
+      "sha256": "20adff0f5a93dbd1b04ed6cc7cd6c85a85c54817c7806a67832168b7b7f3e0a2"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/utils/logic-question-page.js",
+      "bytes": 20167,
+      "sha256": "9ede51821e455745e4108541934af13920e3791a7e4cd78e8324cf9d9e35ff2c"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/utils/paper-practice.js",
+      "bytes": 3853,
+      "sha256": "12c9b5d0ffaea51e21158c901e751698bae8304496c0b5f87f284d86155cce54"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/utils/question-annotations.js",
+      "bytes": 9183,
+      "sha256": "255879262735145277c46d04716b264581d184738edcc460f88c325b820be513"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/utils/quiz-ink.js",
+      "bytes": 10178,
+      "sha256": "80f8eb0c7b779b610a50a4ed085935c7fb2d58344e77b4431142bc7211523e2d"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/utils/quiz-slide.js",
+      "bytes": 4354,
+      "sha256": "1a106aa284e52117fcadf3e5163c864aa90027b0a178f4c1f55e0918d69d4acc"
+    },
+    {
+      "path": "miniprogram/logicQuiz3/_shared/utils/quiz-word-actions.js",
+      "bytes": 6063,
+      "sha256": "585e6cd269eabada90a3f0aae6dbbe72cfbec399113d5c03fae3c7c7531902a6"
+    },
+    {
+      "path": "miniprogram/logicSearch/app.wxss",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "miniprogram/logicSearch/data.js",
+      "bytes": 1383934,
+      "sha256": "7ae52f1579a6b30641a3b146c75e957db8a2afab92de9434b666b7f403fbd3e3"
+    },
+    {
+      "path": "miniprogram/logicSearch/index.js",
+      "bytes": 1903,
+      "sha256": "759ebbcc3fa948d2b91fb32c0d8ed88406bfed4c8effc4725c2fb5e166871564"
+    },
+    {
+      "path": "miniprogram/logicSearch/index.json",
+      "bytes": 52,
+      "sha256": "21c6ad80aba882841dde954a1c48ca4f56838575340773bbb35917423c2b7428"
+    },
+    {
+      "path": "miniprogram/logicSearch/index.wxml",
+      "bytes": 2299,
+      "sha256": "afdf2c0147e81e542799a5b739b353312f35b46c6c8e99caea4cc9ade0791464"
+    },
+    {
+      "path": "miniprogram/logicSearch/index.wxss",
+      "bytes": 3522,
+      "sha256": "8d5be9e4ae5307a6147387d5ebe25b4f9f51cd13a56187ae7e1766c6780bcafc"
+    },
+    {
+      "path": "miniprogram/logicSearch/needs.js",
+      "bytes": 3537,
+      "sha256": "fa8717bc61a998ab8143f792d77146c29c51ae137c3dc72d1c7691295ea0f07a"
+    },
+    {
+      "path": "miniprogram/logicSearch/needs.json",
+      "bytes": 46,
+      "sha256": "50cd8bdfc35b1cee75514acf30a30108ef558e6cbf03ea36361796c9d70b2569"
+    },
+    {
+      "path": "miniprogram/logicSearch/needs.wxml",
+      "bytes": 1548,
+      "sha256": "bc1f028a6f9c2beb46c1f6d8117c10225ceeb397364713ebbbd7f5478b7745c2"
+    },
+    {
+      "path": "miniprogram/logicSearch/needs.wxss",
+      "bytes": 3777,
+      "sha256": "f1c7c45008f0326c2159ca982fe221dfc1870104d28faf7ca8bdaf2b5a73ba3d"
+    },
+    {
+      "path": "miniprogram/logicSearch/records.js",
+      "bytes": 1129,
+      "sha256": "039e847f69afb6b5f7d690a22a24df6613753309db66c5a44d0c29eb5deb4eee"
+    },
+    {
+      "path": "miniprogram/logicSearch/records.json",
+      "bytes": 46,
+      "sha256": "70964d4eed1a69cea5d009506633df91a97ceea7e20d4ad6cb4f3344af66a4e1"
+    },
+    {
+      "path": "miniprogram/logicSearch/records.wxml",
+      "bytes": 1277,
+      "sha256": "32f10b8eaee2bd4a90eb544816b8a48eaf0b1a363544e8f1ca8b80903bda20c0"
+    },
+    {
+      "path": "miniprogram/logicSearch/records.wxss",
+      "bytes": 2426,
+      "sha256": "a9284d8212ba4ddac6ef9b2949bff0e6a4b0b6b4f5eab54c38044c1aa8b0bce7"
+    },
+    {
+      "path": "miniprogram/logicSearch/_shared/data/idiom-study-index.js",
+      "bytes": 48741,
+      "sha256": "fe05f466f7cfbe421f33c85eec9d13d16e1a7f80c8850e7f3ac54060ae738408"
+    },
+    {
+      "path": "miniprogram/logicSearch/_shared/data/study-bank-flags.js",
+      "bytes": 25698,
+      "sha256": "ef8a14782f7517d1e7acfea2d92484ce4acb090c5163a57effe595df02ecfd2d"
+    },
+    {
+      "path": "miniprogram/logicSearch/_shared/utils/idiom-navigation.js",
+      "bytes": 1508,
+      "sha256": "8e5b4a56018ef60fb1db47cef579d2cca94ea0cf5287d266590e2e93e1a26885"
+    },
+    {
+      "path": "miniprogram/logicSearch/_shared/utils/paper-practice.js",
+      "bytes": 3853,
+      "sha256": "12c9b5d0ffaea51e21158c901e751698bae8304496c0b5f87f284d86155cce54"
+    },
+    {
+      "path": "miniprogram/logicSearch/_shared/utils/question-search.js",
+      "bytes": 1016,
+      "sha256": "8f80268e835d609510116260a10af19c570f1dc6fb7fd12b77c968586c12d37e"
+    },
+    {
+      "path": "miniprogram/pages/index/index.js",
+      "bytes": 1441,
+      "sha256": "dc64289dea42f1e654668c2629030ad496f8b4dffdc8d25885967223f32ca2ce"
+    },
+    {
+      "path": "miniprogram/pages/index/index.json",
+      "bytes": 49,
+      "sha256": "0b6283254b7ce3daa4475ba9d796164e3f2ec2f2b81dfb8f4f71ffcff0ba9b96"
+    },
+    {
+      "path": "miniprogram/pages/index/index.wxml",
+      "bytes": 2122,
+      "sha256": "884f2c9e49287a6e798554c2e98a24384716043fadbaec40370b54b41b3bb33a"
+    },
+    {
+      "path": "miniprogram/pages/index/index.wxss",
+      "bytes": 2170,
+      "sha256": "2d478c9da126955fa885878505236fe06a6441ed2cb430c99cbfab74ef6c06bf"
+    },
+    {
+      "path": "miniprogram/pages/profile/index.js",
+      "bytes": 6656,
+      "sha256": "549ce5961f259a8056b034c6cee609f230f1db34a02b7025bd45596f8363f9aa"
+    },
+    {
+      "path": "miniprogram/pages/profile/index.json",
+      "bytes": 40,
+      "sha256": "14adf966498decbb9d25f9990e548c8d441bca57d19405c0fe601567b74d0fb8"
+    },
+    {
+      "path": "miniprogram/pages/profile/index.wxml",
+      "bytes": 3482,
+      "sha256": "d7f72d04c72e57ef16a9ad78134c6cd9bc37a6cd610839fca4c2bc3dc8dbef01"
+    },
+    {
+      "path": "miniprogram/pages/profile/index.wxss",
+      "bytes": 6424,
+      "sha256": "85758d5ee768cec7635795ff8bca71ed04e61f872a956fc2d4482e1625bb68c0"
+    },
+    {
+      "path": "miniprogram/pages/train/index.js",
+      "bytes": 111,
+      "sha256": "700de6459e92e27dd4767aec50231d974e8f9bd32119072a2b86dc9b01766710"
+    },
+    {
+      "path": "miniprogram/pages/train/index.json",
+      "bytes": 40,
+      "sha256": "e456b7d683bda21daf1fa06565f072c598e74ee6d0f79c69b13acba49e1bfd63"
+    },
+    {
+      "path": "miniprogram/pages/train/index.wxml",
+      "bytes": 422,
+      "sha256": "6ba77e84bfb6c5864c40fbb96d2544ab1d6904b2f3484acacfe3b906767c6eed"
+    },
+    {
+      "path": "miniprogram/pages/train/index.wxss",
+      "bytes": 39,
+      "sha256": "77f9e056e7a3c5fb58084b6de882702cb7938d8dd3e72169281d3fcf67c3333e"
+    },
+    {
+      "path": "miniprogram/pages/writing/index.js",
+      "bytes": 10,
+      "sha256": "0895cb310fb18e3f6b35229e90218b9bd57abde1bb8820f33ff98f73fe83a0d5"
+    },
+    {
+      "path": "miniprogram/pages/writing/index.json",
+      "bytes": 40,
+      "sha256": "4c5de355b6602d12e21e74c48b4779dbf1b75f7985cf42044ce219ddc258d266"
+    },
+    {
+      "path": "miniprogram/pages/writing/index.wxml",
+      "bytes": 319,
+      "sha256": "947a64ab1a6200a35504f4b0715419e93a32acf2174e9182b03d9482d2b4d865"
+    },
+    {
+      "path": "miniprogram/pages/writing/index.wxss",
+      "bytes": 39,
+      "sha256": "77f9e056e7a3c5fb58084b6de882702cb7938d8dd3e72169281d3fcf67c3333e"
+    },
+    {
+      "path": "miniprogram/styles/idiom-study.wxss",
+      "bytes": 34634,
+      "sha256": "9c67106aa5139eae770bca260ef85db73aab1f03710377c8e1d785f1dc092038"
+    },
+    {
+      "path": "miniprogram/styles/logic-shared.wxss",
+      "bytes": 11480,
+      "sha256": "110ab6bc4445b325ad68c50f18bc94c65aa18af845ab3db7064574389b4336b1"
+    },
+    {
+      "path": "miniprogram/styles/tablet-layout.wxss",
+      "bytes": 3017,
+      "sha256": "40c03a06bf1c6c07cbc1ef588d391086c738523b47ce43c92d866b8303453ef5"
+    },
+    {
+      "path": "miniprogram/utils/exam-history.js",
+      "bytes": 1779,
+      "sha256": "2bad0ba1d7cc7484569d2e4c86970504ba8efa9686448e984fa50df93317c1b2"
+    },
+    {
+      "path": "miniprogram/utils/exam-session.js",
+      "bytes": 5464,
+      "sha256": "f410c1fd45ac9b87b3317dbf408f4e374b4897a1313a02d22d7bb08b990805a0"
+    },
+    {
+      "path": "miniprogram/utils/logic-store.js",
+      "bytes": 9135,
+      "sha256": "09f8f00d6b4673164f6e451557ec06c8b5ef60c5df625ae4f6247a5f94c28c69"
+    },
+    {
+      "path": "miniprogram/utils/needs-study.js",
+      "bytes": 1619,
+      "sha256": "183ac5e3c1c2475e6d3ebe80678e8c33c70dc8cedb3cf3bf3a788843be57bc7e"
+    },
+    {
+      "path": "miniprogram/utils/packed-json.js",
+      "bytes": 2298,
+      "sha256": "31e298db5bcd84575624d742b2fd82bcb1b54863c82286ef942ef09051af2c5c"
+    },
+    {
+      "path": "miniprogram/utils/public-study-cache.js",
+      "bytes": 3350,
+      "sha256": "58ad34bec227ffdd503c135626e2f0492923638ca4f7c46d9d515c88151f73e0"
+    },
+    {
+      "path": "miniprogram/utils/study-cloud.js",
+      "bytes": 5702,
+      "sha256": "f310038ce5025672e23ac8b20d55797f62aabd91878cec292c3715b82c5ba814"
+    },
+    {
+      "path": "miniprogram/utils/word-terms.js",
+      "bytes": 2184,
+      "sha256": "4e9de018d177598e0fdbabf4f8e89670465b24502e295a78c433870c96d72de3"
+    },
+    {
+      "path": "miniprogram/utils/wrong-records.js",
+      "bytes": 3032,
+      "sha256": "2be8205aaeaaeb2332d38c949f74f486595436f26ca81ec64099804802dc78ac"
+    },
+    {
+      "path": "project.config.json",
+      "bytes": 926,
+      "sha256": "9a11e2ef9eeb30fdf93c83799acd2ffef5af35dfb35324db63197fe0b09233b8"
+    }
+  ]
+}

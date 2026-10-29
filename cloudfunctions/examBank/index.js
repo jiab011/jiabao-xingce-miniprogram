@@ -1,0 +1,3 @@
+const cloud=require('wx-server-sdk'),crypto=require('crypto');cloud.init({env:cloud.DYNAMIC_CURRENT_ENV});
+const resources=require('./resources').create(cloud),bank=require('./bank').create(resources);
+exports.main=async e=>{try{const {OPENID,APPID}=cloud.getWXContext();if(!OPENID||!APPID)throw new Error('请在微信小程序内打开');if(e.action==='readQuestionInk'||e.action==='saveQuestionInk'){const uid=crypto.createHash('sha256').update(APPID+':'+OPENID).digest('hex').slice(0,32);return await require('./question-ink').handle(e,cloud.database(),OPENID,uid,Date.now());}return await bank.handle(e);}catch(error){console.error('examBank',error.message);return {ok:false,message:error.message||'题库暂时不可用，请稍后重试'};}};

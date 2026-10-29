@@ -1,0 +1,36 @@
+<view class="logic-page">
+  <input class="search-input" value="{{query}}" placeholder="输入词语或关键词" bindinput="onInput" focus="{{focus}}" confirm-type="search" />
+  <view class="panel">
+    <view class="heading">{{title}}</view>
+    <view class="muted">{{total}} 词 · 已标记学习 {{learned}} 词</view>
+    <block wx:if="{{(description ? 1 : 0) === 1}}">
+      <view class="bank-rule">{{description}}</view>
+    </block>
+  </view>
+  <block wx:if="{{(total ? 1 : 0) === 1}}">
+    <view class="card">
+      <block wx:for="{{visible}}" wx:for-item="item_n" wx:for-index="index_o" wx:key="id">
+        <button class="word-row" bindtap="open" data-id="{{item_n.id}}">
+          <view class="row">
+            <text class="word-term">{{item_n.term}}</text>
+            <block wx:if="{{(item_n.learned ? 1 : 0) === 1}}">
+              <text class="pill">已学</text>
+            </block>
+          </view>
+          <view class="small">真题 {{item_n.count}} 道 · 正选 {{item_n.correct}} 道</view>
+        </button>
+      </block>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="empty">
+      <view>{{query ? '没有找到匹配词语' : '这里还没有收藏的词语'}}</view>
+      <block wx:if="{{(!query ? 1 : 0) === 1}}">
+        <button class="btn light" bindtap="goAll">去词库学习</button>
+      </block>
+    </view>
+  </block>
+  <block wx:if="{{(total ? 1 : 0) === 1}}">
+    <view class="footer-note">{{hasMore ? '继续上滑加载更多' : '已显示全部结果'}}</view>
+  </block>
+</view>

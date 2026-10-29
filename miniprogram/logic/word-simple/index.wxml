@@ -1,0 +1,51 @@
+<block wx:if="{{(word ? 1 : 0) === 1}}">
+  <view class="logic-page {{bankTotal ? 'has-word-nav' : ''}}">
+    <view class="panel">
+      <view class="word-title">{{word.term}}</view>
+      <view class="statistics">
+        <view>
+          <view class="stat-value">{{word.count}}</view>
+          <view class="stat-label">真题出现</view>
+        </view>
+        <view>
+          <view class="stat-value">{{word.correct}}</view>
+          <view class="stat-label">正确选项</view>
+        </view>
+        <view>
+          <view class="stat-value">{{word.national}}</view>
+          <view class="stat-label">国考真题</view>
+        </view>
+      </view>
+      <view class="row actions">
+        <button class="btn light favorite-word" bindtap="favorite">{{favorite ? '★ 已收藏' : '☆ 收藏词语'}}</button>
+        <button class="btn primary learn-word" bindtap="learn">{{learned ? '已学 · 撤销标记' : '标记已学'}}</button>
+      </view>
+    </view>
+    <view class="panel">
+      <view class="heading">真题解析摘录</view>
+      <view class="excerpt">{{word.excerpt || '先看下方真题语境，结合解析理解这个词。'}}</view>
+      <block wx:if="{{(sourceTitle ? 1 : 0) === 1}}">
+        <view class="source">来自：{{sourceTitle}}。此处为原库解析摘录，完整解释请查看关联题目。</view>
+      </block>
+    </view>
+    <view class="panel">
+      <view class="row">
+        <text class="heading">关联真题</text>
+        <button class="btn light" bindtap="allQuestions">全部 {{word.count}} 题 ›</button>
+      </view>
+      <block wx:for="{{related}}" wx:for-item="item_E0" wx:for-index="index_F0" wx:key="id">
+        <button class="question-row" bindtap="question" data-id="{{item_E0.id}}">
+          <view class="small">{{item_E0.title}} · 第 {{item_E0.no}} 题</view>
+          <view class="question-preview">{{item_E0.preview}}…</view>
+        </button>
+      </block>
+    </view>
+    <block wx:if="{{(bankTotal ? 1 : 0) === 1}}">
+      <view class="word-bank-nav">
+        <button class="bank-previous" bindtap="previousWord" disabled="{{!hasBankPrevious}}">上一词</button>
+        <button class="bank-list" bindtap="wordList">{{bankPosition}} / {{bankTotal}} · 列表</button>
+        <button class="bank-next" bindtap="nextWord" disabled="{{!hasBankNext}}">下一词</button>
+      </view>
+    </block>
+  </view>
+</block>

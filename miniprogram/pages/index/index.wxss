@@ -1,0 +1,22 @@
+.modules-card{padding:20rpx 29rpx 28rpx}
+.section-heading{-webkit-align-items:baseline;align-items:baseline;display:-webkit-flex;display:flex;padding:1rpx 0 24rpx;white-space:nowrap}
+.section-title{color:#111;font-size:34rpx;font-weight:600;letter-spacing:0.4rpx}
+.section-subtitle{color:#333;font-size:27rpx;margin-left:50rpx}
+.module-row{display:-webkit-flex;display:flex;width:100%}
+.module-row + .module-row{margin-top:18rpx}
+.module-spacer{-webkit-flex:1 1 0%;flex:1 1 0%;min-width:0}
+.foundations-card{margin-top:20rpx}
+.module-item{-webkit-align-items:center;align-items:center;background:transparent;border:0;border-radius:0;display:-webkit-flex;display:flex;-webkit-flex:1 1 0%;flex:1 1 0%;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;line-height:1.35;margin:0;max-width:none;min-width:0;overflow:visible;padding:10rpx 0 0;width:0}
+.module-icon{display:block;-webkit-flex-shrink:0;flex-shrink:0;height:100rpx;width:100rpx}
+.module-name{color:#393939;display:block;font-size:28rpx;font-weight:400;margin-top:12rpx;white-space:nowrap}
+@media (min-width:760px){.modules-card{padding:12.5px 18.125px 17.5px}
+.section-heading{-webkit-align-items:baseline;align-items:baseline;display:-webkit-flex;display:flex;padding:.625px 0 15px;white-space:nowrap}
+.section-title{color:#111;font-size:21.25px;font-weight:600;letter-spacing:.25px}
+.section-subtitle{color:#333;font-size:16.875px;margin-left:31.25px}
+.module-row + .module-row{margin-top:11.25px}
+.foundations-card{margin-top:12.5px}
+.module-item{-webkit-align-items:center;align-items:center;background:transparent;border:0;border-radius:0;display:-webkit-flex;display:flex;-webkit-flex:1 1 0%;flex:1 1 0%;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;line-height:1.35;margin:0;max-width:none;min-width:0;overflow:visible;padding:6.25px 0 0;width:0}
+.module-icon{display:block;-webkit-flex-shrink:0;flex-shrink:0;height:62.5px;width:62.5px}
+.module-name{color:#393939;display:block;font-size:17.5px;font-weight:400;margin-top:7.5px;white-space:nowrap}
+}
+@import "/styles/tablet-layout.wxss";
